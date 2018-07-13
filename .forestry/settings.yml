@@ -1,0 +1,75 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- path: content
+  label: Pages
+  create: all
+- path: content/caching
+  label: Caching
+  create: all
+- path: content/signing-up
+  label: Signing up
+  create: all
+- path: content/img
+  label: Img
+  create: all
+- path: content/webhooks
+  label: Webhooks
+  create: all
+- path: content/api
+  label: Api
+  create: all
+- path: content/team-management
+  label: Team management
+  create: all
+- path: content/xamarin
+  label: Xamarin
+  create: all
+- path: content/fastlane
+  label: Fastlane
+  create: all
+- path: content/tips-and-tricks
+  label: Tips and tricks
+  create: all
+- path: content/faq
+  label: Faq
+  create: all
+- path: content/troubleshooting
+  label: Troubleshooting
+  create: all
+- path: content/tools
+  label: Tools
+  create: all
+- path: content/tutorials
+  label: Tutorials
+  create: all
+- path: content/code-signing
+  label: Code signing
+  create: all
+- path: content/docker
+  label: Docker
+  create: all
+- path: content/stylesheets
+  label: Stylesheets
+  create: all
+- path: content/infrastructure
+  label: Infrastructure
+  create: all
+- path: content/adding-a-new-app
+  label: Adding a new app
+  create: all
+- path: content/getting-started
+  label: Getting started
+  create: all
+- path: content/bitrise-cli
+  label: Bitrise cli
+  create: all
+upload_dir: static/uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+version: '0.43'

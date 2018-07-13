@@ -6,4 +6,4 @@ fields:
 - type: textarea
 pages:
 - content/getting-started/getting-started.md
-- content/getting-started/index.md
+- content/getting-started/index.md.md

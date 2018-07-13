@@ -11,6 +11,10 @@ plainIDAnchors = true
 smartDashes = true
 smartypants = true
 [[menu.main]]
+name = "Another test"
+url = "/"
+weight = 1
+[[menu.main]]
 name = "Caching"
 url = "/caching/index"
 weight = 6

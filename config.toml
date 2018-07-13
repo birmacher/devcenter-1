@@ -1,4 +1,4 @@
-baseurl = "https://http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/"
+baseurl = "https://example.org/"
 canonifyurls = true
 googleAnalytics = ""
 languageCode = "en-us"
@@ -13,27 +13,27 @@ smartypants = true
 [[menu.main]]
 name = "Caching"
 url = "/caching/index"
-weight = 1
+weight = 6
 [[menu.main]]
 name = "License"
 url = "license/"
-weight = 6
+weight = 5
 [[menu.main]]
 name = "Roadmap"
 url = "roadmap/"
-weight = 5
+weight = 4
 [[menu.main]]
 name = "Adding content"
 url = "adding-content/"
-weight = 4
+weight = 3
 [[menu.main]]
 name = "Getting started"
 url = "getting-started/"
-weight = 3
+weight = 2
 [[menu.main]]
 name = "Material"
 url = "/"
-weight = 2
+weight = 1
 [params]
 author = "Digitalcraftsman"
 copyright = "Released under the MIT license"

@@ -1,4 +1,4 @@
-baseurl = "https://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/"
+baseurl = "http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/"
 canonifyurls = true
 googleAnalytics = ""
 languageCode = "en-us"

@@ -11,9 +11,19 @@ plainIDAnchors = true
 smartDashes = true
 smartypants = true
 [[menu.main]]
+name = "Adding content"
+parent = "Material"
+url = "adding-content/"
+weight = 1
+[[menu.main]]
+name = "Material"
+parent = "License"
+url = "/"
+weight = 1
+[[menu.main]]
 name = "teststset"
 url = "/tets"
-weight = 1
+weight = 2
 [[menu.main]]
 name = "License"
 url = "license/"
@@ -21,18 +31,10 @@ weight = 2
 [[menu.main]]
 name = "Roadmap"
 url = "roadmap/"
-weight = 6
-[[menu.main]]
-name = "Adding content"
-url = "adding-content/"
 weight = 4
 [[menu.main]]
 name = "Getting started"
 url = "getting-started/"
-weight = 5
-[[menu.main]]
-name = "Material"
-url = "/"
 weight = 3
 [params]
 author = "Digitalcraftsman"

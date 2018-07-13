@@ -11,19 +11,14 @@ plainIDAnchors = true
 smartDashes = true
 smartypants = true
 [[menu.main]]
-name = "Adding content"
-parent = "Material"
-url = "adding-content/"
-weight = 1
+name = "teststset"
+url = "/tets"
+weight = 3
 [[menu.main]]
 name = "Material"
 parent = "License"
 url = "/"
 weight = 1
-[[menu.main]]
-name = "teststset"
-url = "/tets"
-weight = 2
 [[menu.main]]
 name = "License"
 url = "license/"

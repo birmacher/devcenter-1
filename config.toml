@@ -1,4 +1,4 @@
-baseurl = "http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/"
+baseurl = "https://example.org/"
 canonifyurls = true
 googleAnalytics = ""
 languageCode = "en-us"
@@ -13,7 +13,7 @@ smartypants = true
 [[menu.main]]
 name = "Caching"
 url = "/caching/index"
-weight = 1
+weight = 6
 [[menu.main]]
 name = "License"
 url = "license/"

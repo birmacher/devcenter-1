@@ -5,5 +5,6 @@ is_partial: false
 fields:
 - type: textarea
 pages:
+- content/getting-started.md
 - content/getting-started/getting-started.md
 - content/getting-started/index.md

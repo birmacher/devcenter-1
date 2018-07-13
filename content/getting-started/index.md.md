@@ -1,7 +1,7 @@
 ---
-title: Index
-date: 2018-07-13 11:01:22 +0000
-undefined: ''
-
+title: "Getting Started 2"
+menu:
+  main:
+    parent: tutorials
 ---
-this is the index.md file
+just some test 2

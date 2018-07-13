@@ -1,5 +1,6 @@
 +++
-
+title = "Hello there!"
+menu = "main"
 +++
 just some tests
 

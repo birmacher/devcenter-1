@@ -1,8 +1,13 @@
-__Bitrise__ is a [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
++++
+
++++
+just some tests
+
+**Bitrise** is a [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
 and [Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) (CI/CD) Platform as a Service (PaaS)
 with a main focus on mobile app development (`iOS`, `Android`, `Xamarin`, ...). It is a collection of tools and services to help you with the development and automation of your software projects
 
-__Automate the testing and deployment of your apps with just a few clicks.__
+**Automate the testing and deployment of your apps with just a few clicks.**
 
 ## Run your builds on bitrise.io
 
@@ -28,12 +33,11 @@ After a build is finished the Virtual Machine is destroyed and you can browse
 the logs of every step that ran during the workflow.
 You can read more at [Code Security](/getting-started/code-security).
 
-
 ## Bitrise CLI - the open source, offline, automation runner
 
 To run a `bitrise` build on your machine, you can install our [open source runner](https://www.bitrise.io/cli)
 and use the `bitrise` command to execute your workflows locally.
-_No [bitrise.io](https://www.bitrise.io) account required to use the Bitrise CLI._
+_No_ [_bitrise.io_](https://www.bitrise.io) _account required to use the Bitrise CLI._
 
 It's a great help when you're developing steps, debugging builds,
 or just want to use Bitrise for _any kind of automation_ on your machine.

@@ -11,31 +11,31 @@ plainIDAnchors = true
 smartDashes = true
 smartypants = true
 [[menu.main]]
-name = "Material"
-url = "/"
-weight = 1
-[[menu.main]]
-name = "Getting started"
-url = "getting-started/"
-weight = 3
+name = "License"
+url = "license/"
+weight = 7
 [[menu.main]]
 name = "Adding content"
 url = "adding-content/"
 weight = 4
 [[menu.main]]
-name = "Roadmap"
-url = "roadmap/"
-weight = 5
+name = "Another test"
+url = "/"
+weight = 3
 [[menu.main]]
-name = "License"
-url = "license/"
-weight = 7
+name = "Getting started"
+url = "getting-started/"
+weight = 1
 [[menu.main]]
 name = "Caching"
 url = "/caching/index"
 weight = 6
 [[menu.main]]
-name = "Another test"
+name = "Roadmap"
+url = "roadmap/"
+weight = 5
+[[menu.main]]
+name = "Material"
 url = "/"
 weight = 2
 [params]

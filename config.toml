@@ -13,7 +13,7 @@ smartypants = true
 [[menu.main]]
 name = "teststset"
 url = "/tets"
-weight = 3
+weight = 2
 [[menu.main]]
 name = "Material"
 parent = "License"
@@ -22,7 +22,7 @@ weight = 1
 [[menu.main]]
 name = "License"
 url = "license/"
-weight = 2
+weight = 3
 [[menu.main]]
 name = "Roadmap"
 url = "roadmap/"
@@ -30,7 +30,7 @@ weight = 4
 [[menu.main]]
 name = "Getting started"
 url = "getting-started/"
-weight = 3
+weight = 1
 [params]
 author = "Digitalcraftsman"
 copyright = "Released under the MIT license"

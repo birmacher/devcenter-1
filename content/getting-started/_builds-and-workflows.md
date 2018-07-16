@@ -1,7 +1,7 @@
 ---
-title: "Builds & Workflows"
----
+title: Builds & Workflows
 
+---
 A *build* is the process specified by the app's *workflow*, which is a collection of *steps*.
 Every step is an **open source** repository which you can inspect, modify,
 and run with the [open source Bitrise CLI](https://www.bitrise.io/cli).

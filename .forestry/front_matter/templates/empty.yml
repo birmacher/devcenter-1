@@ -17,3 +17,4 @@ fields:
 pages:
 - content/caching/Index.md
 - content/infrastructure/index.md
+- content/getting-started/builds-and-workflows.md

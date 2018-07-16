@@ -1,9 +1,19 @@
 ---
-label: empty
+label: Docs
 hide_body: false
 is_partial: false
 fields:
-- type: textarea
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: datetime
+  label: date
+  name: date
+  config:
+    required: true
+    display_utc: true
 pages:
 - content/caching/Index.md
 - content/infrastructure/index.md

@@ -1,63 +1,79 @@
 baseurl = "http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/"
-canonifyurls = true
-googleAnalytics = ""
 languageCode = "en-us"
-metadataformat = "yaml"
-theme = "hugo-material-docs"
 title = "Material Docs"
-[blackfriday]
-fractions = true
-plainIDAnchors = true
-smartDashes = true
-smartypants = true
-[[menu.main]]
-name = "License"
-url = "license/"
-weight = 7
-[[menu.main]]
-name = "Adding content"
-url = "adding-content/"
-weight = 4
-[[menu.main]]
-name = "Another test"
-url = "/"
-weight = 3
-[[menu.main]]
-name = "Getting started"
-url = "getting-started/"
-weight = 1
-[[menu.main]]
-name = "Caching"
-url = "/caching/index"
-weight = 6
-[[menu.main]]
-name = "Roadmap"
-url = "roadmap/"
-weight = 5
-[[menu.main]]
-name = "Material"
-url = "/"
-weight = 2
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 [params]
-author = "Digitalcraftsman"
-copyright = "Released under the MIT license"
-custom_css = []
-custom_js = []
-description = "A material design theme for documentations."
-favicon = ""
-highlight_css = ""
-logo = "images/logo.png"
-permalink = "#"
-provider = "GitHub"
-repo_url = "https://github.com/digitalcraftsman/hugo-material-docs"
-version = "1.0.0"
-[params.font]
-code = "Ubuntu Mono"
-text = "Ubuntu"
-[params.palette]
-accent = "teal"
-primary = "red"
+	# General information
+	author = "Digitalcraftsman"
+	description = "A material design theme for documentations."
+	copyright = "Released under the MIT license"
+
+	# Repository
+	provider = "GitHub"
+	repo_url = "https://github.com/digitalcraftsman/hugo-material-docs"
+
+	version = "1.0.0"
+	logo = "images/logo.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "red"
+    	accent  = "teal"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
 [social]
-email = "hello@email.com"
-github = "digitalcraftsman"
-twitter = ""
+	twitter = ""
+	github  = "digitalcraftsman"
+	email   = "hello@email.com"
+
+
+[[menu.main]]
+	name   = "Getting Started"
+	url    = "getting-started/"
+	weight = 1
+
+[[menu.main]]
+	name   = "API"
+	url    = "api/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Adding content"
+	url    = "adding-content/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Roadmap"
+	url    = "roadmap/"
+	weight = 30
+
+[[menu.main]]
+	name   = "License"
+	url    = "license/"
+	weight = 40
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true

@@ -1,3 +1,6 @@
+---
+title: "App Status Badge"
+---
 With the `Status Image API token`, you can get an embeddable SVG badge image, a JSON message reflecting the status of the app, or a specific branch of the app.
 
 1. Open your App on [bitrise.io](https://www.bitrise.io) and click the badge image right next to the app's name.

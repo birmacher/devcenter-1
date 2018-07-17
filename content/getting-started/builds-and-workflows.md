@@ -2,7 +2,7 @@
 title: Builds & workflows
 menu:
   main:
-    parent: getting-started
+    parent: Getting started
     weight: 2
 
 ---

@@ -2,7 +2,7 @@
 title: Account Security
 menu:
   main:
-    parent: getting-started
+    parent: Getting started
     weight: 3
 
 ---

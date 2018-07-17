@@ -1,11 +1,11 @@
 ---
-title: "Getting Started"
+title: Getting Started
+weight: 1
 menu:
   main:
-    parent: "getting-started"
+    parent: getting-started
     weight: 1
-weight: 01	#rem
----
 
+---
 # Some title
 just some test - some other

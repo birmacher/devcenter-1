@@ -2,7 +2,7 @@
 title: Add your first step to the workflow
 menu:
   main:
-    parent: getting-started
+    parent: Getting Started
     weight: 7
 
 ---

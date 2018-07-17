@@ -3,7 +3,7 @@ title: Add your first step to the workflow
 menu:
   main:
     parent: Getting Started
-    weight: 7
+    weight: 5
 
 ---
 When you've registered an app you can start modifying its Workflow,

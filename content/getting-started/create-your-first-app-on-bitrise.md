@@ -2,8 +2,8 @@
 title: Create your first app on Bitrise
 menu:
   main:
-    parent: getting-started
-    weight: 5
+    parent: Getting Started
+    weight: 6
 
 ---
 We are always refining our UI and UX, to achieve the best and smoothest experience possible,

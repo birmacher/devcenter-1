@@ -1,3 +1,10 @@
+---
+title: Code security
+menu:
+  main:
+    parent: "getting-started"
+    weight: 3
+---
 To guarantee the security of your builds we use [virtual machines](/infrastructure/virtual-machines) for builds.
 Every build runs in its own, clean virtual machine and we discard the whole virtual machine after the build finishes,
 erasing every file your build uses and every change you make during your build.

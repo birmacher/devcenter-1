@@ -1,3 +1,10 @@
+---
+title: Add your first step to the workflow
+menu:
+  main:
+    parent: "getting-started"
+    weight: 6
+---
 When you've registered an app you can start modifying its Workflow,
 that is to customize how a build should work.
 

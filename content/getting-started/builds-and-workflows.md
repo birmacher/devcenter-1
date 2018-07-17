@@ -1,6 +1,5 @@
 ---
 title: Builds & workflows
-date: 2018-07-16 20:40:06 +0000
 menu:
   main:
     parent: "getting-started"

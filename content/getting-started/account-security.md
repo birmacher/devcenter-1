@@ -1,3 +1,10 @@
+---
+title: Account Security
+menu:
+  main:
+    parent: "getting-started"
+    weight: 4
+---
 
 ## Enable Two-factor authentication
 

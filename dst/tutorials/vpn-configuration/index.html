@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/vpn-configuration/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/vpn-configuration/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<p>Do you require a VPN connection for your build, to be able to connect to your server,
+either to <code>git clone</code> your repository or to access a private API?
+If yes, then this tutorial is for you!</p>
+
+<h2 id="technical-infos">Technical infos</h2>
+
+<p>Connecting to a VPN, in short, works like this:</p>
+
+<ol>
+<li>the build starts</li>
+<li>you install &amp; configure the VPN components you need</li>
+<li>you start the VPN</li>
+<li>you proceed with the build</li>
+</ol>
+
+<p>Obviously, if you require a VPN connection in order to access your code repository,
+you have to connect to the VPN <strong>before</strong> the <code>Git Clone</code> step, but in general
+you can configure &amp; connect to the VPN anywhere in your Workflow, <strong>before</strong> you&rsquo;d use the
+connection.</p>
+
+<p><em>You can choose other VPN tools, not just the one shown here (<a href="https://www.strongswan.org">strongswan</a>),
+this is just one example setup which works on <a href="https://www.bitrise.io">bitrise.io</a>.</em></p>
+
+<p><strong>One important note</strong>: when you choose your VPN tool and do the setup/configuration,
+you have to be careful to <strong>not to restart / abort</strong> existing SSH sessions!
+The <a href="https://www.bitrise.io">bitrise.io</a> workers will abort the build
+if the SSH connection between the build&rsquo;s Control/Master machine and
+the Build virtual machine terminates!</p>
+
+<h2 id="example">Example</h2>
+
+<p>This is an example script which you can either save into your repository and run
+it from there, or just copy paste its content into a <code>Script Step</code> in your <code>bitrise</code>
+configuration (<code>bitrise.yml</code> / Workflow).</p>
+
+<pre><code class="language-bash">#!/usr/bin/env bash
+set -e
+
+echo &quot;WAN IP&quot;
+# This prints the servers Internet IP adress to the log, useful for debugging
+curl http://httpbin.org/ip
+
+case &quot;$OSTYPE&quot; in
+  linux*)
+    echo &quot;Configuring for Linux&quot;
+
+    # Variables
+    etc_dir=/etc
+    etc_sudo='sudo' # Sudo is needed for Linux Strongswan configuration
+
+    # Install strongswan
+    echo &quot;Installing Strongswan...&quot;
+    sudo apt-get install -y strongswan
+
+    ;;
+  darwin*)
+    echo &quot;Configuring for Mac OS&quot;
+
+    # Variables
+    etc_dir=/usr/local/etc
+    etc_sudo='' # Sudo is NOT needed for Mac OS Strongswan configuration
+
+    # Install Strongswan using homebrew
+    echo &quot;Installing OpenSSL...&quot;
+    # Manually install OpenSSL first to save time, since installing Strongswan directly compiles OpenSSL from source instead
+    brew install openssl
+    echo &quot;Installing Strongswan...&quot;
+    brew install strongswan
+
+    ;;
+  *)
+    echo &quot;Unknown operative system: $OSTYPE, exiting&quot;
+    exit 1
+    ;;
+esac
+
+
+# Method for rendering a template string file (when run, returns the input string with $VARIABLES replaced from env)
+render_template() {
+  eval &quot;echo \&quot;$(cat $1)\&quot;&quot;
+}
+
+# Create a temporary directory to hold files
+temp_dir=/tmp/vpn-config
+mkdir $temp_dir
+
+# IPsec config file, see examples at https://wiki.strongswan.org/projects/strongswan/wiki/IKEv1Examples and https://wiki.strongswan.org/projects/strongswan/wiki/IKEv2Examples
+echo &quot;Downloading ipsec.conf...&quot;
+wget https://www.example.com/ipsec.conf.template -O $temp_dir/ipsec.conf.template
+# IPsec credentials file, see documentation at https://wiki.strongswan.org/projects/strongswan/wiki/IpsecSecrets
+echo &quot;Downloading ipsec.secrets...&quot;
+wget https://www.example.com/ipsec.secrets.template -O $temp_dir/ipsec.secrets.template
+# In some cases you might need to download the certificate, or certificate chain, of your other VPN endpoint
+echo &quot;Downloading server.crt...&quot;
+wget https://www.example.com/server.crt -O $temp_dir/server.crt
+
+echo &quot;Rendering config templates&quot;
+render_template $temp_dir/ipsec.conf.template &gt; $temp_dir/ipsec.conf
+render_template $temp_dir/ipsec.secrets.template &gt; $temp_dir/ipsec.secrets
+
+echo &quot;Installing configuration&quot;
+$etc_sudo cp $temp_dir/ipsec.conf $etc_dir/ipsec.conf
+$etc_sudo cp $temp_dir/ipsec.secrets $etc_dir/ipsec.secrets
+$etc_sudo cp $temp_dir/server.crt $etc_dir/ipsec.d/ocspcerts/server.crt
+
+# Start the ipsec service
+echo &quot;Starting ipsec&quot;
+sudo ipsec start
+
+# We're sleeping between commands, mostly since Mac OS seems to have some problems otherwise
+sleep 1
+
+# Output some helpful status to the log
+echo &quot;Status ipsec&quot;
+sudo ipsec statusall
+
+sleep 1
+
+# Switch out myconnection with the name of your connection in ipsec.conf
+echo &quot;Initiating VPN connection&quot;
+sudo ipsec up myconnection
+
+sleep 1
+
+case &quot;$OSTYPE&quot; in
+  linux*)
+    ;;
+  darwin*)
+    # In Mac OS El Capitan, the `sudo ipsec up` command consistently fails the first time, but succeeds after a restart of the ipsec service
+    echo &quot;Restarting ipsec&quot;
+    sudo ipsec restart
+
+    sleep 1
+
+    echo &quot;Initiating VPN connection&quot;
+    sudo ipsec up myconnection
+
+    sleep 1
+
+    # This step might apply if you are routing all traffic trough the IPsec connection (that is, if your remote IP range is 0.0.0.0/0)
+    # Mac OS El Capitan seems to have problems getting the DNS configuration from the Strongswan interface. Also IPv6 sometimes causes issues. So we're manually turning off IPv6 and forcing a new DNS configuration.
+    echo &quot;Disabling IPv6 and forcing DNS settings&quot;
+    # Fetch main interface
+    main_interface=$(networksetup -listnetworkserviceorder | awk -F'\\) ' '/\(1\)/ {print $2}')
+    # Completely disable IPv6
+    sudo networksetup -setv6off &quot;$main_interface&quot;
+    # Switch 10.0.0.1 with your DNS server
+    sudo networksetup -setdnsservers &quot;$main_interface&quot; 10.0.0.1
+    ;;
+  *) ;;
+esac
+
+# Your VPN connection should be up and running. Any following steps of your Bitrise workflow can access devices over your VPN connection 🎉
+
+</code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/how-to-use-the-generic-file-storage/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/webhooks/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

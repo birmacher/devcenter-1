@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/android-tips-and-tricks/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/android-tips-and-tricks/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<h2 id="what-are-gradle-tasks-and-how-can-i-get-the-list-of-available-tasks-in-my-project">What are Gradle tasks and how can I get the list of available tasks in my project?</h2>
+
+<p>A <code>gradle</code> task is a process you can run with <code>gradle</code>.
+You can run these tasks by running <code>gradle TASK-TO-RUN</code> in your Command Line / Terminal.</p>
+
+<p>A standard Android Gradle project includes a lot of tasks by default, things like:</p>
+
+<ul>
+<li><code>androidDependencies - Displays the Android dependencies of the project.</code></li>
+<li><code>assemble - Assembles all variants of all applications and secondary packages.</code></li>
+<li><code>assembleAndroidTest - Assembles all the Test applications.</code></li>
+<li><code>clean - Deletes the build directory</code></li>
+</ul>
+
+<p>You can get the base task list by calling <code>gradle tasks</code> in your Android app&rsquo;s directory,
+or to see all the available tasks you can call <code>gradle tasks --all</code>.</p>
+
+<p>Running <code>gradle tasks</code> you&rsquo;ll get a list of available Gradle tasks in the format:</p>
+
+<pre><code>$ gradle task
+
+:tasks
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Android tasks
+-------------
+androidDependencies - Displays the Android dependencies of the project.
+signingReport - Displays the signing info for each variant.
+sourceSets - Prints out all the source sets defined in this project.
+
+Build tasks
+-----------
+assemble - Assembles all variants of all applications and secondary packages.
+assembleAndroidTest - Assembles all the Test applications.
+assembleDebug - Assembles all Debug builds.
+assembleRelease - Assembles all Release builds.
+...
+</code></pre>
+
+<p>You can run any of the tasks on bitrise from a <code>Script</code> step by calling <code>gradle task-name-to-run</code> (for example: <code>gradle assemle</code>)
+or by using our <code>Gradle Runner</code> step (<a href="https://github.com/bitrise-io/steps-gradle-runner">https://github.com/bitrise-io/steps-gradle-runner</a>)
+and specifying the task as the value of the <code>gradle_task</code> input.</p>
+
+<p><strong>Instead of running <code>gradle</code> directly, you should run the gradle commands through <code>gradlew</code> (the Gradle Wrapper)!</strong>
+The <code>Gradle Runner</code> step does this, and as you can see it in the related input description of the step:</p>
+
+<blockquote>
+<p>Using a Gradle Wrapper (gradlew) is strongly suggested, as the wrapper is what makes sure
+that the right Gradle version is installed and used for the build.</p>
+
+<p><strong>You can find more information about the Gradle Wrapper (gradlew),
+and about how you can generate one (if you would not have one already)</strong>
+in the official guide at: <a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html">https://docs.gradle.org/current/userguide/gradle_wrapper.html</a>.</p>
+</blockquote>
+
+<h2 id="how-to-install-an-additional-android-sdk-package">How to install an additional Android SDK package</h2>
+
+<p><strong>The preferred way to do this is to use the <code>Install missing Android tools</code> step.
+Please only use a Script solution if you really have to, as you&rsquo;ll have to update
+the Script if the Android tools change (which did happen).</strong></p>
+
+<p>All you have to do is to add a <code>Script</code> step to your workflow,
+and use the Android <code>sdkmanager</code> tool to install the additional packages you want to.</p>
+
+<p>As an example, to install the Android SDK v18 and the related <code>build-tools</code> v18.0.1,
+you can add a <code>Script</code> step (can be the very first step in the Workflow)
+with the following content:</p>
+
+<pre><code>#!/bin/bash
+# fail if any commands fails
+set -e
+# debug log
+set -x
+
+# write your script here
+sdkmanager &quot;platforms;android-18&quot;
+sdkmanager &quot;build-tools;18.0.1&quot;
+</code></pre>
+
+<p><strong>You can get the full list of available packages</strong> by running:
+<code>sdkmanager --list --include_obsolete --verbose</code>.
+You can run this on your own machine if you have <code>$ANDROID_HOME/tools/bin</code> in your <code>$PATH</code>.
+If not then you can run it with <code>/PATH/TO/ANDROID-SDK-HOME/tools/bin/sdkmanager ...</code>.</p>
+
+<h2 id="enable-gradle-debug-options">Enable Gradle debug options</h2>
+
+<p>If your Gradle build fails and you can&rsquo;t find any information in the logs you can try to call it with
+<code>--stacktrace --debug</code> flags (ex: <code>gradle ... --stacktrace --debug</code>) to get more detailed logs.</p>
+
+<p>In most cases <code>--stacktrace</code> should be enough, and the <code>Gradle Runner</code> step includes
+this flag by default.</p>
+
+<h2 id="run-a-bitrise-android-build-on-your-mac-pc-with-docker">Run a bitrise Android build on your Mac/PC, with Docker</h2>
+
+<p>You can run your build on your Mac/PC, inside the same <code>docker</code> container you use on <a href="https://www.bitrise.io">bitrise.io</a>,
+to fully test your build in an identical environment! You can find the detailed guide here:
+<a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/docker/run-your-build-locally-in-docker/">How to run your build locally in Docker</a></p>
+
+<h2 id="memory-ram-limit">Memory (RAM) limit</h2>
+
+<p>You can specify the amount allowed RAM for the JVM by adding two <strong>Environment Variables</strong> to your Workflow,
+e.g. as <code>App Env Var</code>s:</p>
+
+<ul>
+<li><code>GRADLE_OPTS: '-Dorg.gradle.jvmargs=&quot;-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError&quot;'</code></li>
+<li><code>_JAVA_OPTIONS: &quot;-Xms512m -Xmx1024m&quot;</code></li>
+</ul>
+
+<p>This method can be used to limit the allowed RAM the Gradle JVM process can use,
+which can be useful in case there&rsquo;s not enough RAM available in the system.</p>
+
+<h2 id="emulators">Emulators</h2>
+
+<p>You can find and use our Android emulator steps to create &amp; boot emulators:
+<a href="http://www.bitrise.io/integrations">http://www.bitrise.io/integrations</a>.</p>
+
+<p>First you have to create an emulator with a <code>Create Android emulator</code> step,
+where you can set the Android version and a couple of other parameters for the new emulator,
+then you can boot this emulator with the <code>Start Android emulator</code> step,
+which makes sure that the emulator is booted and ready for subsequent steps.</p>
+
+<h3 id="emulator-with-google-apis">Emulator with Google APIs</h3>
+
+<p><strong>Instead of using a Script step to create an android emulator please use the <code>Create Android emulator</code> step!
+There are simply too many edge cases to cover here, as well as the commands and working configurations change quite frequently.</strong></p>
+
+<p><em>The section below is kept here for referencing purposes, and might be outdated.</em></p>
+
+<p><strong>Note about Android SDK versions:</strong> at this time there are lots of known issues reported for Android Emulators
+with Android SDK version 22 &amp; 23 when combined with Google Play services
+(see <a href="http://stackoverflow.com/questions/32856919/androidstudio-emulator-wont-run-unless-you-update-google-play-services">1</a>
+and <a href="https://code.google.com/p/android/issues/detail?id=176348">2</a>).
+The script above creates an emulator with SDK version 21, which should work properly with Google Play services.</p>
+
+<p><em>There are possible workarounds for newer versions
+(see <a href="http://stackoverflow.com/questions/34329363/app-wont-run-unless-you-update-google-play-services-with-google-maps-api-andr">1</a>
+and <a href="http://stackoverflow.com/questions/33114112/app-wont-run-unless-you-update-google-play-services">2</a>),
+but that requires some customization in your project.</em></p>
+
+<h2 id="installing-using-java-version-x">Installing / Using Java version X</h2>
+
+<p>!!! note &ldquo;Java 8 is now pre-installed&rdquo;
+    Java 8 is now the pre-installed Java version on the Bitrise.io Linux Stack.
+    This section is kept here for future reference, in case you&rsquo;d need another Java version.</p>
+
+<p><em>If you&rsquo;d need a Java / JDK version which is not preinstalled on the Android stacks,
+you can follow this guide to install it. This example will install Java/JDK 8,
+please adapt it to the version you need.</em></p>
+
+<p>If your build requires JDK 8, you can install and activate it with a <code>Script</code> step:</p>
+
+<pre><code>#!/bin/bash
+set -ex
+
+add-apt-repository -y ppa:openjdk-r/ppa
+apt-get update -qq
+apt-get install -y openjdk-8-jdk
+update-java-alternatives -s /usr/lib/jvm/java-1.8.0-openjdk-amd64
+echo &quot;done&quot;
+</code></pre>
+
+<p>That&rsquo;s all, just add the <code>Script</code> step to the Workflow with the content above,
+and start a new build. <em>This <code>Script</code> step can be the very first step in the Workflow,
+as it does not depend on anything else.</em></p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/team-management/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/attach-any-file-to-build/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

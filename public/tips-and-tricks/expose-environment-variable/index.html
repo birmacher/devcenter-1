@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/expose-environment-variable/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/expose-environment-variable/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<p>You can expose Environment Variables from one Step,
+to make it available for every other Step performed after the Step during the build.
+An example might be that you want to generate a
+release note which you want to use in a message or deploy step.
+Exposing environment variables is really easy,
+you just have to use <a href="https://github.com/bitrise-io/envman/">envman</a> if you want to make it available for every other Step.</p>
+
+<p>A very simple example might be:</p>
+
+<pre><code>envman add --key MY_RELEASE_NOTE --value &quot;This is the release note&quot;
+</code></pre>
+
+<p>You can call <code>envman</code> in any Step, including a script step,
+or even in your own script (stored in your repository) if you call it from a <code>bitrise</code> build.</p>
+
+<p>Envman can be used in a couple of ways.
+You can specify the value as the <code>--value</code> parameter (you can see this in the previous example),
+pipe the value:</p>
+
+<pre><code>echo 'hi' | envman add --key MY_RELEASE_NOTE
+</code></pre>
+
+<p>or read the value from a file:</p>
+
+<pre><code>envman add --key MY_RELEASE_NOTE --valuefile ./some/file/path
+</code></pre>
+
+<p><em>You can read more about how <code>envman</code> can
+be used on it&rsquo;s <a href="https://github.com/bitrise-io/envman/">GitHub page</a>.</em></p>
+
+<p>!!! warning &ldquo;Env Var value size limit&rdquo;
+    Environment Variable values set through <code>envman</code> are limited to 10KB by default.
+    This is done in order to prevent issues with common tools.
+    Different tools have different environment size constraints,
+    e.g. <code>Bash</code> will start to fail on OS X once the environments set
+    exceed ~120KB (<strong>in total, not a single variable!</strong>).</p>
+
+<pre><code>For larger data you should use files or other solutions,
+and use environment variables to point to the file / to the
+ID or location of where the data is stored.
+</code></pre>
+
+<p>Once the environment variable is exposed you can use it like
+any other environment variable. In <code>bash</code> you can reference
+the previous example environment as: <code>$MY_RELEASE_NOTE</code>.</p>
+
+<p>You can of course use these exposed environment variables in the inputs of other Steps.
+For example the <strong>HockeyApp Deploy</strong> step has a <code>notes</code> input,
+you can reference the previous example variable by inserting <code>$MY_RELEASE_NOTE</code> into the input,
+like: <code>The Release Note: $MY_RELEASE_NOTE</code>,
+which will be resolved as <code>The Release Note: This is the release note</code> (if you used
+the first example to set the value of <code>MY_RELEASE_NOTE</code>).</p>
+
+<p>A simple example, exposing the release note and then using it in another <code>Script step</code>,
+and in a <code>Slack step</code>:</p>
+
+<pre><code>format_version: 1.1.0
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+
+workflows:
+  example:
+    steps:
+    - script:
+        inputs:
+        - content: |
+            #!/bin/bash
+            envman add --key MY_RELEASE_NOTE --value &quot;This is the release note&quot;
+    - script:
+        inputs:
+        - content: |
+            #!/bin/bash
+            echo &quot;My Release Note: $MY_RELEASE_NOTE&quot;
+    - slack:
+        inputs:
+        - channel: ...
+        - webhook_url: ...
+        - message: &quot;Release Notes: $MY_RELEASE_NOTE&quot;
+</code></pre>
+
+<h2 id="copy-an-environment-variable-to-another-key">Copy an environment variable to another key</h2>
+
+<p>If you want to expose the value of an environment variable to be accessible
+through another environment variable key, you can simply expose the value with a new key.</p>
+
+<p>For example, if you want to copy the value of the <code>BITRISE_BUILD_NUMBER</code> environment variable
+and make it available under the environment variable key <code>MY_BUILD_NUMBER</code>, you just have to
+read the current value and expose it under the new key.</p>
+
+<p>To modify the first example here, which exposed a fix value:</p>
+
+<pre><code>envman add --key MY_RELEASE_NOTE --value &quot;This is the release note&quot;
+</code></pre>
+
+<p>simply reference/read the value of the other environment variable in the <code>envman add ...</code> command.</p>
+
+<p>To expose the value of <code>BITRISE_BUILD_NUMBER</code> under the key <code>MY_BUILD_NUMBER</code>:</p>
+
+<pre><code>envman add --key MY_BUILD_NUMBER --value &quot;${BITRISE_BUILD_NUMBER}&quot;
+</code></pre>
+
+<p>After this, subsequent steps can get the value of <code>BITRISE_BUILD_NUMBER</code> from the
+<code>MY_BUILD_NUMBER</code> environment variable.</p>
+
+<p><em>Note: if you change the value of <code>BITRISE_BUILD_NUMBER</code> after this, the
+value of <code>MY_BUILD_NUMBER</code> won&rsquo;t be modified, that will still hold the original value!</em></p>
+
+<h2 id="overwrite-an-environment-variable-if-another-one-is-set">Overwrite an Environment Variable if another one is set</h2>
+
+<p>E.g. if a custom environment variable is set through the Build Trigger API.</p>
+
+<p>The best way to do this, to make sure that no matter what, you overwrite the other env var,
+is to use a Script step, as described above, and check whether the custom env var is set.</p>
+
+<p>As an example, if you want to overwrite the <code>PROJECT_SCHEME</code> environment variable,
+if, let&rsquo;s say, a <code>API_PROJECT_SCHEME</code> env var is set, just drop in a <code>Script</code> step (can be the very first one
+in the workflow), with the content:</p>
+
+<pre><code>#!/bin/bash
+set -ex
+if [ ! -z &quot;$API_PROJECT_SCHEME&quot; ] ; then
+  envman add --key PROJECT_SCHEME --value &quot;$API_PROJECT_SCHEME&quot;
+fi
+</code></pre>
+
+<p>This script will check whether the <code>API_PROJECT_SCHEME</code> env var is defined,
+and if it is, then its value will be assigned to the <code>PROJECT_SCHEME</code> environment variable,
+overwriting the original value of <code>PROJECT_SCHEME</code>.</p>
+
+<h3 id="alternative-solution-use-workflow-env-vars">Alternative solution: use Workflow Env Vars</h3>
+
+<p>Alternatively you can set environment variables for Workflows too.
+The Env Vars you set for a workflow will overwrite the env var
+if defined as an App Env Var or Secret Env Var.</p>
+
+<p>An example workflow which defined an environment variable, and then runs another workflow
+which can use those env vars:</p>
+
+<pre><code>workflows:
+
+  deploy-alpha:
+    envs:
+    - ENV_TYPE: alpha
+    after_run:
+    - _deploy
+
+  _deploy:
+    steps:
+    - script:
+        inputs:
+        - content: |
+            #!/bin/bash
+            echo &quot;ENV_TYPE: $ENV_TYPE&quot;
+</code></pre>
+
+<p>If you run the <code>deploy-alpha</code> workflow, that will set the <code>ENV_TYPE</code> env var to <code>alpha</code>,
+then it will run the <code>_deploy</code> workflow, which can use that environment variable -
+in this example it will simply print its value (the printed text will be: <code>ENV_TYPE: alpha</code>).</p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/dont-mark-build-failed-if-step-fails/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/install-additional-tools/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

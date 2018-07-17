@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apis on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/</link>
+    <description>Recent content in Apis on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/build-trigger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/build-trigger/</guid>
+      <description>Note: the www endpoint is now deprecated. Please use the https://app.bitrise.io/app/APP-SLUG/build/start.json endpoint instead.
+With the Build Trigger API you can start a new build of your app with a simple API call.
+You can define parameters for the build like what branch, tag or git commit to use and what build message to present on the Build&amp;rsquo;s details page.
+!!! note &amp;ldquo;Interactive cURL call configurator&amp;rdquo; You can find an interactive cURL call configurator by clicking on the Start/Schedule a build button on your app&amp;rsquo;s bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/outgoing-webhooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/outgoing-webhooks/</guid>
+      <description>By setting up outgoing webhooks you can make Bitrise send notifications about specific events to your web service, so you can create custom integrations.
+You can set the URL of your web service and select which events should trigger a notification in the Code tab of your app. Currently only build events are supported: a notification is sent when a build starts or finishes.
+The event type that triggered the webhook is sent in a custom header:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/v0.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/v0.1/</guid>
+      <description>!!! warning &amp;ldquo;The API is work-in-progress&amp;rdquo; The API is work-in-progress, we&amp;rsquo;ll add docs for new endpoints here as we progress, as well as we might change things a bit if required.
+ Join the discussion at: https://discuss.bitrise.io/t/bitrise-api-v0-1-work-in-progress/1554. Follow it if you want to get notified about new endpoints and changes, we announce those there. If you want to request a new API feature / endpoint, please do it here: http://discuss.</description>
+    </item>
+    
+    <item>
+      <title>App Status Badge</title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/app-status-badge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/app-status-badge/</guid>
+      <description>With the Status Image API token, you can get an embeddable SVG badge image, a JSON message reflecting the status of the app, or a specific branch of the app.
+ Open your App on bitrise.io and click the badge image right next to the app&amp;rsquo;s name.
+ In the Status image popup, you can optionally set a branch, and get copy-paste-ready Embed codes for the SVG image.
+!!! example &amp;ldquo;Example SVG URL&amp;rdquo;  https://app.</description>
+    </item>
+    
+  </channel>
+</rss>

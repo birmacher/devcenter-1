@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cachings on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/</link>
+    <description>Recent content in Cachings on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Jul 2018 12:06:22 +0000</lastBuildDate>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>index.md</title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/index/</link>
+      <pubDate>Fri, 13 Jul 2018 12:06:22 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/index/</guid>
+      <description>About Caching</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/about-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/about-caching/</guid>
+      <description>The caching will tar all the cached directories and dependencies and store them securely in Amazon S3. Note that if you store files which are downloaded from a CDN / cloud storage you might not see any improvement, as downloading it from the Bitrise Build Cache storage will probably take about the same time as downloading it from its canonical CDN / cloud storage location. However Bitrise Caching still might help if you have reliability issues with the resource&amp;rsquo;s, or dependency&amp;rsquo;s canonical download location.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-cocoapods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-cocoapods/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-cocoapods-dependencies/193</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-gradle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-gradle/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-gradle-dependencies/194</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-maven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-maven/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-maven-dependencies/195</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-ruby-gems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-ruby-gems/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-ruby-gem-dependencies/196</description>
+    </item>
+    
+  </channel>
+</rss>

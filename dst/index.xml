@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bitrise DevCenter on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/</link>
+    <description>Recent content in Bitrise DevCenter on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Jul 2018 20:11:40 +0000</lastBuildDate>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Index</title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/</link>
+      <pubDate>Mon, 16 Jul 2018 20:11:40 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/</guid>
+      <description>title: Infrastructure Infra homepage</description>
+    </item>
+    
+    <item>
+      <title>index.md</title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/index/</link>
+      <pubDate>Fri, 13 Jul 2018 12:06:22 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/index/</guid>
+      <description>About Caching</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-a-new-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-a-new-app/</guid>
+      <description>When adding your app to Bitrise, we will clone your repository to make sure we can access it. Besides cloning your repository we will run our project scanner that detects all the supported apps and instantly configure your workflow with all the necessary steps to build and deploy your app.
+!!! note &amp;ldquo;Currently we are supporting the following projects out of the box&amp;rdquo; * iOS * Android * Xamarin * Fastlane</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/build-trigger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/build-trigger/</guid>
+      <description>Note: the www endpoint is now deprecated. Please use the https://app.bitrise.io/app/APP-SLUG/build/start.json endpoint instead.
+With the Build Trigger API you can start a new build of your app with a simple API call.
+You can define parameters for the build like what branch, tag or git commit to use and what build message to present on the Build&amp;rsquo;s details page.
+!!! note &amp;ldquo;Interactive cURL call configurator&amp;rdquo; You can find an interactive cURL call configurator by clicking on the Start/Schedule a build button on your app&amp;rsquo;s bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/outgoing-webhooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/outgoing-webhooks/</guid>
+      <description>By setting up outgoing webhooks you can make Bitrise send notifications about specific events to your web service, so you can create custom integrations.
+You can set the URL of your web service and select which events should trigger a notification in the Code tab of your app. Currently only build events are supported: a notification is sent when a build starts or finishes.
+The event type that triggered the webhook is sent in a custom header:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/v0.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/v0.1/</guid>
+      <description>!!! warning &amp;ldquo;The API is work-in-progress&amp;rdquo; The API is work-in-progress, we&amp;rsquo;ll add docs for new endpoints here as we progress, as well as we might change things a bit if required.
+ Join the discussion at: https://discuss.bitrise.io/t/bitrise-api-v0-1-work-in-progress/1554. Follow it if you want to get notified about new endpoints and changes, we announce those there. If you want to request a new API feature / endpoint, please do it here: http://discuss.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/bitrise-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/bitrise-cli/</guid>
+      <description>Bitrise is a collection of tools and services to help you with the development and automation of your software projects, with a main focus on mobile apps.
+Most of this DevCenter describes things related to bitrise.io, the hosted automation service, but the heart of Bitrise is the open source Bitrise CLI / runner, which is responsible for interpreting the build configuration and executing it.
+This open source runner is referred to as Bitrise CLI or Bitrise, and it&amp;rsquo;s a tool which you can install and run on your own Mac/PC!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/about-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/about-caching/</guid>
+      <description>The caching will tar all the cached directories and dependencies and store them securely in Amazon S3. Note that if you store files which are downloaded from a CDN / cloud storage you might not see any improvement, as downloading it from the Bitrise Build Cache storage will probably take about the same time as downloading it from its canonical CDN / cloud storage location. However Bitrise Caching still might help if you have reliability issues with the resource&amp;rsquo;s, or dependency&amp;rsquo;s canonical download location.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-cocoapods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-cocoapods/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-cocoapods-dependencies/193</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-gradle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-gradle/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-gradle-dependencies/194</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-maven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-maven/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-maven-dependencies/195</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-ruby-gems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/caching/caching-ruby-gems/</guid>
+      <description>This guide was moved to: https://discuss.bitrise.io/t/how-to-cache-ruby-gem-dependencies/196</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-in-gradle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-in-gradle/</guid>
+      <description>Configure manually in Gradle You can manually specify the code signing configuration in your Gradle configuration so that your app gets signed during the build process.
+ Open your module-level build.gradle file.
+ Add the signingConfigs codeblock to your code and define the following entries specific to your project: storeFile, storePassword, keyAlias, and keyPassword.
+  !!! example &amp;ldquo;Signing configuration in build.gradle&amp;ldquo;  android { signingConfigs { release { keyAlias &#39;MyAndroidKey&#39; keyPassword &#39;***&#39; storeFile file(&amp;quot;/path/to/my/keystore.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-procedures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-procedures/</guid>
+      <description>Before you distribute your app through Google Play Store, your APK file must be digitally signed.
+You can specify the code signing configuration for your project in Android Studio or manually in your Gradle configuration. You can also use the sign-apk step in your Bitrise Workflow Editor to have your APK signed automatically.
+!!! info &amp;ldquo;Different Android code signing procedures&amp;rdquo; * Android code signing with Android Studio * Android code signing in Gradle * Android code signing using Bitrise Sign APK step</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-using-bitrise-sign-apk-step/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-using-bitrise-sign-apk-step/</guid>
+      <description>Create a signed APK with the Sign APK step You can create a signed APK using the Sign APK step in our Bitrise workflow.
+Bitrise Project Scanner provides a deploy workflow which contains the Sign APK step. With this step, you can digitally sign your APK as part of your workflow. This step is configured to run if you have already uploaded your keystore file to Bitrise. All you have to do is upload your keystore file in the Code signing tab of the Workflow Editor.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-with-android-studio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-with-android-studio/</guid>
+      <description>You can specify the code signing configuration for your project in Android Studio.
+ Go to Project navigator.
+ Select your project and open Module Settings.
+ From Modules, select your module.
+ On the Signing tab, fill out the signing information. In our example, we used the following values:
+ name: release
+ key alias: MyAndroidKey
+ key password: ***
+ store file: /path/to/my/keystore.jks
+ store password: ***
+   Once you filled out the signing information, the signingConfigs block will be created in your module&amp;rsquo;s build.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing-ios-frameworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing-ios-frameworks/</guid>
+      <description>Developing iOS frameworks When you are developing an iOS framework you have to distribute a code signed version of your framework, however you don&amp;rsquo;t need to sign it with your Distribution profile, the Developer profile will be enough. After distribution the framework will be re-codesigned by the frameworks&amp;rsquo; consumer during the code signing process.1
+If you attempt to build it without code signing Xcode won&amp;rsquo;t produce a .framework file and you will receive the following error:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing/</guid>
+      <description>To run a build of your iOS app on Bitrise, you will need to provide code signing files in some way. The code signing of iOS projects requires:
+ Signing certificates in a .p12 format Provisioning Profile file(s) matching your project (team ID, bundle ID, &amp;hellip;) a script, tool or step which installs these files in the build environment.  You can store your code signing files and create a signed .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/collecting-files-with-codesigndoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/collecting-files-with-codesigndoc/</guid>
+      <description>The open source codesigndoc tool runs a clean Xcode/Xamarin Studio Archive on your Mac, and analyzes the generated archive file. It collects the code signing settings that Xcode or Xamarin Studio used during the archive process, and prints the list of the required code signing files. You can also search for, export and upload these files using codesigndoc.
+Collecting the files with codesigndoc  Open the Terminal.
+ Enter the appropriate one-liner command, depending on your project type.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xamarin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xamarin/</guid>
+      <description>You can easily create a signed IPA for your Xamarin project with Bitrise. All you need to do is set the relevant inputs of our Xamarin Archive step!
+!!! todo &amp;ldquo;Before you start&amp;rdquo; Before setting up IPA export, make sure that:
+ * your code signing files have been collected: we recommend using our [codesigndoc](https://github.com/bitrise-tools/codesigndoc) tool. * you have the `Certificate and profile installer` step in your workflow.  If you&amp;rsquo;re all set, proceed to setting up IPA export in your workflow:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xcode/</guid>
+      <description>You can easily create a signed IPA for your Xamarin project with Bitrise. All you need to do is set the relevant inputs of our Xamarin Archive step!
+!!! todo &amp;ldquo;Before you start&amp;rdquo; Before setting up IPA export, make sure that:
+ * your code signing files have been collected: we recommend using our [codesigndoc](https://github.com/bitrise-tools/codesigndoc) tool. * you have the required steps in your workflow to manage code your signing files: * `Certificate and profile installer` if you uploaded your Provisioning Profiles manually.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/exporting-code-signing-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/exporting-code-signing-files/</guid>
+      <description>Exporting certificates using Xcode  Start Xcode Select Xcode &amp;gt; Preferences from the navigation bar. At the top of the window select Accounts. Select your Apple ID and your team from the right side bar, then click on View Details.... A dialog will appear where you will see your code signing identities and the provisioning profiles. Select the certificates and choose Export from the pop-up menu.  Enter a filename in the Save As dialog.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/generating-code-signing-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/generating-code-signing-files/</guid>
+      <description>You&amp;rsquo;ll need two kinds of files to sign your app: Certificates and Provisioning Profiles.
+Generate a Code Signing Certificate The certificates - development or distribution - are the guarantee that you, the named developer, built this code, that you are a member of the developer program, and that Apple have issued you with a certificate to do so.
+To get a certificate, you need to generate a Certificate Signing Request with Keychain Access and send it to Apple.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ionic-cordova-code-signing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ionic-cordova-code-signing/</guid>
+      <description>Naturally, Bitrise supports iOS applications built with either Ionic or Cordova. However, the code signing process is slightly different compared to a &amp;ldquo;native&amp;rdquo; Xcode project.
+Bitrise supports both manual and automatic provisioning for Ionic and Cordova apps as well - and once again, the processes are somewhat different.
+Ionic/Cordova code signing with manual provisioning  Generate the native Xcode project locally from your Ionic or Cordova project by calling cordova platform add ios or ionic cordova platform add ios.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-auto-provisioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-auto-provisioning/</guid>
+      <description>Manage your code signing files on bitrise.io. You can use iOS automatic provisioning to automatically generate the required Provisioning Profiles for your project.
+With automatic provisioning, the iOS Auto Provision step will manage the Provisioning Profiles. You only have to upload the .p12 certificate files manually to bitrise.io.
+!!! warning &amp;ldquo;Upload all signing certificates for your project&amp;rdquo; We strongly recommend uploading BOTH the development and distribution signing certificates for your project.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-manual-provisioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-manual-provisioning/</guid>
+      <description>Manage your code signing files on bitrise.io. With manual provisioning, you can collect your Provisioning Profiles and .p12 certificates with our codesigndoc tool and then upload them manually or by using the tool.
+!!! info &amp;ldquo;Xcode Automatically manage signing option&amp;rdquo; We support using Xcode&amp;rsquo;s Automatically manage signing option, introduced in Xcode 8, with your project. In this case, create an IPA of the desired type on your local machine to let Xcode generate the required profiles and then codesigndoc can collect these.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/protecting-your-code-signing-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/protecting-your-code-signing-files/</guid>
+      <description>Protecting your code signing files You can set your code signing files to Protected mode: this means they cannot be downloaded from your bitrise.io account. Your builds will be able to use these protected files, of course. But if you make the file protected, no one will be able to reveal it and the only way to overwrite it is by deleting the current one and creating a new one.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/resigning-an-ipa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/resigning-an-ipa/</guid>
+      <description>During the development of your iOS app you will need multiple types of distributions for different purposes, such as internal testing or deployment to the App Store. The good news is that this does not require setting up two separate workflows on bitrise.io.
+!!! todo &amp;ldquo;Before you start&amp;rdquo; You need to:
+* upload different types of .p12 certificates (for example, developer and distribution certificates) * upload the associated Provisioning Profiles (or managing them automatically with the `iOS Auto Provisioning` step)  If all your code signing files are in place, proceed to setting up your workflow.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/xamarin-android-code-signing/xamarin-android-code-signing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/xamarin-android-code-signing/xamarin-android-code-signing/</guid>
+      <description>Configure code signing in Xamarin Studio You can specify the code signing configuration for your Xamarin Android project by creating a signed APK in Xamarin Studio.
+ Log into your Xamarin Studio.
+ Double click on your Xamarin Android project to open Project Option.
+ Select the Android Package Signing in Build group.
+ Select your platform in the Configuration - Platform.
+ Check the Sign .APK file using the following keystore details.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/docker/</guid>
+      <description>Docker is an ideal tool to create, use and share custom environments, as well as to provide a lightweight way to do builds in emphemeral environments (where the environment is destroyed after the build, and a new one is created when the next build starts).
+Unfortunately Docker can only be used to run Linux guest systems right now, and since Windows Server 2016 it&amp;rsquo;s now possible to run Windows docker containers (guest system) but only from Windows Server 2016 and on Windows 10 with Anniversary Update.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/adding-projects-with-submodules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/adding-projects-with-submodules/</guid>
+      <description>The Problem A common issue is that you have a project, that has one or more submodules or other private repository dependencies.
+This means that you have to grant access to all repositories in order to make the build successful.
+If your git hosting service supports it, the best, most secure way is to register the same SSH key for every repository you have to access during the build, as &amp;ldquo;Deployment keys&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/android-x86-emulator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/android-x86-emulator/</guid>
+      <description>A frequent question is whether it&amp;rsquo;s possible to run the Android x86 emulator, instead of the ARM emulators.
+As an experiment we now allow all the required nested virtualization bits for the x86 Android emulators on the Linux/Android stacks, which means that we can use the virtualization that the host machine has for running an emulator with x86 architecture, and we can thus skip the slow emulation. This is still 10-15% slower than when run on a physical machine, but it is still much faster than the armv7-a emulator.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/available-environment-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/available-environment-variables/</guid>
+      <description>Interactive available Environment Variables list In the Workflow Editor on bitrise.io you can click into any input field of a Step and a green Insert Variable button will appear.
+Click this button and you&amp;rsquo;ll get a full list of available Environment Variables. You can search in this list, and when you find the one you&amp;rsquo;re looking for just click it, and it&amp;rsquo;ll be inserted into the input field for you.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/github-pull-request-status-troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/github-pull-request-status-troubleshooting/</guid>
+      <description>If you can&amp;rsquo;t see the nice little green/red CI checks status (like the one you can see on our Blog, about the Pull Request status feature announcement) on the Pull Request&amp;rsquo;s GitHub page, you should check this list for troubleshooting.
+Make sure to select a Service credential User who has a connected GitHub account The first requirement is that the Service credential User of the app on bitrise.io have to connect his/her GitHub account, or else bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/grant-access-to-github-organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/grant-access-to-github-organization/</guid>
+      <description>Steps to grant access for Bitrise.io to a given GitHub Organization:
+ Open https://github.com In the top right corner click your user / avatar In the list select Settings On the left side select Authorized applications In the left-side navigation, click Authorized OAuth Apps, and choose Bitrise Locate the Organization you want to grant access to, and click Grant.  You can now go back to bitrise.io and you should see the organization / repository on the Add New App page.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-change-the-owner-of-an-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-change-the-owner-of-an-app/</guid>
+      <description>It can happen that you need to transfer an Application on Bitrise to another User or to an Organization. This can be done in a few seconds by following these quick steps:
+ Login with the current Owner of the App on bitrise.io Open the App&amp;rsquo;s page and go to the Team tab Make sure the new owner of the App is in the team or add her/him if you need to.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-generate-ssh-keypair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-generate-ssh-keypair/</guid>
+      <description>If you want to do manual SSH key configuration on bitrise.io you can generate an appropriate SSH keypair with a simple Command Line / Terminal command:
+ssh-keygen -t rsa -b 4096 -P &#39;&#39; -f ./bitrise-ssh  This will generate two files in the current directory (the directory where you run the command):
+ bitrise-ssh (private key) bitrise-ssh.pub (public key)  You should copy paste the public key to your Git hosting service (GitHub, Bitbucket, etc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/i-cant-see-my-github-organization-repository-on-the-add-new-app-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/i-cant-see-my-github-organization-repository-on-the-add-new-app-page/</guid>
+      <description>Most likely you did not grant access to bitrise.io when you authenticated with GitHub to access the organization (or a repository owned by the organization).
+To fix this you should follow this guide: Grant access to a GitHub Organization.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/no-builds-are-triggered-automatically/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/no-builds-are-triggered-automatically/</guid>
+      <description>If no builds are triggered automatically when you push code into your repository, you should make sure your webhook is properly set on the git hosting service you use (GitHub, Bitbucket, GitLab, &amp;hellip;).
+You can find the webhook related setup and troubleshooting guides in the Webhooks section of the DevCenter.
+If the webhook is present on the git hosting service, you should check the Troubleshooting section of the Webhooks docs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/organization-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/organization-faq/</guid>
+      <description>What is an Organization on Bitrise? Organizations are used to seamlessly manage bigger teams and members inside a company. It is a place to gather all the people working on each of your company&amp;rsquo;s apps and delegate them through creating different groups.
+How do I create a new Organization? Just go to your account settings page, scroll down and click on the green New organization button at the bottom left.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/should-i-commit-my-dependencies-into-my-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/should-i-commit-my-dependencies-into-my-repository/</guid>
+      <description>It&amp;rsquo;s a highly debated topic, there are obvious pros and cons for both keeping your dependencies in or outside of your code repository.
+You&amp;rsquo;re of course free to do it the way you want to, our recommendation is that you should include your dependencies inside your repository, whenever you can.
+Let&amp;rsquo;s see why.
+ Once git clone is finished you&amp;rsquo;ll have everything, ready for work. In a CI / distributed environment this also means less chance for network issues, your build won&amp;rsquo;t fail just because a dependency manager&amp;rsquo;s server is down.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/why-my-build-takes-longer-on-bitrise-than-on-my-mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/why-my-build-takes-longer-on-bitrise-than-on-my-mac/</guid>
+      <description>First of all you have to determine which step(s) consume significant time, to identify what can possibly be improved.
+If your dependency step (e.g. CocoaPods) is the one which takes a long time then you might be able to speed it up by using the Bitrise Build Cache feature. You can find more information at Using the Build Cache. This is also true for any step which might include network communication, addressing 3rd party web services, which might temporarily not be available or might be slow due to high demand.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/fastlane-tools-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/fastlane-tools-integration/</guid>
+      <description>Having more time to be creative is the key to great inventions. We believe that giving developers the chance to work without distractions is the most important thing that can lead to extraordinary creations. Our mission is to provide a platform that lets you concentrate on the process of creation, instead of the administrative tasks that get in the way of it.
+That&amp;rsquo;s why we created Bitrise. But we&amp;rsquo;re not alone in this!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/how-to-configure-fastlane-match-for-bitrise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/how-to-configure-fastlane-match-for-bitrise/</guid>
+      <description>If you want to use fastlane match in your bitrise.io build you only have to do three things:
+ Make sure that a single SSH key can be used to git clone both your main repository (the one you register on bitrise.io) and the match repository. You can find more info in this guide. Add an environment variable MATCH_PASSWORD, as described in match&amp;rsquo;s docs, to specify the Encryption password you used for match.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/connecting-apple-dev-account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/connecting-apple-dev-account/</guid>
+      <description>Connecting Your Apple Developer Account to Bitrise You can authenticate your Apple Developer Account on Bitrise and integrate the Apple Developer Portal with your Bitrise project. This allows you to use our iOS Auto Provisioning step which makes managing Provisioning Profiles for iOS applications a lot easier!
+All you need is a bitrise.io account and a valid Apple Developer Account.
+Authenticating your Apple Developer Account on Bitrise  Log in to bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/signing-up-with-bitbucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/signing-up-with-bitbucket/</guid>
+      <description>You are able to authenticate yourself with your Bitbucket user against Bitrise. It brings some practical benefits, like logging in with one click and of course you won&amp;rsquo;t have to authorize your Bitbucket account when adding repositories hosted by these providers again.
+!!! note If you&amp;rsquo;d like to sign up with your email address, please follow the instructions in signing up with email address.
+Sign up Go to the Sign up page by clicking Sign up!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/signing-up-with-email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/signing-up-with-email/</guid>
+      <description>You can sign up to Bitrise in one step with your email address.
+!!! note If you would like to use your GitHub / Bitbucket account, please check out the following devcenter articles:
+* [Signing up with GitHub](/signing-up/signing-up-with-github) * [Signing up with Bitbucket](/signing-up/signing-up-with-bitbucket)  Sign up You just have to pick a username, add your email address and choose a password. Click Sign up with email.
+After you provided your credentials, press Done.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/signing-up-with-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/signing-up-with-github/</guid>
+      <description>You are able to authenticate yourself with your GitHub user against Bitrise. It brings some practical benefits, like logging in with one click and of course you won&amp;rsquo;t have to authorize your GitHub account when adding repositories hosted by these providers again.
+!!! note If you&amp;rsquo;d like to sign up with your email address, please follow the instructions in signing up with email address.
+Sign up Go to the Sign up page by clicking Sign up!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/trial-after-signing-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/signing-up/trial-after-signing-up/</guid>
+      <description>After you have created your account on Bitrise it will start with a 14-day trial of the Team plan. This means that you can setup your application and start building it with all the benefits of the paying plan.
+You can see the remaining time of your trial in the header.
+!!! note &amp;ldquo;Tip&amp;rdquo; Read more about optimizing your build times to help you fit into the 10 minute limit for free accounts.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/team-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/team-management/</guid>
+      <description>Now that you have set up your app on Bitrise we can start inviting team members! You can select multiple roles for the new members, like: admin, developer, and qa/tester. Different roles have different permissions that you can read more about below.
+To invite a team member head to the Team tab on your application&amp;rsquo;s page. You can invite any user by their username or by their email address. If they are not registered on Bitrise we will send out an invitation email for them.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/android-tips-and-tricks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/android-tips-and-tricks/</guid>
+      <description>What are Gradle tasks and how can I get the list of available tasks in my project? A gradle task is a process you can run with gradle. You can run these tasks by running gradle TASK-TO-RUN in your Command Line / Terminal.
+A standard Android Gradle project includes a lot of tasks by default, things like:
+ androidDependencies - Displays the Android dependencies of the project. assemble - Assembles all variants of all applications and secondary packages.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/attach-any-file-to-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/attach-any-file-to-build/</guid>
+      <description>For this example we&amp;rsquo;ll attach the OS X system.log to the Build as an Artifact, but this works for any file, even for ones that you generate during the build, you just have to replace the example path we use (/var/log/system.log) with the path you want to deploy. You can of course use Environment Variables in the path too, like $HOME/.
+Deployed Artifacts appear on the Build&amp;rsquo;s page, in the Artifacts &amp;amp; Apps section, and anyone who has access to the Build page can download it from there.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/disable-a-step-by-condition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/disable-a-step-by-condition/</guid>
+      <description>Disable a Step If you don&amp;rsquo;t want to remove the Step from your Workflow and you don&amp;rsquo;t want to duplicate the Workflow either (which is the preferred way if you want to experiment with new things; you can just create a &amp;ldquo;backup&amp;rdquo; clone of your original Workflow) then you can simply disable a Step by specifying run_if: false .
+Example:
+- script: run_if: false inputs: - content: |- #!/bin/bash echo &amp;quot;This will never run, because of run_if:false&amp;quot;  Run a Step only in CI environment, skip it for local builds This is quite similar to how you completely disable a step, but instead of specifying false as the run_if expression, you specify .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/dont-mark-build-failed-if-step-fails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/dont-mark-build-failed-if-step-fails/</guid>
+      <description>To do this you have to switch to bitrise.yml mode (open the Workflow Editor on bitrise.io -&amp;gt; left side: click on bitrise.yml to switch to the interactive bitrise.yml editor).
+All you have to do is: add an is_skippable: true flag to the Step.
+An example script step which, although fails, it won&amp;rsquo;t &amp;ldquo;break&amp;rdquo; the build:
+- script: is_skippable: true inputs: - content: |- #!/bin/bash echo &amp;quot;Failing Step.&amp;quot; exit 1 # exit 1 would mark this step as Failed, but it won&#39;t break the Build # because of the is_skippable: true flag / property  You can find more examples on GitHub.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/expose-environment-variable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/expose-environment-variable/</guid>
+      <description>You can expose Environment Variables from one Step, to make it available for every other Step performed after the Step during the build. An example might be that you want to generate a release note which you want to use in a message or deploy step. Exposing environment variables is really easy, you just have to use envman if you want to make it available for every other Step.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/install-additional-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/install-additional-tools/</guid>
+      <description>If you need something you can&amp;rsquo;t find a Step for, you can always install &amp;amp; use tools with scripts or Script steps.
+Just add a Script step to your Workflow, and either write your script there, or run a script from your repository.
+Passwordless sudo is enabled on all of our build virtual machines, so you can freely use sudo if you need it.
+Once you have a working script, you can also transform it into a Step and optionally share it with others (through our StepLib).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/optimize-your-build-times/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/optimize-your-build-times/</guid>
+      <description>You can improve your build times with the following tips.
+Feel free to suggest other ways of optimization!
+Include your dependencies in your repository Including your dependencies (like CocoaPods) in your repository can speed up your builds. Once the git clone of your repository is done, everything will be in place to do your build.
+For example, in case of CocoaPods, you can delete the CocoaPods Install step from your workflow if you include your Pods directory and the CocoaPods generated .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/skip-a-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/skip-a-build/</guid>
+      <description>If you want to skip a specific commit, to not to start a build, all you have to do is to include either [skip ci] or [ci skip] in the commit message.
+For example, the commit message:
+This is not important, please [skip ci]  won&amp;rsquo;t start a build, nor will:
+I just changed the README [ci skip]  !!! warning &amp;ldquo;Only the head/last commit message is checked!&amp;rdquo; If you push more than one commit, only the last (&amp;ldquo;head&amp;rdquo;) commit&amp;rsquo;s message will be checked for the skip ci pattern!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/use-bitrise-yml-from-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/use-bitrise-yml-from-repository/</guid>
+      <description>Storing the build configuration (bitrise.yml) in your repository can be a great idea. It has its own PROs and CONs of course, so you have to decide it yourself whether this solution is a good fit for your project or not.
+Things to keep in mind! You can find a discussion about what are the advantages and disadvantages of this approach on GitHub. To highlight a few things to keep in mind if you&amp;rsquo;d want to store and use the bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/write-your-own-scanner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/write-your-own-scanner/</guid>
+      <description>Write your own project scanner When you add a new app on bitrise, it will run a project-scanner step to figure out the project&amp;rsquo;s type and generate a configuration based on the type. Same functionality exist as a bitrise cli plugin.
+Both the step and the plugin uses our shared bitrise-init tool, which is responsible for detecting project type and generating the raleted bitrise configuration (bitrise.yml).
+bitrise-init tool is open source and designed to easily add new project type support.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/xcodebuild-export-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/xcodebuild-export-options/</guid>
+      <description>If you create a new iOS app on bitrise.io the generated default workflow wil include our Xcode Archive step. This step can manage to archive and export your iOS app.
+A bit of history and technical info If the step is used with Xcode 6 it&amp;rsquo;ll generate the following (legacy) command to export the ipa of your app (you can see it in the step&amp;rsquo;s log):
+xcodebuild -exportArchive \ -exportFormat ipa \ -archivePath &amp;quot;/var/folders/lb/8n5bn9k975qgw662jpqdy7mm0000gn/T/bitrise-xcarchive.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tools/bitrise-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tools/bitrise-tools/</guid>
+      <description>List of Open Source tools maintained by the Bitrise team.
+!!! note &amp;ldquo;Where can I find the repositories?&amp;rdquo; For historical reasons the core Bitrise CLI tools live in github.com/bitrise-io, but most of our tools, and every new tool we create lives in the github.com/bitrise-tools, and the CLI core components (plugins, etc.) in the github.com/bitrise-core GitHub organization.
+Core, Bitrise CLI tools  bitrise - the Bitrise CLI, which is used on bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/enabling-bitrise-support-user/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/enabling-bitrise-support-user/</guid>
+      <description>If you need quick tech support from us, our onsite chat support can look into your project and fix your technical issues in the most efficient way! All you have to do is enable Bitrise Support user so that we have access to your project, specifically to your workflow, your build log, your app settings or to your yml.
+With the toggle function, you can easily turn the Bitrise Support user on and off, no need to add us as a user to your app&amp;rsquo;s Team any more.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-android-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-android-issues/</guid>
+      <description>Could not find an android package or you have not accepted the license agreements Error &amp;gt; A problem occurred configuring project &#39;:lib&#39;. &amp;gt; You have not accepted the license agreements of the following SDK components: [Google Repository]. Before building your project, you need to accept the license agreements and complete the installation of the missing components using the Android Studio SDK Manager. Alternatively, to learn how to transfer the license agreements from one workstation to another, go to http://d.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-ios-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-ios-issues/</guid>
+      <description>Searching for errors and issues in Xcode generated output This applies only to the raw, unfiltered output of Xcode. If you can&amp;rsquo;t find the error reason in the logs make sure to switch the Output Tool option of the Xcode &amp;hellip; step to xcodebuild (Xcode&amp;rsquo;s Command Line Tool), which will result in a quite verbose output, but will include everything the way it&amp;rsquo;s produced by Xcode&amp;rsquo;s command line build tool (xcodebuild).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/known-xcode-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/known-xcode-issues/</guid>
+      <description>Feel free to add your comments to this list.
+You can do it directly on GitHub, by clicking this link, just don&amp;rsquo;t forget to send it as a Pull Request ;)
+Performance related Note: mainly affects UI tests.
+The root cause of the issue is that Xcode / the iOS Simulator has issues in performance limited environments. This included Virtual Machines (which is how your builds are running on bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/trigger-doesnt-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/trigger-doesnt-work/</guid>
+      <description>Unfortunately, it can happen that your build triggers do not trigger a build automatically on Bitrise. There are many potential issues that can stop your builds - let&amp;rsquo;s take a look!
+ Check your webhooks.
+Check that you have the webhook set up correctly. You can find out the webhook URL for your repository&amp;rsquo;s hosting provider on the Code tab of your app and you can check in your repository&amp;rsquo;s settings if they match.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/workflow-editor-doesnt-load/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/workflow-editor-doesnt-load/</guid>
+      <description>This can happen if you modified the bitrise.yml / workflow configuration in a way which crashes the Workflow Editor UI.
+If this would happen please contact us so we can fix the issue in the UI code, then you can fix the bitrise.yml through our API.
+You can find an example of how the API works on GitHub. In short, you can use a simple curl call to download &amp;amp; to upload an app&amp;rsquo;s config / bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/auto-deploy-middleman-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/auto-deploy-middleman-project/</guid>
+      <description>This tutorial helps you create a basic static website project (e.g. a Blog) with Middleman, connect and deploy it with Bitrise.
+1. Create and clone a repository on Github To create a new repository on Github, click here. You need to sign in with your Github account, or sign up if you don&amp;rsquo;t have one yet. Once you created your repository, clone it.
+2. Install Middleman Middleman is distributed using the RubyGems package manager.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/build-with-fake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/build-with-fake/</guid>
+      <description>To add support for your FAKE build scripts, open your app&amp;rsquo;s Workflow Editor on bitrise.io and add a Script step to your workflow.
+Below you can find an example script content to perform a build with FAKE, make sure you fill out the parameters at the top of the script!
+#!/bin/bash set -ex # Fill out these parameters: # You should use the same directory that you set in your build script for the FAKE dll output_directory=tools fake_build_script=build.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/community-created/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/community-created/</guid>
+      <description>If you write a tutorial or blog post about Bitrise feel free to add it to this list yourself or contact us and we&amp;rsquo;ll add it for you!
+English Getting Started  How to implement mobile continuous integration(CI) and delivery(CD) using bitrise.io  iOS  Let&amp;rsquo;s automate Swift builds with Bitrise The Road to Bitrise - switching from Jenkins Bitrise and Carthage - a simple guide about how to use Carthage on Bitrise  Android  Seamless Android Builds With Bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/deploy/bitrise-app-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/deploy/bitrise-app-deployment/</guid>
+      <description>Bitrise has an integrated App Deployment system you can use for App and other build artifact file distribution.
+With this you can distribute your iOS and Android app, over the air, for your testers (even for those who don&amp;rsquo;t have a Bitrise account) or you can just use it for archiving your App and other build artifact files (these files will be available on the related Build&amp;rsquo;s details page).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/deploy/deploy-to-testfairy-with-bitrise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/deploy/deploy-to-testfairy-with-bitrise/</guid>
+      <description>If you are looking for a deployment service that also gives you lots of insights about your application, then TestFairy is a great service to check out.
+What is TestFairy? When testing apps in the crowd, you never know what exactly was tested and what exactly went wrong on the client side. TestFairy solves this problem by providing a video of everything that happened on the mobile device, including detailed internal metrics such as CPU, memory, GPS, network, logs, crash reports, and a lot more.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/deploy/publish-your-app-to-appaloosa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/deploy/publish-your-app-to-appaloosa/</guid>
+      <description>Would you like to beta test and deploy your app to 1 or thousands of users? Appaloosa helps you distribute your mobile apps privately, collect feedback and analyse your deployment&amp;rsquo;s efficiency. Check it out!
+What is Appaloosa? Appaloosa is a simple and secure enterprise App Store. They help mobile &amp;amp; digital teams build, test and deploy their apps privately.
+You can manage your apps on Android, iOS and Windows Phone, all in the same place.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/download-or-replace-project-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/download-or-replace-project-resources/</guid>
+      <description>You can do this in quite a few ways, these are probably the easiest ones:
+ use the ZIP resource archive downloader step for downloading and extracting a ZIP file use the File Downloader step to download a single file use a Script Step  !!! note &amp;ldquo;Store the resources file on bitrise.io&amp;ldquo; You can store the resources file on bitrise.io. In the Workflow Editor select the &amp;ldquo;Code signing &amp;amp; Files&amp;rdquo; section, and upload the archive file in the &amp;ldquo;Generic File Storage&amp;rdquo; section.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/efficient-continuous-integration-and-deployment-workflow-for-ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/efficient-continuous-integration-and-deployment-workflow-for-ios/</guid>
+      <description>An efficient CI/CD Workflow for iOS development To achieve an efficient workflow for rapid iOS app development you have to specify the automation scenarios and the triggers to start specific scenarios.
+Additionally you most likely want to minimize the number of tools, configurations and manual steps required to achieve your automated development workflow.
+To make the whole process as easy as possible (and still flexible enough to support a broad range of tasks you might want to perform as part of your automation) was one of the fundamental principles when we started Bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/hipchat-message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/hipchat-message/</guid>
+      <description>You can send HipChat messages during your build.
+You can, for example, send a HipChat message with the Build&amp;rsquo;s bitrise.io URL, the build&amp;rsquo;s status (at the point where you include the HipChat step - usually it&amp;rsquo;s best to make it the very last step of the Workflow) and with the Public Install Page for the app.
+To do this all you have to do is:
+ add a Send HipChat message step to your app&amp;rsquo;s Workflow, after the Deploy to Bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/how-to-use-the-generic-file-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/how-to-use-the-generic-file-storage/</guid>
+      <description>How to upload files to bitrise&amp;rsquo;s Generic File Storage?  Open your app on bitrise.io Go to Workflow tab, to open the Workflow Editor On the left side of Workflow Editor select Code signing &amp;amp; Files Scroll down to Generic File Storage section and click on + Add another File Enter your uniqe id and select your file you want to upload  !!! note Bitrise will upload your file and assign an environment variable (BITRISEIO_[the ID you specify]_URL) to the file&amp;rsquo;s download url.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/vpn-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/vpn-configuration/</guid>
+      <description>Do you require a VPN connection for your build, to be able to connect to your server, either to git clone your repository or to access a private API? If yes, then this tutorial is for you!
+Technical infos Connecting to a VPN, in short, works like this:
+ the build starts you install &amp;amp; configure the VPN components you need you start the VPN you proceed with the build  Obviously, if you require a VPN connection in order to access your code repository, you have to connect to the VPN before the Git Clone step, but in general you can configure &amp;amp; connect to the VPN anywhere in your Workflow, before you&amp;rsquo;d use the connection.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/webhooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/webhooks/</guid>
+      <description>Most source code hosting service provides a feature to register webhooks. A webhook is basically an URL which will be called on specified events.
+To have Bitrise automatically start a build every time you push code into your repository you can set up a webhook at your code hosting service which will automatically trigger a build on Bitrise with the code you push to your repository.
+Setting up incoming webhooks automatically If you select GitHub or Bitbucket as the source code provider when you add your app Bitrise automatically sets up a webhook for it with a click of a button at the end of your app setup journey.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/xamarin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/xamarin/</guid>
+      <description>With Xamarin integration you can now build your iOS and Android Xamarin applications on Bitrise.
+We have listed a couple of tutorials to help you get started, but if you get stuck, feel free to contact us!
+Xamarin tutorials Highlighted: A great overview and a detailed &amp;ldquo;getting started&amp;rdquo; tutorial: check out James Montemagno&amp;rsquo;s video session about setting up Xamarin apps on Bitrise here: https://www.youtube.com/watch?v=1UeNajpjIXY
+Getting Started  Connect your Xamarin account to Bitrise Creating your first App on Bitrise Restore NuGet packages and Xamarin Components  Code Signing  iOS code signing Android code signing  Advanced  Deploy your Xamarin app Add Unit Test to your Xamarin app Run your tests in the Xamarin Test Cloud Add custom sources to NuGet Build with FAKE (F# Make)  !</description>
+    </item>
+    
+    <item>
+      <title>App Status Badge</title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/app-status-badge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/app-status-badge/</guid>
+      <description>With the Status Image API token, you can get an embeddable SVG badge image, a JSON message reflecting the status of the app, or a specific branch of the app.
+ Open your App on bitrise.io and click the badge image right next to the app&amp;rsquo;s name.
+ In the Status image popup, you can optionally set a branch, and get copy-paste-ready Embed codes for the SVG image.
+!!! example &amp;ldquo;Example SVG URL&amp;rdquo;  https://app.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/</guid>
+      <description>Some title just some test - some other</description>
+    </item>
+    
+  </channel>
+</rss>

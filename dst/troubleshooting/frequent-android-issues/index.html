@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-android-issues/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-android-issues/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<h2 id="could-not-find-an-android-package-or-you-have-not-accepted-the-license-agreements">Could not find an android package or you have not accepted the license agreements</h2>
+
+<h3 id="error">Error</h3>
+
+<pre><code>&gt; A problem occurred configuring project ':lib'.
+   &gt; You have not accepted the license agreements of the following SDK components:
+     [Google Repository].
+     Before building your project, you need to accept the license agreements and complete the installation of the missing components using the Android Studio SDK Manager.
+     Alternatively, to learn how to transfer the license agreements from one workstation to another, go to http://d.android.com/r/studio-ui/export-licenses.html
+</code></pre>
+
+<p>or</p>
+
+<pre><code>Could not find com.android.support:appcompat-v7:24.2.0.
+</code></pre>
+
+<h3 id="solution">Solution</h3>
+
+<p><strong>Please use the <code>Install missing Android tools</code> step. The section below is kept only for referencing purposes!</strong></p>
+
+<p>The error means that your build requires an Android package which is either not (yet) preinstalled
+(<em>you can see which packages are preinstalled <a href="https://github.com/bitrise-docker/android/blob/master/Dockerfile#L30">here, on GitHub</a> -
+feel free to send us a Pull Request if you&rsquo;d want to add a new preinstalled package!</em>),
+<strong>or outdated</strong>.</p>
+
+<p>The solution is quite simple, you just have to install/update the related package(s).
+To do that add a <code>Script</code> step to your workflow -
+should be before the step where you get the error, it can be the very first step in the workflow -
+with the following content:</p>
+
+<pre><code>#!/bin/bash
+# fail if any commands fails
+set -e
+# debug log
+set -x
+
+# For newer Android SDK:
+sdkmanager &quot;extras;android;m2repository&quot;
+sdkmanager &quot;extras;google;m2repository&quot;
+
+# For older Android SDK:
+echo y | android update sdk --no-ui --all --filter extra-android-m2repository | grep 'package installed'
+echo y | android update sdk --no-ui --all --filter extra-google-m2repository | grep 'package installed'
+</code></pre>
+
+<p>In most cases you don&rsquo;t need both packages to be updated, so you can try to remove them one
+by one, but having all three in the script covers most of the cases related to this error.</p>
+
+<p>!!! note &ldquo;We update the preinstalled Android packages on every weekend&rdquo;
+    so if the error is related to an outdated package, the workaround
+    we describe here can be removed from your build after that weekend&rsquo;s update.</p>
+
+<h3 id="alternative-solution-for-the-license-error">Alternative solution for the license error</h3>
+
+<p><strong>Please use the <code>Install missing Android tools</code> step. The section below is kept only for referencing purposes!</strong></p>
+
+<p>An alternative solution for the <code>You have not accepted the license agreements of the following SDK components</code>
+error, as printed in the log:</p>
+
+<pre><code>Before building your project, you need to accept the license agreements and complete the installation of the missing components using the Android Studio SDK Manager.
+  Alternatively, to learn how to transfer the license agreements from one workstation to another, go to http://d.android.com/r/studio-ui/export-licenses.html
+</code></pre>
+
+<p>You can find more info at the link printed in the log (<a href="http://d.android.com/r/studio-ui/export-licenses.html">http://d.android.com/r/studio-ui/export-licenses.html</a>),
+but in short this can be done by:</p>
+
+<p><strong>Locate the licenses on your Mac/PC</strong>:</p>
+
+<blockquote>
+<p>If you have accepted the license agreements on one workstation, but wish to build your projects on a different one,
+you can export your licenses by copying the accepted licenses folder from the Android Sdk Home
+folder (this should be located at <code>&lt;android sdk home path&gt;/licenses</code>) of your current workstation,
+to the Android Sdk Home directory of the machine where you now want to build your projects.</p>
+</blockquote>
+
+<p><strong>Create an <code>android-licenses</code> directory in the root directory of your git repository,
+and copy the license files into this directory</strong>,
+then in your Workflow copy the licenses to the right location using a <code>Script</code> step.</p>
+
+<p><strong>Add the <code>Script</code> step right after the <code>Git Clone</code> step</strong> (that&rsquo;s when your code is available
+on the build virtual machine), with the content:</p>
+
+<pre><code>#!/bin/bash
+# fail if any commands fails
+set -e
+# debug log
+set -x
+
+rsync -avhP ./android-licenses/ &quot;$ANDROID_HOME/licenses/&quot;
+</code></pre>
+
+<p>That&rsquo;s all, this script copies the licenses from the <code>android-licenses</code> (from your repository)
+into the system&rsquo;s Android SDK Home path under <code>licenses</code> directory.</p>
+
+<h2 id="install-an-additional-android-package">Install an additional Android package</h2>
+
+<p>Please see <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/android-tips-and-tricks/#how-to-install-an-additional-android-sdk-package">this section</a>.</p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/enabling-bitrise-support-user/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-ios-issues/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

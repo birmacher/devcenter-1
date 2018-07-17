@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fastlanes on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/</link>
+    <description>Recent content in Fastlanes on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/fastlane-tools-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/fastlane-tools-integration/</guid>
+      <description>Having more time to be creative is the key to great inventions. We believe that giving developers the chance to work without distractions is the most important thing that can lead to extraordinary creations. Our mission is to provide a platform that lets you concentrate on the process of creation, instead of the administrative tasks that get in the way of it.
+That&amp;rsquo;s why we created Bitrise. But we&amp;rsquo;re not alone in this!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/how-to-configure-fastlane-match-for-bitrise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/fastlane/how-to-configure-fastlane-match-for-bitrise/</guid>
+      <description>If you want to use fastlane match in your bitrise.io build you only have to do three things:
+ Make sure that a single SSH key can be used to git clone both your main repository (the one you register on bitrise.io) and the match repository. You can find more info in this guide. Add an environment variable MATCH_PASSWORD, as described in match&amp;rsquo;s docs, to specify the Encryption password you used for match.</description>
+    </item>
+    
+  </channel>
+</rss>

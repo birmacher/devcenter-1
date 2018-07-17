@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/generating-code-signing-files/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/generating-code-signing-files/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<p>You&rsquo;ll need two kinds of files to sign your app: Certificates and Provisioning Profiles.</p>
+
+<h2 id="generate-a-code-signing-certificate">Generate a Code Signing Certificate</h2>
+
+<p>The certificates - development or distribution - are the guarantee that you, the named developer, built this code, that you are a member of the developer program, and that Apple have issued you with a certificate to do so.</p>
+
+<p>To get a certificate, you need to generate a Certificate Signing Request with Keychain Access and send it to Apple. This will create a public/private key for you if you don&rsquo;t have one already. Apple will then verify the information, and create a certificate for you.</p>
+
+<h3 id="generate-a-code-signing-certificate-using-xcode">Generate a Code Signing Certificate using Xcode</h3>
+
+<p>First you have to add your Apple ID to Accounts preferences in Xcode. If you are already done with this, you can skip to step 6.</p>
+
+<ol>
+<li>Start Xcode</li>
+<li>Select Xcode &gt; Preferences from the navigation bar.</li>
+<li>At the top of the window select <code>Accounts</code>.</li>
+<li>Click on the <code>+</code> on the lower left corner and select <code>Add Apple ID...</code>
+<img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/img/code-signing/ios-code-signing/xcode_adding_account.png" alt="Adding Apple ID" /></li>
+<li>A dialog will appear. Add your Apple ID and your password, then select <code>Sign in</code>. If you don&rsquo;t have an account you can create your Apple ID by selecting <code>Create Apple ID</code>.
+<img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/img/code-signing/ios-code-signing/xcode_sign_in.png" alt="Sign in to Xcode" /></li>
+<li>Select your Apple ID and your team from the right side bar, then click on <code>View Details...</code>.</li>
+<li>A dialog will appear where you will see your code signing identities and the provisioning profiles.
+<img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/img/code-signing/ios-code-signing/xcode_signing_files.png" alt="Xcode team details" /></li>
+<li>Under the signing identities locate the <code>iOS Development</code> and <code>iOS Distribution</code> profiles. If you have not created them you will see a <code>Create</code> button next to them. Simply select it and Xcode will issue and download your code signing identities for you.</li>
+</ol>
+
+<p>!!! warning
+    If you already have Code Signing Identities issued, you will see a <code>Reset</code> button next to them. You can issue new certificates with it, that Xcode will generate and download, however note that this will invalidate your previous certificate, so only do this if you&rsquo;ve lost those files or if you know what you are doing!</p>
+
+<h3 id="generate-a-code-signing-certificate-manually">Generate a Code Signing Certificate manually</h3>
+
+<ol>
+<li>Open your <code>Keychain Access</code> app on macOS.</li>
+<li>Select <code>Keychain Access</code> &gt; <code>Certificate Assistant</code> &gt; <code>Request a Certificate From a Certificate Authority...</code></li>
+<li>Fill in the <code>User's Email Address</code> and the <code>Common Name</code> and select <code>Saved to Disk</code>. Click on <code>Continue</code> and save the generated <code>certSigningRequest</code> file locally.
+<img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/img/code-signing/ios-code-signing/certificate_assistant.png" alt="Certificate Assistant" /></li>
+<li>Go to <a href="https://developer.apple.com">https://developer.apple.com</a> and log in to your account.</li>
+<li>Select <code>Certificates, IDs &amp; Profiles</code> from the left sidebar.</li>
+<li>Go to <code>Certificates</code> and click on the <code>+</code> button on the top right corner.</li>
+<li>Select <code>iOS App Development</code> and click Continue.</li>
+<li>On the next page you see the instructions for creating the <code>certSigningRequest</code> file. Click continue.</li>
+<li>Upload the created <code>certSigningRequest</code> to the form and click continue. It will generate your code signing certificate for you.</li>
+<li>Download the certificate and double click to install it. Once installed it will be added to your <code>Keychain Access</code> app.</li>
+</ol>
+
+<h2 id="generate-a-provisioning-profile">Generate a Provisioning Profile</h2>
+
+<p>Provisioning is the process of preparing and configuring an app to launch on devices and to use app services. Development Provisioning Profiles holds the device identifiers ( UUID ) that is eligible to run your app. Distribution Provisioning Profiles can include App Store profiles, that lets you distribute your app to the App Store and Ad-hoc profiles are good for distributing to your testers.</p>
+
+<h3 id="generate-a-provisioning-profile-with-xcode">Generate a Provisioning Profile with Xcode</h3>
+
+<p>Xcode will automatically generate an App ID for your project, that matches your unique bundle ID for your project. An App ID is used to identify one or more of your apps. It can be an <em>explicit App ID</em> that only matches one unique bundle identifier or a <em>wildcard App ID</em> that can match multiple ones.</p>
+
+<p>Xcode will also create a <em>Team Provisioning Profile</em> for your project automatically, so you can start deploying to your device automatically.</p>
+
+<p>If you hit any issues you should make sure that the device is eligible, for example if the device doesn&rsquo;t match the deployment target you will get an error.</p>
+
+<p>Also make sure that your app is connected to the correct Team.</p>
+
+<ol>
+<li>Select your project file from Xcode&rsquo;s project navigator</li>
+<li>Go to the <code>Signing</code> section and under the <code>Team</code> select your correct team.
+<img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/img/code-signing/ios-code-signing/xcode_team_selector.png" alt="Team selector" /></li>
+</ol>
+
+<p>!!! note
+    If you hit any issues and can&rsquo;t resolve it move to the manual step and set up Provisioning Profiles following the documentation.</p>
+
+<p>!!! note
+    To setup a distribution Provisioning Profile, go ahead with the manual setup.</p>
+
+<h3 id="download-a-provisioning-profile-with-xcode">Download a Provisioning Profile with Xcode</h3>
+
+<p>If you have already created the Provisioning Profile, you can do the following.</p>
+
+<ol>
+<li>Start Xcode</li>
+<li>Select Xcode &gt; Preferences from the navigation bar.</li>
+<li>At the top of the window select <code>Accounts</code>.</li>
+<li>Select your Apple ID and your team, then select <code>Download Manual Profiles</code>.</li>
+<li>Go to <code>~/Library/MobileDevice/Provisioning Profiles/</code> and your profiles should be there.</li>
+</ol>
+
+<h3 id="generate-a-provisioning-profile-manually">Generate a Provisioning Profile manually</h3>
+
+<h4 id="setup-an-app-id">Setup an App ID</h4>
+
+<ol>
+<li>If you haven&rsquo;t already created an App ID for your project, go to <a href="https://developer.apple.com">https://developer.apple.com</a> and log in.</li>
+<li>Select Certificates, Identifiers &amp; Profiles from the left sidebar</li>
+<li>Navigate to Identifiers &gt; App IDs</li>
+<li>In the <code>App ID Description</code> add a recognizable name for your App ID</li>
+<li>Select <code>Explicit App ID</code> and add your bundle identifier to the field.</li>
+<li>Select any additional <code>App Services</code> that you need.</li>
+<li>Click continue.</li>
+</ol>
+
+<h4 id="generate-a-provisioning-profile-1">Generate a Provisioning Profile</h4>
+
+<ol>
+<li>Go to <a href="https://developer.apple.com">https://developer.apple.com</a> and log in.</li>
+<li>Select Certificates, Identifiers &amp; Profiles from the left sidebar</li>
+<li>Navigate to Provisioning Profiles &gt; All</li>
+<li>Select the <code>+</code> from the top right corner.</li>
+<li>For development select the correct project type under <code>Development</code>, or for distribution select the correct one under <code>Distribution</code> and click continue.</li>
+<li>Select the App ID you would like to use.</li>
+<li>Select the certificates you wish to include in the Provisioning Profile. These certificates will be able to build with this profile; click continue.</li>
+<li>Select all the devices you would like to use with this profile and click continue.</li>
+<li>Name your Provisioning Profile and click continue.</li>
+<li>Your profile is generated. You can download it to your device and double click to install it on your Mac.</li>
+</ol>
+
+<h4 id="download-a-provisioning-profile">Download a Provisioning Profile</h4>
+
+<ol>
+<li>Go to <a href="https://developer.apple.com">https://developer.apple.com</a> and log in.</li>
+<li>Select Certificates, Identifiers &amp; Profiles from the left sidebar</li>
+<li>Navigate to Provisioning Profiles &gt; All</li>
+<li>Find the Provisioning Profile you are looking for from the list or use the search to filter.</li>
+<li>Click on the selected Provisioning Profile, this will expand the details.</li>
+<li>If its status is invalid, you can click on the <code>Edit</code> button and save again.</li>
+<li>Click on the <code>Download</code> button to download it and double click to install it on your Mac.</li>
+</ol>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/exporting-code-signing-files/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ionic-cordova-code-signing/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

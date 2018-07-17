@@ -1,6 +1,5 @@
 baseurl = "http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/"
 canonifyurls = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
 googleAnalytics = ""
 languageCode = "en-us"
 metadataformat = "yaml"
@@ -33,7 +32,8 @@ url = "api/"
 weight = 3
 [[menu.main]]
 name = "Getting Started"
-url = "getting-started/"
+identifier = "getting-started"
+url = "/getting-started/"
 weight = 1
 [params]
 author = "Digitalcraftsman"

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/efficient-continuous-integration-and-deployment-workflow-for-ios/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/efficient-continuous-integration-and-deployment-workflow-for-ios/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<h1 id="an-efficient-ci-cd-workflow-for-ios-development">An efficient CI/CD Workflow for iOS development</h1>
+
+<p>To achieve an efficient workflow for rapid iOS app development you have to specify the
+automation scenarios and the triggers to start specific scenarios.</p>
+
+<p>Additionally you most likely want to minimize the number of tools, configurations and
+manual steps required to achieve your automated development workflow.</p>
+
+<p>To make the whole process as easy as possible (and still flexible enough to support a
+broad range of tasks you might want to perform as part of your automation) was one of
+the fundamental principles when we started <a href="https://www.bitrise.io/">Bitrise.io</a>.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p><a href="http://git-scm.com/">Git</a> is the most popular modern
+<a href="http://en.wikipedia.org/wiki/Distributed_revision_control">Distributed Version Control System (DVCS)</a> at the moment,
+its branching system provides the flexibility to efficiently organize your app&rsquo;s code repository.</p>
+
+<p>Through <strong>hooks</strong> <em>git</em> is ideal to be the trigger of your automation scenarios, <strong>no other tools required</strong>.</p>
+
+<p>Well, actually there&rsquo;s one more thing: you have to organize your git repository
+branches in a way which is easy to manage and also which can be used to identify
+what automation scenario should be performed when a change happens on a specific branch.</p>
+
+<h2 id="let-s-do-it">Let&rsquo;s do it!</h2>
+
+<p>The most popular git branching model which fulfills these requirements is
+<a href="http://nvie.com/posts/a-successful-git-branching-model/">Gitflow</a>.
+You can use other branching models but we&rsquo;ll use Gitflow jargon to describe the concepts.</p>
+
+<p>A very minimalistic summary of how Gitflow works:</p>
+
+<ul>
+<li>You have two fixed, main branches:
+
+<ul>
+<li><strong>master</strong> : it should only contain the code of release versions</li>
+<li><strong>develop</strong> : it&rsquo;s the root branch for development, the integration or synchronization branch for developers</li>
+</ul></li>
+<li>You work on <strong>feature</strong> branches:
+
+<ul>
+<li>Always start the feature branch from the <em>develop</em> branch.</li>
+<li>Once a feature (issue / task) is finished you close the related feature branch, merging
+the feature&rsquo;s code back to the integration <em>develop</em> branch.</li>
+</ul></li>
+<li>Once you&rsquo;re ready for a release, you merge from <em>develop</em> to <em>master</em> (through a Gitflow <em>release</em>)</li>
+</ul>
+
+<p>With this model you can always see the active tasks (<em>feature</em> branches), the latest &ldquo;staging&rdquo; or &ldquo;beta&rdquo; code (<em>develop</em> branch) and the released versions (<em>master</em> branch).</p>
+
+<p>Your branches have separate meanings / purposes, which make this branching model a naturally good fit for automation.</p>
+
+<p>So with a branching model like Gitflow and through <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/webhooks/">webhooks</a>,
+you can define and automate three main scenarios:</p>
+
+<ol>
+<li>Change on a <em>feature</em> branch: while a feature is under active development you mostly
+want to continuously <strong>test the code</strong>, checking whether it still fulfills
+the defined tests, so when it&rsquo;s finished and you merge it back to the <em>develop</em> branch,
+it won&rsquo;t break anything.</li>
+<li>Change on <em>develop</em> branch: this is the main integration point of finished features / tasks.
+If you or your team works on multiple features simultaneously, those independent features might introduce
+conflicting changes, so you want to always <strong>test</strong> the code changes on <em>develop</em> to detect these breaking changes.
+If the tests do pass, you or your testers might want to give a manual spin for that particular version
+of the app, so you configure an <strong>automatic deployment</strong> which should make the version accessible
+for those use are in charge of testing the new versions.
+It&rsquo;s also a good idea to <strong>notify the testers</strong> when a new test version is available.</li>
+<li>Everything worked, your app is rock solid, was tested both automatically with unit and other tests
+and manually by your internal testers, and now it&rsquo;s ready for prime time.
+Fantastic! Now you can create a <em>release</em>, which in Gitflow will merge the code from <em>develop</em> into
+the <em>master</em> branch. As always, just to be absolutely sure, you want to run
+your <strong>automatic tests</strong> one last time.
+If it passes you want to <strong>build the release version of the App</strong>,
+<strong>deploy it</strong> for your external beta testers / your project manager / anyone who agreed
+to test your precious app before the App Store submission.
+And of course you don&rsquo;t want to forget to <strong>invite your testers</strong>, do you?</li>
+</ol>
+
+<p>The beauty of Gitflow (or a similar branching model) is that if you use an automation service
+like <a href="https://www.bitrise.io/">Bitrise</a> you can define these scenarios,
+connect to the related branches and you&rsquo;ll never have to do these tasks manually.</p>
+
+<p><strong>You can just work on your code</strong>, organized into branches and that&rsquo;s all.
+<strong>Everything else will happen automatically</strong>, based on which branch changed.</p>
+
+<h2 id="git-bitrise">Git + Bitrise</h2>
+
+<p>Bitrise is built specifically to help you with this kind of automation.
+To achieve an automated workflow like the one described in the previous section this is all what you have to do:</p>
+
+<ol>
+<li><strong>Register your App&rsquo;s repository</strong> on <a href="https://www.bitrise.io/">Bitrise</a>
+(<em>Don&rsquo;t forget to setup a <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/webhooks/">webhook</a>!</em> If you connect your repository through
+our GitHub or Bitbucket integration options, Bitrise will do this automatically for you).</li>
+<li>Prepare your App&rsquo;s <strong>Primary Workflow</strong> to include the <em>tests</em> you would like to run on every code change.</li>
+<li>Create a <strong>new Workflow for your develop branch</strong> and add the <em>deployment</em>
+and <em>notification</em> steps you would like to use.
+For example, you can use Bitrise&rsquo;s built in App Deployment system
+and send email and Slack notifications when a test build is available -
+you can find dozens of Steps in our library or you can just add <em>script</em> steps
+and do anything you want to.</li>
+<li>Create another <strong>Workflow for your master branch</strong> and configure it for
+the <em>deployment</em> of release versions, <em>notifying</em> your beta testers or project manager,
+maybe even <a href="https://github.com/bitrise-io/steps-sms-text-message">Send a Text message</a>.</li>
+</ol>
+
+<p><em>That&rsquo;s all, no other setup is required</em>.
+You can customize your Workflows the way you want and you can
+<strong>control everything with nothing but your code repository!</strong></p>
+
+<p>!!! note
+    You can create unlimited number of Workflows
+    so if you have a more complex branching model
+    you can configure your automations to support the way you work.</p>
+
+<p>We have a great amount of Steps you can choose from
+and <strong>all of these Steps are open source</strong>,
+so if you want to modify one or create a brand new Step you can do that too!</p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/download-or-replace-project-resources/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tutorials/hipchat-message/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

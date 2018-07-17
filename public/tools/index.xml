@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tools/</link>
+    <description>Recent content in Tools on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tools/bitrise-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tools/bitrise-tools/</guid>
+      <description>List of Open Source tools maintained by the Bitrise team.
+!!! note &amp;ldquo;Where can I find the repositories?&amp;rdquo; For historical reasons the core Bitrise CLI tools live in github.com/bitrise-io, but most of our tools, and every new tool we create lives in the github.com/bitrise-tools, and the CLI core components (plugins, etc.) in the github.com/bitrise-core GitHub organization.
+Core, Bitrise CLI tools  bitrise - the Bitrise CLI, which is used on bitrise.</description>
+    </item>
+    
+  </channel>
+</rss>

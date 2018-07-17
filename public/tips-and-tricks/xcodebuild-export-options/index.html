@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/xcodebuild-export-options/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/xcodebuild-export-options/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<p>If you create a new iOS app on <a href="https://www.bitrise.io/">bitrise.io</a>
+the generated default workflow wil include our <code>Xcode Archive</code> step.
+This step can manage to archive and export your iOS app.</p>
+
+<h2 id="a-bit-of-history-and-technical-info">A bit of history and technical info</h2>
+
+<p>If the step is used with <code>Xcode 6</code> it&rsquo;ll generate the following (legacy) command to export
+the <code>ipa</code> of your app (you can see it in the step&rsquo;s log):</p>
+
+<pre><code>xcodebuild -exportArchive \
+	-exportFormat ipa \
+	-archivePath &quot;/var/folders/lb/8n5bn9k975qgw662jpqdy7mm0000gn/T/bitrise-xcarchive.YnAMfpzJ/ios-simple-objc.xcarchive&quot; \
+	-exportPath &quot;/Users/vagrant/deploy/ios-simple-objc.ipa&quot; \
+	-exportProvisioningProfile &quot;Xyz&quot;
+</code></pre>
+
+<p>Back in the days of Xcode 6 this was everything you had to do; just specify the format to be <code>ipa</code>
+and set the required paths and the Provisioning Profile to be used for code signing the <code>ipa</code>.</p>
+
+<p><code>Xcode 7</code> introduced a lot of additional archive feature and the support for
+defining more complex archive parameters. This meant that although Xcode 7 still supports
+the old parameters, it&rsquo;s now declared as <strong>deprecated</strong>, and you&rsquo;d get
+the following warning if you&rsquo;d use the old parameters instead of the new <code>-exportOptionsPlist</code> parameter:</p>
+
+<pre><code>xcodebuild: WARNING: -exportArchive without -exportOptionsPlist is deprecated
+</code></pre>
+
+<p>The export command&rsquo;s <strong>new version</strong> expects a Plist file (<code>-exportOptionsPlist</code>),
+which should include all the archive parameters (including code signing type/method,
+and other parameters like enable/disable Bitcode). The full command looks like this:</p>
+
+<pre><code>xcodebuild -exportArchive \
+	-archivePath &quot;/var/folders/lb/8n5bn9k975qgw662jpqdy7mm0000gn/T/bitrise-xcarchive.QbpHVvNx/ios-simple-objc.xcarchive&quot; \
+	-exportPath &quot;/var/folders/lb/8n5bn9k975qgw662jpqdy7mm0000gn/T/bitrise-xcarchive.aCvNPRAi&quot; \
+	-exportOptionsPlist &quot;/Users/vagrant/deploy/export_options.plist&quot;
+</code></pre>
+
+<p>By default the <code>Xcode Archive</code> step generates the minimal sufficient Plist file,
+with only the export <code>method</code> defined in it (unless you specify the <code>export_options_path</code> input,
+we&rsquo;ll get back to this a bit later):</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple Computer//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+	&lt;key&gt;method&lt;/key&gt;
+	&lt;string&gt;development&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre>
+
+<h2 id="about-the-xcode-archive-step-generated-export-options">About the Xcode Archive step generated export options</h2>
+
+<p>The default <strong>generated</strong> export options Plist file only specifies
+the <strong>export method</strong> (<code>app-store</code>, <code>ad-hoc</code>, <code>enterprise</code> or <code>development</code>)
+based on the provisioning profile embedded in the <code>.xcarchive</code> (which is generated by the <code>xcodebuild archive</code>
+command, also performed by the <code>Xcode Archive</code> step, right before the <code>xcodebuild -exportArchive</code> command).</p>
+
+<p><em>The embedded provisioning profile depends on your code sign settings in your project.
+You can force the desired code signing configuration
+with <code>Xcode Archive</code> step&rsquo;s <code>force_code_sign_identity</code> and <code>force_provisioning_profile</code> inputs.
+You can find more information about these options in the <a href="ios/code-signing">iOS Code Signing</a> article.</em></p>
+
+<p>Every other export option which can be defined in the Plist is optional.</p>
+
+<h2 id="use-your-own-export-options">Use your own export options</h2>
+
+<p>In case of the default export_options.plist does not fit your needs,
+you can specify your own export options too.
+To do this create a plist file (in your repository) with the options you want to use.</p>
+
+<p>!!! note &ldquo;Available export options&rdquo;
+    You can get a list of all available options by calling <code>xcodebuild -h</code> -
+    check the <strong>Available keys for -exportOptionsPlist:</strong> section of the printed help.</p>
+
+<p><em>These are the options you can select in Xcode when you export the ipa manually.</em></p>
+
+<p>The <strong>recommanded</strong> way is to <strong>put this generated plist file in your project&rsquo;s repository</strong>.
+Then you can set <code>Xcode Archive</code> step&rsquo;s <code>export_options_path</code> input
+to the path of your plist file (e.g. <code>./path/to/export-options.plist</code>).</p>
+
+<h3 id="disable-bitcode-in-ipa">Disable bitcode in ipa</h3>
+
+<p><strong>By default uploadBitcode export options is set to YES</strong>, unless you specifically disable
+it in the export options Plist.
+If it does not fit your requirements you have to use your own export options,
+instead of the archive steps generated one.</p>
+
+<p>Your export options plist should look like:</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple Computer//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+	&lt;key&gt;method&lt;/key&gt;
+	&lt;string&gt;app-store&lt;/string&gt;
+	&lt;key&gt;uploadBitcode&lt;/key&gt;
+	&lt;false/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre>
+
+<p>!!! note &ldquo;Code Signing note&rdquo;
+    Of course, if you set the <code>method</code> to <code>app-store</code> then you have to upload / use
+    an App Store code signing Identity &amp; Provisioning Profile (it have to be
+    available in the system).</p>
+
+<h3 id="related-issues">Related issues:</h3>
+
+<h4 id="error-itms-90635-invalid-mach-o-format">ERROR ITMS-90635: Invalid Mach-O Format</h4>
+
+<pre><code>Transporter Error Output: ERROR ITMS-90635: Invalid Mach-O Format.
+...
+Verify that all of the targets for a platform have a consistent value for the ENABLE_BITCODE build setting.
+...
+</code></pre>
+
+<p>This error occurs if you have different <code>ENABLE_BITCODE</code> settings
+in your (sub)projects, including the projects generated by CocoaPods for example.</p>
+
+<p>If you use CocoaPods you can <strong>override the <code>ENABLE_BITCODE</code> in the pod projects</strong> by adding
+the following section to your <code>Podfile</code>:</p>
+
+<p>For CocoaPods 1.0+:</p>
+
+<pre><code>post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
+  end
+end
+</code></pre>
+
+<p>For CocoaPods 0.39 and below:</p>
+
+<pre><code>post_install do |installer|
+  installer.project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
+  end
+end
+</code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/write-your-own-scanner/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tools/bitrise-tools/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

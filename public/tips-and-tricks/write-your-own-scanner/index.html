@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/write-your-own-scanner/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/write-your-own-scanner/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<h1 id="write-your-own-project-scanner">Write your own project scanner</h1>
+
+<p>When you add a <strong>new app</strong> on bitrise, it will run a <a href="https://github.com/bitrise-steplib/steps-project-scanner">project-scanner step</a> to figure out the <strong>project&rsquo;s type</strong> and generate a <strong>configuration</strong> based on the type. Same functionality exist as a bitrise cli <a href="https://github.com/bitrise-core/bitrise-plugins-init">plugin</a>.</p>
+
+<p>Both the step and the plugin uses our shared <a href="https://github.com/bitrise-core/bitrise-init">bitrise-init tool</a>, which is responsible for detecting project type and generating the raleted bitrise configuration (bitrise.yml).</p>
+
+<p><strong>bitrise-init tool</strong> is <strong>open source</strong> and designed to <strong>easily add new project type</strong> support. The following article will explain, how to write your own project scanner.</p>
+
+<h2 id="bitrise-init-tool">bitrise-init tool</h2>
+
+<p>The tool is written in <a href="https://golang.org">golang</a> and built with <strong>command line interface</strong>.</p>
+
+<p>In the <code>cli</code> package you can find <code>init_config.go</code> which is responsible to initialize a bitrise configuration file.</p>
+
+<p>It does the followings:</p>
+
+<ol>
+<li><strong>Collects the cli inputs</strong> (dir, output-dir, format, &hellip;) which configures the init process and prints this params</li>
+<li><strong>Instantiates</strong> the currently available <strong>project scanners</strong> (ios, android, xamarin, fastlane) and puts them into an array</li>
+<li>Iterates through the scanner array, <strong>calls the scanner</strong> interface methods on every scanner and collects them outputs<br /></li>
+<li>Based on the scanner outputs <strong>generates the configurations</strong></li>
+</ol>
+
+<p><strong>To contribure and write your own scanner you have to do the followings:</strong></p>
+
+<ol>
+<li>Fork the <a href="https://github.com/bitrise-steplib/steps-project-scanner">project</a></li>
+<li>Write your project type detection functionality guided by the <code>ScannerInterface</code><br />
+<em>Every new scanner has to put into new package inside the scanners package and has to contain go tests.</em></li>
+<li>Instantiate and add the new scanner to the scanner list in <code>cli/init_config.go</code></li>
+<li>Test with the specified project type</li>
+<li>Create a PR</li>
+</ol>
+
+<h2 id="scannerinterface">ScannerInterface</h2>
+
+<p><strong>Declaration (<code>scanners/scanners.go</code>):</strong></p>
+
+<pre><code>// ScannerInterface ...
+type ScannerInterface interface {
+	Name() string
+	Configure(searchDir string)
+
+	DetectPlatform() (bool, error)
+
+	Options() (models.OptionModel, error)
+	DefaultOptions() models.OptionModel
+
+	Configs() (models.BitriseConfigMap, error)
+	DefaultConfigs() (models.BitriseConfigMap, error)
+}
+</code></pre>
+
+<ul>
+<li>You have to provide a simple name of the project type you will detect and return with that in <code>Name()</code> function.<br /></li>
+<li>Scanner will be configured (<code>Configure(searchDir string)</code>) with the search directoy (where the scanner should scan).<br /></li>
+<li><code>DetectPlatform()</code> should return true, if desired platform is detected.<br />
+It has to be a small logic, which quickly decide. If it return with falss, the scanner loop will continue with the next detector.<br /></li>
+<li><code>Options()</code> has to return with an <code>OptionModel</code> instance. This model represents an option for a step input, which will be asked from the user.<br />
+<em>Lets say ios project scanner found three schemes and later the user has to decide which one to use in the bitrise.yml.<br />
+See more in OptionModel section.</em></li>
+<li><code>Configs()</code> return value should hold the possible workflow variations.<br />
+If we stay at ios example, lats say project contains two sub project one of them has a test project also. In this case scanner should pass back at <em>least</em> two workflows, one with test and another one without test, because which workflow will be used, depends on which project will be selected.</li>
+<li>Later about <code>Defult</code> prefixed methods.</li>
+</ul>
+
+<h2 id="optionmodel">OptionModel</h2>
+
+<p>OptionModel represents an input, with possible values.<br />
+Every value can contain a new OptionModel, which is available if the value will be selected.</p>
+
+<p><strong>Declaration (<code>models/models.go</code>):</strong></p>
+
+<pre><code>// OptionModel ...
+type OptionModel struct {
+	Title  string 
+	EnvKey string 
+
+	ValueMap OptionValueMap 
+	Config   string         
+}
+</code></pre>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>title: Path to the gradle file to use
+env_key: GRADLE_BUILD_FILE_PATH
+value_map:
+  build.gradle:
+    title: Gradle task to run
+    env_key: GRADLE_TASK
+    value_map:
+      assembleAndroidTest:
+        title: Gradlew file path
+        env_key: GRADLEW_PATH
+        value_map:
+          ./gradlew:
+            config: android-gradlew-config
+      assembleDebug:
+        title: Gradlew file path
+        env_key: GRADLEW_PATH
+        value_map:
+          ./gradlew:
+            config: android-gradlew-config
+  app/build.gradle:
+    title: Gradle task to run
+    env_key: GRADLE_TASK
+    value_map:
+      assembleAndroidTest:
+        title: Gradlew file path
+        env_key: GRADLEW_PATH
+        value_map:
+          ./gradlew:
+            config: android-gradlew-config
+      assembleDebug:
+        title: Gradlew file path
+        env_key: GRADLEW_PATH
+        value_map:
+          ./gradlew:
+            config: android-gradlew-config
+</code></pre>
+
+<p>Every OptionModel instance represents a step input with the possible values.</p>
+
+<ul>
+<li><code>Title</code> is title of the related input.<br /></li>
+<li><code>EnvKey</code> is a key for the environment variable, which will be set as value of the related input.<br /></li>
+<li><code>Valuemap</code> contains the possible values of the input.<br /></li>
+<li><code>Config</code> holds which config should be used if this option value is selected.</li>
+</ul>
+
+<h2 id="bitriseconfigmap">BitriseConfigMap</h2>
+
+<p>BitriseConfigMap maps the name of the bitrise.yml and the value is a bitrise.yml as a raw string.<br />
+The name of the bitrse.yml is last OptionModel&rsquo;s Config&rsquo;s value.</p>
+
+<p><strong>Declaration (<code>models/models.go</code>):</strong></p>
+
+<pre><code>// BitriseConfigMap ...
+type BitriseConfigMap map[string]string
+</code></pre>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>fastlane:
+  default-fastlane-config: |
+    format_version: 1.2.0
+    default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+    trigger_map:
+    - pattern: '*'
+      is_pull_request_allowed: true
+      workflow: primary
+    workflows:
+      primary:
+        steps:
+        - git-clone@3.2.0: {}
+        - fastlane@2.2.0:
+            inputs:
+            - lane: $FASTLANE_LANE
+            - work_dir: $FASTLANE_WORK_DIR
+ios:
+  default-ios-config: |
+    format_version: 1.2.0
+    default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+    trigger_map:
+    - pattern: '*'
+      is_pull_request_allowed: true
+      workflow: primary
+    workflows:
+      primary:
+        steps:
+        - git-clone@3.2.0: {}
+        - xcode-archive@1.7.3:
+            inputs:
+            - project_path: $BITRISE_PROJECT_PATH
+            - scheme: $BITRISE_SCHEME
+</code></pre>
+
+<hr />
+
+<blockquote>
+<p>For more infos and examples check out the existing scanners.</p>
+</blockquote>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/use-bitrise-yml-from-repository/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/tips-and-tricks/xcodebuild-export-options/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

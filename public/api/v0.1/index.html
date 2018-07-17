@@ -1,0 +1,4280 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title> - Material Docs</title>
+    <meta name="generator" content="Hugo 0.44" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/v0.1/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/v0.1/">
+    <meta property="og:title" content="Material Docs">
+    <meta property="og:image" content="/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Material Docs">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/fonts/icon.eot?52m981');
+        src: url('/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('/fonts/icon.woff?52m981')
+               format('woff'),
+             url('/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/application.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/images.css">
+
+    <link rel="stylesheet" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/modernizr.js"></script>
+
+    
+
+  
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+  </head>
+  <body class="palette-primary-red palette-accent-teal">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/digitalcraftsman" title="@digitalcraftsman on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/digitalcraftsman/hugo-material-docs" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
+        
+          <br>
+          digitalcraftsman/hugo-material-docs
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/digitalcraftsman/hugo-material-docs/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting Started" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/getting-started/">
+	
+	Getting Started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="API" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/">
+	
+	API
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding content" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/adding-content/">
+	
+	Adding content
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/roadmap/">
+	
+	Roadmap
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Infrastructure" href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/infrastructure/">
+	
+	Infrastructure
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/digitalcraftsman" target="_blank" title="@digitalcraftsman on GitHub">
+              @digitalcraftsman on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:hello@email.com" title="Email of hello@email.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<p>!!! warning &ldquo;The API is work-in-progress&rdquo;
+    The API is work-in-progress, we&rsquo;ll add docs for new endpoints here as we progress,
+    as well as we might change things a bit if required.</p>
+
+<ul>
+<li>Join the discussion at: <a href="https://discuss.bitrise.io/t/bitrise-api-v0-1-work-in-progress/1554">https://discuss.bitrise.io/t/bitrise-api-v0-1-work-in-progress/1554</a>.
+Follow it if you want to get notified about new endpoints and changes,
+we announce those there.</li>
+<li>If you want to request a new API feature / endpoint,
+please do it here: <a href="http://discuss.bitrise.io/t/bitrise-public-api/37">http://discuss.bitrise.io/t/bitrise-public-api/37</a></li>
+</ul>
+
+<h2 id="api-domain-host-and-versioning">API domain/host and versioning</h2>
+
+<p>The Bitrise API&rsquo;s host is: <a href="https://api.bitrise.io/">https://api.bitrise.io/</a></p>
+
+<p>Every endpoint except the root one is versioned, and the version have to be included in the URL right after the host.</p>
+
+<p>Example: <a href="https://api.bitrise.io/v0.1/me">https://api.bitrise.io/v0.1/me</a> (requires authentication)</p>
+
+<p>Right now we have only one version, <code>v0.1</code>.</p>
+
+<p>There&rsquo;s no long term compatibility promise for <code>v0.1</code>, although we try to do our best to not to break anything unless we have to. Once we&rsquo;re happy with <code>v0.1</code> we&rsquo;ll &ldquo;freeze&rdquo; it as <code>v1.0</code>, for which we&rsquo;ll provide long term support.</p>
+
+<h2 id="authentication">Authentication</h2>
+
+<p>The current API supports only one type of authentication, user generated <strong>Personal Access Tokens</strong>.</p>
+
+<p>Right now <strong>every API endpoint requires authentication</strong>, there&rsquo;s no endpoint which you can call without including the authentication information, except the &ldquo;root&rdquo; URL (<a href="https://api.bitrise.io">https://api.bitrise.io</a>).</p>
+
+<p>To acquire a Personal Access Token for your user, sign in with that user on <a href="https://www.bitrise.io">bitrise.io</a>, go to your <strong>Account Settings</strong> page, and select the <a href="https://www.bitrise.io/me/profile#/security">Security</a> tab on the left side.</p>
+
+<p>Here you can manage your account&rsquo;s Two Factor Authentication settings, as well as your Personal Access Tokens.</p>
+
+<p>To get started with the API simply click the <strong>Generate new token</strong> button, and save the generated Personal Access Token somewhere safe.</p>
+
+<p><strong>Important note: the generated token is shown only once, when it&rsquo;s generated!</strong> There&rsquo;s no way to see the token value again! You can of course generate as many Access Tokens as you like, and delete the ones you don&rsquo;t need anymore.</p>
+
+<p>Once you have the token you can start interacting with the API.</p>
+
+<p>To provide the required access token you have to add a <strong>HEADER</strong> to your requests, with the key <code>Authorization</code> and value <code>token THE-ACCESS-TOKEN</code>.</p>
+
+<p>An example API call with auth, using <code>curl</code>:</p>
+
+<pre><code class="language-javascript">var request = require(&quot;request&quot;);
+
+var options = { method: 'GET',
+  url: 'https://api.bitrise.io/v0.1/me',
+  headers:
+   { 'Cache-Control': 'no-cache',
+     'Authorization': 'token THE-ACCESS-TOKEN' } };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+</code></pre>
+
+<pre><code class="language-ruby">require 'uri'
+require 'net/http'
+
+url = URI(&quot;https://api.bitrise.io/v0.1/me&quot;)
+
+http = Net::HTTP.new(url.host, url.port)
+
+request = Net::HTTP::Get.new(url)
+request[&quot;Authorization&quot;] = 'token THE-ACCESS-TOKEN'
+request[&quot;Cache-Control&quot;] = 'no-cache'
+request[&quot;Postman-Token&quot;] = '1186a653-efe4-cbe4-41c9-f4f46c47a5c5'
+
+response = http.request(request)
+puts response.read_body
+</code></pre>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' https://api.bitrise.io/v0.1/me
+</code></pre>
+
+<h2 id="response">Response</h2>
+
+<p>Every endpoint responds with a JSON formatted response.</p>
+
+<h3 id="pagination">Pagination</h3>
+
+<p>When you call an endpoint which returns a list of items you always have to be prepared that you might not get the whole list in a single response, you&rsquo;ll have to iterate through the &ldquo;pages&rdquo; to retrieve all the items.</p>
+
+<p>The response of the endpoint will include a <code>paging</code> object, with <code>total_item_count</code> and <code>page_item_limit</code> properties, and if there&rsquo;s a &ldquo;next&rdquo; page available it&rsquo;ll also include a <code>next</code> &ldquo;anchor&rdquo; item.</p>
+
+<p>Example:</p>
+
+<pre><code class="language-javascript">{
+  &quot;data&quot;: [ ... ],
+  &quot;paging&quot;: {
+    &quot;total_item_count&quot;: 3,
+    &quot;page_item_limit&quot;: 2,
+    &quot;next&quot;: &quot;518e869d56f2adfd&quot;
+  }
+}
+</code></pre>
+
+<p><em>Note: the <code>next</code> property of the <code>paging</code> object is only included if there&rsquo;s at least one more page available. If there&rsquo;s no <code>next</code> property inside <code>paging</code> that means that there&rsquo;s no more page to retrieve.</em></p>
+
+<p>The <code>page_item_limit</code> property can be set with the query parameter named <code>limit</code> at the GET requests, so you can specify the size of the response pages. The default and also maximum value for this parameter is 50.</p>
+
+<p>Example:</p>
+
+<ul>
+<li>Calling <code>https://api.bitrise.io/v0.1/me/apps</code> will retrieve you the first page of your apps with size of 50.</li>
+<li>If you call <code>https://api.bitrise.io/v0.1/me/apps?limit=10</code>, the response is also the first page of your apps, but it will contain only 10 elements.</li>
+</ul>
+
+<p>If you want to iterate through all the items this is what you have to do:</p>
+
+<ol>
+<li>First call the endpoint without any pagination parameters</li>
+<li>From the response process the <code>paging</code> object.</li>
+<li>If the <code>paging</code> object includes a <code>next</code> item, simply call the exact same endpoint with an additional <code>next=</code> query parameter, and pass the value you got in the response as the value of the <code>next</code> parameter.</li>
+</ol>
+
+<p>That&rsquo;s all.</p>
+
+<p>A quick example, iterating through all of your registered apps:</p>
+
+<ol>
+<li>First call <code>https://api.bitrise.io/v0.1/me/apps</code></li>
+<li>Process the items (<code>data</code> property)</li>
+<li>Then check the <code>paging</code> (root) property.</li>
+<li>If there&rsquo;s a <code>next</code> property inside <code>paging</code> simply call the endpoint again, with the <code>next</code> query parameter
+
+<ul>
+<li>Example: <code>https://api.bitrise.io/v0.1/me/apps?next=NEXTVALUE</code>, where <code>NEXTVALUE</code> is the value of the <code>next</code> property you got in your previous response.</li>
+</ul></li>
+<li>Repeate this until the <code>paging</code> object does not include a <code>next</code> property, which means that the page you received was the last one.</li>
+</ol>
+
+<h2 id="endpoints">Endpoints</h2>
+
+<h3 id="root-urls">Root URLs</h3>
+
+<p>Both <code>/</code> and <code>/v0.1</code> are considered as root URLs, and return the same response at the moment (of course this will change in the future, once we have more than one version of the API).</p>
+
+<p>These are the only endpoints which do not require authentication.</p>
+
+<p>Example <code>curl</code> request:</p>
+
+<pre><code class="language-shell">curl https://api.bitrise.io/v0.1
+</code></pre>
+
+<h3 id="get-me">GET /me</h3>
+
+<p>You can use this endpoint to get information about your account (identified by the Access Token).</p>
+
+<h4 id="example-curl-request">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/me'
+</code></pre>
+
+<h4 id="example-response">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;avatar_url&quot;: &quot;https://secure.gravatar.com/avatar/f50ae2f0652b92e9dbdcc7b8d9d348a0&quot;,
+    &quot;slug&quot;: &quot;8e82ac7601178f17&quot;,
+    &quot;username&quot;: &quot;api-demo&quot;
+  }
+}
+</code></pre>
+
+<h3 id="get-users-user-slug">GET /users/USER-SLUG</h3>
+
+<p>Get information about a specific user account.</p>
+
+<h4 id="example-curl-request-1">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/users/USER-SLUG'
+</code></pre>
+
+<h4 id="example-response-1">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;avatar_url&quot;: &quot;https://secure.gravatar.com/avatar/f50ae2f0652b92e9dbdcc7b8d9d348a0&quot;,
+    &quot;slug&quot;: &quot;8e82ac7601178f17&quot;,
+    &quot;username&quot;: &quot;api-demo&quot;
+  }
+}
+</code></pre>
+
+<h3 id="get-organizations">GET /organizations</h3>
+
+<p>List the organizations you are part of.</p>
+
+<h4 id="example-curl-request-2">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/organizations'
+</code></pre>
+
+<h4 id="example-response-2">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;avatar_icon_url&quot;: &quot;https://bitrise-public-content-production.s3.amazonaws.com/org-icons/default_avatar-01.png&quot;,
+      &quot;name&quot;: &quot;APIDemoOrg&quot;,
+      &quot;slug&quot;: &quot;e1ec3dea540bcf21&quot;
+    },
+    {
+      &quot;avatar_icon_url&quot;: &quot;https://bitrise-public-content-production.s3.amazonaws.com/org-icons/default_avatar-03.png&quot;,
+      &quot;name&quot;: &quot;SecondApiDemoOrg&quot;,
+      &quot;slug&quot;: &quot;04da60feea593f6c&quot;
+    }
+  ]
+}
+</code></pre>
+
+<h3 id="get-organizations-org-slug">GET /organizations/ORG-SLUG</h3>
+
+<p>Get information about a specific oraganization account.</p>
+
+<h4 id="example-curl-request-3">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/organizations/USER-SLUG'
+</code></pre>
+
+<h4 id="example-response-3">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;avatar_icon_url&quot;: &quot;https://bitrise-public-content-production.s3.amazonaws.com/org-icons/default_avatar-01.png&quot;,
+    &quot;name&quot;: &quot;APIDemoOrg&quot;,
+    &quot;slug&quot;: &quot;e1ec3dea540bcf21&quot;
+  }
+}
+</code></pre>
+
+<h3 id="get-apps">GET /apps</h3>
+
+<p>Retrieve the apps you have access to. This includes the apps created / owned by you, as well as apps where you&rsquo;re a Team member (either added directly, or through an Organization&rsquo;s Group). All the apps you have access to (similar to the Dashboard on <a href="https://www.bitrise.io">bitrise.io</a>.</p>
+
+<p><em>Note: the <code>/me/apps</code> endpoint is also working and the same as above, but it&rsquo;s deprecated</em></p>
+
+<h4 id="example-curl-request-4">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps?limit=2'
+</code></pre>
+
+<h4 id="example-response-4">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;is_disabled&quot;: false,
+      &quot;is_public&quot;: false,
+      &quot;owner&quot;: {
+        &quot;account_type&quot;: &quot;organization&quot;,
+        &quot;name&quot;: &quot;APIDemoOrg&quot;,
+        &quot;slug&quot;: &quot;e1ec3dea540bcf21&quot;
+      },
+      &quot;project_type&quot;: &quot;ios&quot;,
+      &quot;provider&quot;: &quot;github&quot;,
+      &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+      &quot;repo_slug&quot;: &quot;sample-apps-ios-swift-xcode6&quot;,
+      &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-ios-swift-xcode6.git&quot;,
+      &quot;slug&quot;: &quot;93f256e365d929d3&quot;,
+      &quot;status&quot;: 1,
+      &quot;title&quot;: &quot;sample-apps-ios-swift-xcode6&quot;
+    },
+    {
+      &quot;is_disabled&quot;: false,
+      &quot;is_public&quot;: false,
+      &quot;owner&quot;: {
+        &quot;account_type&quot;: &quot;user&quot;,
+        &quot;name&quot;: &quot;api-demo&quot;,
+        &quot;slug&quot;: &quot;8e82ac7601178f17&quot;
+      },
+      &quot;project_type&quot;: &quot;xamarin&quot;,
+      &quot;provider&quot;: &quot;github&quot;,
+      &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+      &quot;repo_slug&quot;: &quot;sample-apps-xamarin-cross-platform&quot;,
+      &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-xamarin-cross-platform.git&quot;,
+      &quot;slug&quot;: &quot;f46e89061e967f27&quot;,
+      &quot;status&quot;: 1,
+      &quot;title&quot;: &quot;sample-apps-xamarin-cross-platform&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;next&quot;: &quot;13533d589b89fb4b&quot;,
+    &quot;page_item_limit&quot;: 2,
+    &quot;total_item_count&quot;: 5
+  }
+}
+</code></pre>
+
+<h4 id="sorting-parameters-for-app-list">Sorting parameters for app list</h4>
+
+<p>There are two available sorting parameter for this endpoint:</p>
+
+<ul>
+<li><strong><code>created_at</code>:</strong> descending order by the <code>created_at</code> attribute (default)</li>
+<li><strong><code>last_build_at</code>:</strong> it&rsquo;s ordered by <code>last_build_at</code> attribute in descending order,</li>
+</ul>
+
+<h5 id="example-curl-request-5">Example <code>curl</code> request</h5>
+
+<p>Request:</p>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps?limit=2&amp;sort_by=last_build_at'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;is_disabled&quot;: false,
+      &quot;is_public&quot;: false,
+      &quot;owner&quot;: {
+        &quot;account_type&quot;: &quot;organization&quot;,
+        &quot;name&quot;: &quot;APIDemoOrg&quot;,
+        &quot;slug&quot;: &quot;e1ec3dea540bcf21&quot;
+      },
+      &quot;project_type&quot;: &quot;ios&quot;,
+      &quot;provider&quot;: &quot;github&quot;,
+      &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+      &quot;repo_slug&quot;: &quot;sample-apps-ios-swift-xcode6&quot;,
+      &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-ios-swift-xcode6.git&quot;,
+      &quot;slug&quot;: &quot;93f256e365d929d3&quot;,
+      &quot;status&quot;: 1,
+      &quot;title&quot;: &quot;sample-apps-ios-swift-xcode6&quot;
+    },
+    {
+      &quot;is_disabled&quot;: false,
+      &quot;is_public&quot;: false,
+      &quot;owner&quot;: {
+        &quot;account_type&quot;: &quot;user&quot;,
+        &quot;name&quot;: &quot;api-demo&quot;,
+        &quot;slug&quot;: &quot;8e82ac7601178f17&quot;
+      },
+      &quot;project_type&quot;: &quot;android&quot;,
+      &quot;provider&quot;: &quot;github&quot;,
+      &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+      &quot;repo_slug&quot;: &quot;sample-apps-android-sdk22&quot;,
+      &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22.git&quot;,
+      &quot;slug&quot;: &quot;669403bffbe35909&quot;,
+      &quot;status&quot;: 1,
+      &quot;title&quot;: &quot;sample-apps-android-sdk22&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;next&quot;: &quot;13533d589b89fb4b&quot;,
+    &quot;page_item_limit&quot;: 2,
+    &quot;total_item_count&quot;: 5
+  }
+}
+</code></pre>
+
+<h3 id="get-users-user-slug-apps">GET /users/USER-SLUG/apps</h3>
+
+<p>Also you can list apps for a specific user, obviously only those applicaitons with be listed in this response, which you have required rights. This endpoint works and responses the same as the <code>/apps</code> one, so you can use the same parameters too.</p>
+
+<p><em>Note: this endpoint doesn&rsquo;t work with the <code>/me</code> subroute</em></p>
+
+<h4 id="example-curl-request-6">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/users/USER-SLUG/apps?limit=2'
+</code></pre>
+
+<h4 id="example-response-5">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;is_disabled&quot;: false,
+      &quot;is_public&quot;: false,
+      &quot;owner&quot;: {
+        &quot;account_type&quot;: &quot;user&quot;,
+        &quot;name&quot;: &quot;api-demo&quot;,
+        &quot;slug&quot;: &quot;8e82ac7601178f17&quot;
+      },
+      &quot;project_type&quot;: &quot;xamarin&quot;,
+      &quot;provider&quot;: &quot;github&quot;,
+      &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+      &quot;repo_slug&quot;: &quot;sample-apps-xamarin-cross-platform&quot;,
+      &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-xamarin-cross-platform.git&quot;,
+      &quot;slug&quot;: &quot;f46e89061e967f27&quot;,
+      &quot;status&quot;: 1,
+      &quot;title&quot;: &quot;sample-apps-xamarin-cross-platform&quot;
+    },
+    {
+      &quot;is_disabled&quot;: false,
+      &quot;is_public&quot;: false,
+      &quot;owner&quot;: {
+        &quot;account_type&quot;: &quot;user&quot;,
+        &quot;name&quot;: &quot;api-demo&quot;,
+        &quot;slug&quot;: &quot;8e82ac7601178f17&quot;
+      },
+      &quot;project_type&quot;: &quot;macos&quot;,
+      &quot;provider&quot;: &quot;github&quot;,
+      &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+      &quot;repo_slug&quot;: &quot;sample-apps-osx-10-12&quot;,
+      &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-osx-10-12.git&quot;,
+      &quot;slug&quot;: &quot;13533d589b89fb4b&quot;,
+      &quot;status&quot;: 1,
+      &quot;title&quot;: &quot;sample-apps-osx-10-12&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;next&quot;: &quot;669403bffbe35909&quot;,
+    &quot;page_item_limit&quot;: 2,
+    &quot;total_item_count&quot;: 4
+  }
+}
+</code></pre>
+
+<h3 id="get-organizations-org-slug-apps">GET /organizations/ORG-SLUG/apps</h3>
+
+<p>Also you can list apps for a specific oraganization, it works the very same way as the <code>/users/USER-SLUG/apps</code> one.</p>
+
+<p><em>Note: this endpoint doesn&rsquo;t work with the <code>/me</code> subroute</em></p>
+
+<h4 id="example-curl-request-7">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/organizations/USER-SLUG/apps?limit=2'
+</code></pre>
+
+<h4 id="example-response-6">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;is_disabled&quot;: false,
+      &quot;is_public&quot;: false,
+      &quot;owner&quot;: {
+        &quot;account_type&quot;: &quot;organization&quot;,
+        &quot;name&quot;: &quot;APIDemoOrg&quot;,
+        &quot;slug&quot;: &quot;e1ec3dea540bcf21&quot;
+      },
+      &quot;project_type&quot;: &quot;ios&quot;,
+      &quot;provider&quot;: &quot;github&quot;,
+      &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+      &quot;repo_slug&quot;: &quot;sample-apps-ios-swift-xcode6&quot;,
+      &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-ios-swift-xcode6.git&quot;,
+      &quot;slug&quot;: &quot;93f256e365d929d3&quot;,
+      &quot;status&quot;: 1,
+      &quot;title&quot;: &quot;sample-apps-ios-swift-xcode6&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 2,
+    &quot;total_item_count&quot;: 1
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug">GET /apps/{APP-SLUG}</h3>
+
+<p>Get a specific app&rsquo;s data.</p>
+
+<h4 id="example-curl-request-8">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG'
+</code></pre>
+
+<h4 id="example-response-7">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;is_disabled&quot;: false,
+    &quot;is_public&quot;: false,
+    &quot;owner&quot;: {
+      &quot;account_type&quot;: &quot;user&quot;,
+      &quot;name&quot;: &quot;api-demo&quot;,
+      &quot;slug&quot;: &quot;8e82ac7601178f17&quot;
+    },
+    &quot;project_type&quot;: &quot;android&quot;,
+    &quot;provider&quot;: &quot;github&quot;,
+    &quot;repo_owner&quot;: &quot;bitrise-samples&quot;,
+    &quot;repo_slug&quot;: &quot;sample-apps-android-sdk22&quot;,
+    &quot;repo_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22.git&quot;,
+    &quot;slug&quot;: &quot;669403bffbe35909&quot;,
+    &quot;status&quot;: 1,
+    &quot;title&quot;: &quot;sample-apps-android-sdk22&quot;
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-bitrise-yml">GET /apps/{APP-SLUG}/bitrise.yml</h3>
+
+<p>Download the bitrise.yml of your application.</p>
+
+<h4 id="example-curl-request-9">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/bitrise.yml'
+</code></pre>
+
+<h4 id="example-response-8">Example response</h4>
+
+<pre><code class="language-yaml">app:
+  envs:
+  - BITRISE_PROJECT_PATH: sample-apps-osx-10-12.xcodeproj
+    opts:
+      is_expand: false
+  - BITRISE_SCHEME: sample-apps-osx-10-12
+    opts:
+      is_expand: false
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+format_version: 1.3.1
+trigger_map:
+- push_branch: '*'
+  workflow: primary
+- pull_request_source_branch: '*'
+  workflow: primary
+workflows:
+  deploy:
+    steps:
+    - activate-ssh-key@3.1.1:
+        run_if: '{{getenv &quot;SSH_RSA_PRIVATE_KEY&quot; | ne &quot;&quot;}}'
+    - git-clone@3.4.2: {}
+    - script@1.1.3:
+        title: Do anything with Script step
+    - certificate-and-profile-installer@1.8.4: {}
+    - xcode-test-mac:
+        inputs:
+        - project_path: $BITRISE_PROJECT_PATH
+        - scheme: $BITRISE_SCHEME
+    - xcode-archive-mac@1.4.0:
+        inputs:
+        - project_path: $BITRISE_PROJECT_PATH
+        - scheme: $BITRISE_SCHEME
+    - deploy-to-bitrise-io@1.2.9: {}
+  primary:
+    steps:
+    - activate-ssh-key@3.1.1:
+        run_if: '{{getenv &quot;SSH_RSA_PRIVATE_KEY&quot; | ne &quot;&quot;}}'
+    - git-clone@3.4.2: {}
+    - script@1.1.3:
+        title: Do anything with Script step
+    - certificate-and-profile-installer@1.8.4: {}
+    - xcode-test-mac@1.1.0:
+        inputs:
+        - project_path: $BITRISE_PROJECT_PATH
+        - scheme: $BITRISE_SCHEME
+    - deploy-to-bitrise-io@1.2.9: {}
+
+</code></pre>
+
+<h3 id="post-apps-app-slug-bitrise-yml">POST /apps/{APP-SLUG}/bitrise.yml</h3>
+
+<p>Upload a new bitrise.yml for your application.</p>
+
+<h4 id="example-curl-request-10">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -X POST -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/bitrise.yml' -d '{&quot;app_config_datastore_yaml&quot;:&quot;app:\n  envs:\n  - BITRISE_PROJECT_PATH: sample-apps-osx-10-12.xcodeproj\n    opts:\n      is_expand: false\n  - BITRISE_SCHEME: sample-apps-osx-10-12\n    opts:\n      is_expand: false\ndefault_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git\nformat_version: 1.3.1\ntrigger_map:\n- push_branch: '*'\n  workflow: primary\n- pull_request_source_branch: '*'\n  workflow: primary\nworkflows:\n  deploy:\n    steps:\n    - activate-ssh-key@3.1.1:\n        run_if: '{{getenv \&quot;SSH_RSA_PRIVATE_KEY\&quot; | ne \&quot;\&quot;}}'\n    - git-clone@3.4.2: {}\n    - script@1.1.3:\n        title: Do anything with Script step\n    - certificate-and-profile-installer@1.8.4: {}\n    - xcode-test-mac:\n        inputs:\n        - project_path: $BITRISE_PROJECT_PATH\n        - scheme: $BITRISE_SCHEME\n    - xcode-archive-mac@1.4.0:\n        inputs:\n        - project_path: $BITRISE_PROJECT_PATH\n        - scheme: $BITRISE_SCHEME\n    - deploy-to-bitrise-io@1.2.9: {}\n  primary:\n    steps:\n    - activate-ssh-key@3.1.1:\n        run_if: '{{getenv \&quot;SSH_RSA_PRIVATE_KEY\&quot; | ne \&quot;\&quot;}}'\n    - git-clone@3.4.2: {}\n    - script@1.1.3:\n        title: Do anything with Script step\n    - certificate-and-profile-installer@1.8.4: {}\n    - xcode-test-mac@1.1.0:\n        inputs:\n        - project_path: $BITRISE_PROJECT_PATH\n        - scheme: $BITRISE_SCHEME\n    - deploy-to-bitrise-io@1.2.9: {}\n&quot;}'
+</code></pre>
+
+<h4 id="example-response-9">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;app&quot;: {
+    &quot;envs&quot;: [
+      {
+        &quot;BITRISE_PROJECT_PATH&quot;: &quot;sample-apps-osx-10-12.xcodeproj&quot;,
+        &quot;opts&quot;: {
+          &quot;is_expand&quot;: false
+        }
+      },
+      {
+        &quot;BITRISE_SCHEME&quot;: &quot;sample-apps-osx-10-12&quot;,
+        &quot;opts&quot;: {
+          &quot;is_expand&quot;: false
+        }
+      }
+    ]
+  },
+  &quot;default_step_lib_source&quot;: &quot;https://github.com/bitrise-io/bitrise-steplib.git&quot;,
+  &quot;format_version&quot;: &quot;1.3.1&quot;,
+  &quot;trigger_map&quot;: [
+    {
+      &quot;push_branch&quot;: &quot;*&quot;,
+      &quot;workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;pull_request_source_branch&quot;: &quot;*&quot;,
+      &quot;workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;workflows&quot;: {
+    &quot;deploy&quot;: {
+      &quot;steps&quot;: [
+        {
+          &quot;activate-ssh-key@3.1.1&quot;: {
+            &quot;run_if&quot;: &quot;{{getenv \&quot;SSH_RSA_PRIVATE_KEY\&quot; | ne \&quot;\&quot;}}&quot;
+          }
+        },
+        {
+          &quot;git-clone@3.4.2&quot;: {}
+        },
+        {
+          &quot;script@1.1.3&quot;: {
+            &quot;title&quot;: &quot;Do anything with Script step&quot;
+          }
+        },
+        {
+          &quot;certificate-and-profile-installer@1.8.4&quot;: {}
+        },
+        {
+          &quot;xcode-test-mac&quot;: {
+            &quot;inputs&quot;: [
+              {
+                &quot;project_path&quot;: &quot;$BITRISE_PROJECT_PATH&quot;
+              },
+              {
+                &quot;scheme&quot;: &quot;$BITRISE_SCHEME&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;xcode-archive-mac@1.4.0&quot;: {
+            &quot;inputs&quot;: [
+              {
+                &quot;project_path&quot;: &quot;$BITRISE_PROJECT_PATH&quot;
+              },
+              {
+                &quot;scheme&quot;: &quot;$BITRISE_SCHEME&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;deploy-to-bitrise-io@1.2.9&quot;: {}
+        }
+      ]
+    },
+    &quot;primary&quot;: {
+      &quot;steps&quot;: [
+        {
+          &quot;activate-ssh-key@3.1.1&quot;: {
+            &quot;run_if&quot;: &quot;{{getenv \&quot;SSH_RSA_PRIVATE_KEY\&quot; | ne \&quot;\&quot;}}&quot;
+          }
+        },
+        {
+          &quot;git-clone@3.4.2&quot;: {}
+        },
+        {
+          &quot;script@1.1.3&quot;: {
+            &quot;title&quot;: &quot;Do anything with Script step&quot;
+          }
+        },
+        {
+          &quot;certificate-and-profile-installer@1.8.4&quot;: {}
+        },
+        {
+          &quot;xcode-test-mac@1.1.0&quot;: {
+            &quot;inputs&quot;: [
+              {
+                &quot;project_path&quot;: &quot;$BITRISE_PROJECT_PATH&quot;
+              },
+              {
+                &quot;scheme&quot;: &quot;$BITRISE_SCHEME&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;deploy-to-bitrise-io@1.2.9&quot;: {}
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+
+<h3 id="post-apps-app-slug-provisioning-profiles">POST /apps/{APP-SLUG}/provisioning-profiles</h3>
+
+<p>Add provisioning profile for a specific application. This is the first phase of the provisioning profile upload process, calling this endpoint a new provisioning profile object is created and its slug and a presigned upload URL will be retrieved.</p>
+
+<h4 id="example-curl-request-11">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X POST -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/provisioning-profiles' -d '{&quot;upload_file_name&quot;:&quot;sample.provisionprofile&quot;,&quot;upload_file_size&quot;:2047}'
+</code></pre>
+
+<h4 id="example-response-10">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;:{
+    &quot;upload_file_name&quot;:&quot;sample.provisionprofile&quot;,
+    &quot;upload_file_size&quot;:2047,
+    &quot;slug&quot;:&quot;01C6FA6P6HRQT5PQ8RMMVVXE6W&quot;,
+    &quot;processed&quot;:false,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:false,
+    &quot;upload_url&quot;:&quot;https://concrete-userfiles-production.s3-us-west-2.amazonaws.com/build_certificates/uploads/30067/original/certs.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180216%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20180216T124240Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=content-length%3Bhost&amp;X-Amz-Signature=2bf42176650f00405abfd7b7757635c9be16b43e98013abb7f750d3c658be28e&quot;
+  }
+}
+</code></pre>
+
+<p>After this call you have to upload to AWS your provisioning profile file with the presigned URL.</p>
+
+<h4 id="example-curl-request-12">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -T sample.provisionprofile 'https://concrete-userfiles-production.s3-us-west-2.amazonaws.com/build_certificates/uploads/30067/original/certs.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180216%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20180216T124240Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=content-length%3Bhost&amp;X-Amz-Signature=2bf42176650f00405abfd7b7757635c9be16b43e98013abb7f750d3c658be28e'
+</code></pre>
+
+<h3 id="post-apps-app-slug-provisioning-profiles-provisioning-profile-slug-uploaded">POST /apps/{APP-SLUG}/provisioning-profiles/{PROVISIONING-PROFILE-SLUG}/uploaded</h3>
+
+<p>After the provisioning profile is uploaded to AWS, you have to confirm the upload with this endpoint.</p>
+
+<h4 id="example-curl-request-13">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X POST -H  'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/provisioning-profiles/PROVISIONING-PROFILE-SLUG/uploaded'
+</code></pre>
+
+<h4 id="example-response-11">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;:{
+    &quot;upload_file_name&quot;:&quot;sample.provisionprofile&quot;,
+    &quot;upload_file_size&quot;:2047,
+    &quot;slug&quot;:&quot;01C6FA6P6HRQT5PQ8RMMVVXE6W&quot;,
+    &quot;processed&quot;:false,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:false
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-provisioning-profiles">GET /apps/{APP-SLUG}/provisioning-profiles</h3>
+
+<p>List provisioning profiles for a specific application.</p>
+
+<h4 id="example-curl-request-14">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X POST -H  'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/provisioning-profiles'
+</code></pre>
+
+<h4 id="example-response-12">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;upload_file_name&quot;:&quot;sample.provisionprofile&quot;,
+      &quot;upload_file_size&quot;:2047,
+      &quot;slug&quot;:&quot;01C6FA6P6HRQT5PQ8RMMVVXE6W&quot;,
+      &quot;processed&quot;:false,
+      &quot;is_expose&quot;:true,
+      &quot;is_protected&quot;:false
+    },
+    {
+      &quot;upload_file_name&quot;:&quot;sample2.provisionprofile&quot;,
+      &quot;upload_file_size&quot;:2047,
+      &quot;slug&quot;:&quot;01C6FA6P6HRQT5PQ8RMMVVXE5T&quot;,
+      &quot;processed&quot;:true,
+      &quot;is_expose&quot;:true,
+      &quot;is_protected&quot;:true
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 2
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-provisioning-profiles-provisioning-profile-slug">GET /apps/{APP-SLUG}/provisioning-profiles/{PROVISIONING-PROFILE-SLUG}</h3>
+
+<p>Get a specific provisioning profile&rsquo;s data.</p>
+
+<h4 id="example-curl-request-15">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X POST -H  'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/provisioning-profiles/PROVISIONING-PROFILE-SLUG'
+</code></pre>
+
+<h4 id="example-response-13">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;upload_file_name&quot;:&quot;sample.provisionprofile&quot;,
+    &quot;upload_file_size&quot;:2047,
+    &quot;slug&quot;:&quot;01C6FA6P6HRQT5PQ8RMMVVXE6W&quot;,
+    &quot;processed&quot;:false,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:false,
+    &quot;download_url&quot;:&quot;https://concrete-userfiles-production.s3-us-west-2.amazonaws.com/prov_profile_documents/uploads/80144/original/sample.provisionprofile?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180322%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20180322T091652Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6dd7bb3db72aafb2d434da7b1a8f80a82a3a7a0276e84620137ed64de5025ab2&quot;
+  }
+}
+</code></pre>
+
+<p><em>Note: <code>download_url</code> is generated only when the provisioning profile&rsquo;s <code>is_protected</code> attribute is <code>false</code></em></p>
+
+<h3 id="patch-apps-app-slug-provisioning-profiles-provisioning-profile-slug">PATCH /apps/{APP-SLUG}/provisioning-profiles/{PROVISIONING-PROFILE-SLUG}</h3>
+
+<p>Set a specific subset of provisioning profile attributes. You can update the <code>is_protected</code>, <code>is_expose</code> and <code>processed</code> attributes of a provisioning profile object. There are some constraints:</p>
+
+<ol>
+<li>once the <code>is_protected</code> flag is set with value <code>true</code> it cannot be changed anymore</li>
+<li>when the value of <code>is_protected</code> is <code>true</code>, then the <code>is_expose</code> flag cannot be set to other value</li>
+<li>once <code>processed</code> flag set to true, then its value cannot be changed anymore</li>
+</ol>
+
+<p>Violating these constraints the response will be <code>Bad Request</code>.
+<em>Note: the previous <code>/apps/{APP-SLUG}/provisioning-profiles/{PROVISIONING-PROFILE-SLUG}/uploaded</code> endpoint will have the same effect as this one with the request body &lsquo;{&ldquo;processed&rdquo;:true}&rsquo;</em></p>
+
+<h4 id="example-curl-request-16">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -X PATCH -H  'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/provisioning-profiles/PROVISIONING-PROFILE-SLUG -d '{&quot;is_protected&quot;:true}'
+</code></pre>
+
+<h4 id="example-response-14">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;:{
+    &quot;upload_file_name&quot;:&quot;sample.provisionprofile&quot;,
+    &quot;upload_file_size&quot;:2047,
+    &quot;slug&quot;:&quot;01C6FA6P6HRQT5PQ8RMMVVXE6W&quot;,
+    &quot;processed&quot;:false,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:true
+  }
+}
+</code></pre>
+
+<h3 id="post-apps-app-slug-build-certificates">POST /apps/{APP-SLUG}/build-certificates</h3>
+
+<p>Add certificate file for a specific application. This is the first phase of the certificate file upload process, calling this endpoint a new certificate object is created and its slug and a presigned upload URL will be retrieved.</p>
+
+<h4 id="example-curl-request-17">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -X POST -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/build-certificates' -d '{&quot;upload_file_name&quot;:&quot;sample_cert.p12&quot;,&quot;upload_file_size&quot;:1023}'
+</code></pre>
+
+<h4 id="example-response-15">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;:{
+    &quot;upload_file_name&quot;:&quot;sample_cert.p12&quot;,
+    &quot;upload_file_size&quot;:1023,
+    &quot;slug&quot;:&quot;01C6FA2R4CB772QTDETBE0MENP&quot;,
+    &quot;processed&quot;:false,
+    &quot;certificate_password&quot;:&quot;&quot;,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:false,
+    &quot;upload_url&quot;:&quot;https://concrete-userfiles-production.s3-us-west-2.amazonaws.com/build_certificates/uploads/30067/original/certs.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180216%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20180216T124240Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=content-length%3Bhost&amp;X-Amz-Signature=2bf42176650f00405abfd7b7757635c9be16b43e98013abb7f750d3c658be28e&quot;
+  }
+}
+</code></pre>
+
+<p>After this call you have to upload to AWS your certificate file with the presigned URL.</p>
+
+<h4 id="example-curl-request-18">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -T sample_cert.p12 'https://concrete-userfiles-production.s3-us-west-2.amazonaws.com/build_certificates/uploads/30067/original/certs.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180216%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20180216T124240Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=content-length%3Bhost&amp;X-Amz-Signature=2bf42176650f00405abfd7b7757635c9be16b43e98013abb7f750d3c658be28e
+</code></pre>
+
+<h3 id="post-apps-app-slug-build-certificates-build-certificate-slug-uploaded">POST /apps/{APP-SLUG}/build-certificates/{BUILD-CERTIFICATE-SLUG}/uploaded</h3>
+
+<p>After the certificate file is uploaded to AWS, you have to confirm the upload with this endpoint.</p>
+
+<h4 id="example-curl-request-19">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -X POST -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/build-certificates/BUILD-CERTIFICATE-SLUG/uploaded'
+</code></pre>
+
+<h4 id="example-response-16">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;:{
+    &quot;upload_file_name&quot;:&quot;sample_cert.p12&quot;,
+    &quot;upload_file_size&quot;:1023,
+    &quot;slug&quot;:&quot;01C6FA2R4CB772QTDETBE0MENP&quot;,
+    &quot;processed&quot;:true,
+    &quot;certificate_password&quot;:&quot;&quot;,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:false
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-build-certificates">GET /apps/{APP-SLUG}/build-certificates</h3>
+
+<p>List build certificates for a specific application.</p>
+
+<h4 id="example-curl-request-20">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -X POST -H  'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/build-certificates'
+</code></pre>
+
+<h4 id="example-response-17">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;upload_file_name&quot;:&quot;sample_cert.p12&quot;,
+      &quot;upload_file_size&quot;:1023,
+      &quot;slug&quot;:&quot;01C6FA2R4CB772QTDETBE0MENP&quot;,
+      &quot;processed&quot;:true,
+      &quot;certificate_password&quot;:&quot;&quot;,
+      &quot;is_expose&quot;:true,
+      &quot;is_protected&quot;:false
+    },
+    {
+      &quot;upload_file_name&quot;:&quot;sample_cert_2.p12&quot;,
+      &quot;upload_file_size&quot;:1023,
+      &quot;slug&quot;:&quot;01C6FA2R4CB772QTDETBE0MEMO&quot;,
+      &quot;processed&quot;:true,
+      &quot;certificate_password&quot;:&quot;s0m3-s3cr3t-ch4r4ct3r5&quot;,
+      &quot;is_expose&quot;:true,
+      &quot;is_protected&quot;:true
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 2
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-build-certificates-build-certificate-slug">GET /apps/{APP-SLUG}/build-certificates/{BUILD-CERTIFICATE-SLUG}</h3>
+
+<p>Get a specific build certificate&rsquo;s data.</p>
+
+<h4 id="example-curl-request-21">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -X POST -H  'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/build-certificates/BUILD-CERTIFICATE-SLUG'
+</code></pre>
+
+<h4 id="example-response-18">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;upload_file_name&quot;:&quot;sample_cert.p12&quot;,
+    &quot;upload_file_size&quot;:1023,
+    &quot;slug&quot;:&quot;01C6FA2R4CB772QTDETBE0MENP&quot;,
+    &quot;processed&quot;:true,
+    &quot;certificate_password&quot;:&quot;&quot;,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:false,
+    &quot;download_url&quot;:&quot;https://concrete-userfiles-production.s3-us-west-2.amazonaws.com/prov_profile_documents/uploads/80144/original/sample.provisionprofile?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180322%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20180322T091652Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6dd7bb3db72aafb2d434da7b1a8f80a82a3a7a0276e84620137ed64de5025ab2&quot;
+  }
+}
+</code></pre>
+
+<p><em>Note: <code>download_url</code> is generated only when the build certificate&rsquo;s <code>is_protected</code> attribute is <code>false</code></em></p>
+
+<h3 id="patch-apps-app-slug-build-certificates-build-certificate-slug">PATCH /apps/{APP-SLUG}/build-certificates/{BUILD-CERTIFICATE-SLUG}</h3>
+
+<p>Set a specific subset of build certificate attributes. You can update the <code>is_protected</code>, <code>is_expose</code>, <code>certificate_password</code> and <code>processed</code> attributes of a build certificate object. There are some constraints:</p>
+
+<ol>
+<li>once the <code>is_protected</code> flag is set with value <code>true</code> it cannot be changed anymore</li>
+<li>when the value of <code>is_protected</code> is <code>true</code>, then the <code>is_expose</code> flag cannot be set to other value</li>
+<li>once <code>processed</code> flag set to true, then its value cannot be changed anymore</li>
+</ol>
+
+<p>Violating these constraints the response will be <code>Bad Request</code>.
+<em>Note: the previous <code>/apps/{APP-SLUG}/build-certificates/{BUILD-CERTIFICATE-SLUG}/uploaded</code> endpoint will have the same effect as this one with the request body &lsquo;{&ldquo;processed&rdquo;:true}&rsquo;</em></p>
+
+<h4 id="example-curl-request-22">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -X PATCH -H  'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/build-certificates/BUILD-CERTIFICATE-SLUG -d '{&quot;is_protected&quot;:true}'
+</code></pre>
+
+<h4 id="example-response-19">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;:{
+    &quot;upload_file_name&quot;:&quot;sample_cert.p12&quot;,
+    &quot;upload_file_size&quot;:1023,
+    &quot;slug&quot;:&quot;01C6FA2R4CB772QTDETBE0MENP&quot;,
+    &quot;processed&quot;:true,
+    &quot;certificate_password&quot;:&quot;&quot;,
+    &quot;is_expose&quot;:true,
+    &quot;is_protected&quot;:true
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-builds">GET /apps/{APP-SLUG}/builds</h3>
+
+<p>Get the builds of a specific app.</p>
+
+<p>Status codes (<code>status</code>) and related status texts (<code>status_text</code>):</p>
+
+<ul>
+<li><code>status</code>=0: Not finished yet.
+
+<ul>
+<li>If <code>is_on_hold</code> = <code>true</code>: the build did not start yet (<code>status_text</code>=<code>on-hold</code>)</li>
+<li>If <code>is_on_hold</code> = <code>false</code>: the build is running (<code>status_text</code>=<code>in-progress</code>).</li>
+</ul></li>
+<li><code>status</code>=1: Build finished, with success (<code>status_text</code>=<code>success</code>).</li>
+<li><code>status</code>=2: Build finished, with error (<code>status_text</code>=<code>error</code>).</li>
+<li><code>status</code>=3: Build was aborted (<code>status_text</code>=<code>aborted</code>).</li>
+</ul>
+
+<p>Build times:</p>
+
+<ul>
+<li>the actual build time is the difference of <strong><code>finished_at</code></strong> and <strong><code>environment_prepare_finished_at</code></strong></li>
+<li><strong><code>triggered_at</code></strong> is the time when the build was registered, it&rsquo;s always set, for every build. <strong>Other build times might be <code>nil</code></strong>, if the build did not get to that point yet.</li>
+<li><strong><code>started_on_worker_at</code></strong> is the time of when a worker started to process the build. The difference between <code>started_on_worker_at</code> and <code>triggered_at</code> is usually for how long the build was <strong>&ldquo;on hold&rdquo;</strong> (rarely it can also include &ldquo;waiting for worker&rdquo; but that shouldn&rsquo;t happen under usual circumstances).</li>
+<li><strong><code>environment_prepare_finished_at</code></strong> is the time when the environment of the build was fully prepared; the build starts right after this, usually under a second.</li>
+<li><strong><code>finished_at</code></strong> is when the build finished (with success or error, or the time of the &ldquo;abort&rdquo; if it was aborted). <code>finished_at</code> is <code>nil</code> in case of a running build.</li>
+</ul>
+
+<h4 id="example-curl-request-23">Example <code>curl</code> request</h4>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?limit=3'
+</code></pre>
+
+<h4 id="example-response-20">Example response</h4>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 37,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: null,
+      &quot;finished_at&quot;: null,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;b5d8ecabd4231264&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-28T09:24:49Z&quot;,
+      &quot;status&quot;: 0,
+      &quot;status_text&quot;: &quot;in-progress&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-28T09:24:49Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 36,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-05-28T08:48:48Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-05-28T08:50:37Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;fc3faedc50a610ea&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-28T08:47:50Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-28T08:47:49Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 35,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-05-14T12:12:26Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-05-14T12:13:57Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2a0b62127f2a91ec&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-14T12:11:25Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-14T12:11:24Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;next&quot;: &quot;226f809ae60c822d&quot;,
+    &quot;page_item_limit&quot;: 3,
+    &quot;total_item_count&quot;: 37
+  }
+}
+</code></pre>
+
+<h4 id="filtering-parameters-for-build-list">Filtering parameters for build list</h4>
+
+<p>It&rsquo;s possible to filter the builds with URL query parameters. These parameters evaluated with a logical AND operator.</p>
+
+<h5 id="available-parameters">Available parameters:</h5>
+
+<ul>
+<li><strong><code>status</code></strong> (integer): In the response there will be only the builds with a certain status.</li>
+<li><strong><code>branch</code></strong> (string): Retrieves the builds from the given branch.</li>
+<li><strong><code>trigger_event_type</code></strong> (string): With this parameter the builds can be filtered based on the trigger event. Data type: <em>string</em> The available values are the following:
+
+<ul>
+<li><em><code>push</code></em>: when the response contains only the builds which were triggered by a commit push</li>
+<li><em><code>pull-request</code></em>: when the response contains only the builds which were triggered by a pull request</li>
+</ul></li>
+<li><strong><code>pull_request_id</code></strong> (integer): This parameter specifies the pull request id of the actual build, works only if <code>trigger_event_type</code> parameter is specified with the value <em><code>pull-request</code></em></li>
+<li><strong><code>after</code></strong> (integer): Giving this parameter, in the response there will be only those builds which were triggered after or at the given time. The value has to be passed as UNIX timestamp.</li>
+<li><strong><code>before</code></strong> (integer): Similar to the previous one this filters by the time when the build was triggered, but this retrieves the ones before or at the given time. The value has to be passed as UNIX timestamp.</li>
+<li><strong><code>workflow</code></strong> (string): The response will contain only the builds triggered with the specified workflow.</li>
+<li><strong><code>commit_message</code></strong> (string): In the result set there will be the builds with the given commit message, this parameter is case insensitive and also retrieves the partial matches.</li>
+<li><strong><code>build_number</code></strong> (string): Retrieves build with the specified actual build number parameter.</li>
+</ul>
+
+<h5 id="example-curl-requests">Example <code>curl</code> requests</h5>
+
+<p>Request with <code>status</code> filtering (aborted builds):</p>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?status=3'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: &quot;User api-demo requested to abort this build with reason: canceled through the API&quot;,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 12,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-06-20T22:35:15Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ce86c8475d31d288&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;status&quot;: 3,
+      &quot;status_text&quot;: &quot;aborted&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-06-20T22:35:02Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: &quot;User api-demo requested to abort this build with reason: This is an example abort build&quot;,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 10,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;Abort example&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-05-30T15:47:32Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;Abort example&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;3247e2920496e846&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+      &quot;status&quot;: 3,
+      &quot;status_text&quot;: &quot;aborted&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 2
+  }
+}
+</code></pre>
+
+<p>Request with <code>branch</code> filtering (builds on <em>develop</em> branch):</p>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?branch=develop'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;develop&quot;,
+      &quot;build_number&quot;: 15,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T07:46:00Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T07:47:25Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;develop&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;1e79f459d59ec74b&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T07:46:00Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T07:45:59Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 1
+  }
+}
+</code></pre>
+
+<p>Request with <code>trigger_event_type</code> filtering (builds triggered by <em>pull request</em>):</p>
+
+<pre><code class="language-shell">curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?trigger_event_type=pull-request'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+      &quot;build_number&quot;: 22,
+      &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-02-23T14:28:15Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-02-23T14:29:41Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+        &quot;branch_dest&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+        &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+        &quot;pull_request_head_branch&quot;: &quot;pull/4/head&quot;,
+        &quot;pull_request_id&quot;: 4,
+        &quot;pull_request_merge_branch&quot;: &quot;pull/4/merge&quot;,
+        &quot;pull_request_repository_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22.git&quot;
+      },
+      &quot;pull_request_id&quot;: 4,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/4&quot;,
+      &quot;slug&quot;: &quot;2a009816d8b62496&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-02-23T14:27:07Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-02-23T14:25:57Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;create_dev_file&quot;,
+      &quot;build_number&quot;: 17,
+      &quot;commit_hash&quot;: &quot;b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+      &quot;commit_message&quot;: &quot;Create dev.txt\n\nAdd a file&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T08:48:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T08:50:13Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;create_dev_file&quot;,
+        &quot;branch_dest&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+        &quot;commit_message&quot;: &quot;Create dev.txt\n\nAdd a file&quot;,
+        &quot;pull_request_head_branch&quot;: &quot;pull/3/head&quot;,
+        &quot;pull_request_id&quot;: 3,
+        &quot;pull_request_merge_branch&quot;: &quot;pull/3/merge&quot;,
+        &quot;pull_request_repository_url&quot;: &quot;https://github.com/slapec93/sample-apps-android-sdk22.git&quot;
+      },
+      &quot;pull_request_id&quot;: 3,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/3&quot;,
+      &quot;slug&quot;: &quot;62f841f1497f5f30&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T08:47:26Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T08:47:25Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 16,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T08:31:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T08:33:05Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;pull_request_id&quot;: 3
+      },
+      &quot;pull_request_id&quot;: 3,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/3&quot;,
+      &quot;slug&quot;: &quot;b5e4e86ff62ef8ec&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T08:30:29Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T08:30:28Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 3
+  }
+}
+</code></pre>
+
+<p>Request with <code>before</code> filtering (builds triggered before 04.25.2017 1:34pm):</p>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?before=1493127294'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 6,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;unwatch test&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T12:05:48Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T12:09:26Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;unwatch test&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;cabbf96b36031c45&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T12:04:38Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T12:04:37Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 5,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:48:15Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:51:47Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;8b2a7f96da727174&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:46:44Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:59Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 4,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:43:18Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:46:42Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;de020764ecdc8e57&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:43:18Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:57Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 3,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:39:24Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:43:16Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;23c891eab2caad9c&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:38:11Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:54Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 2,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:34:52Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:38:10Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;851f3cfcded7e20f&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:34:52Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:52Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 1,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:06:55Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:10:47Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;51d5915205deede2&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:06:55Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:06:54Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 6
+  }
+}
+</code></pre>
+
+<p>Request with <code>after</code> filtering (builds triggered after 06.20.2017 10:35pm):</p>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?after=1497998102'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 37,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: null,
+      &quot;finished_at&quot;: null,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;b5d8ecabd4231264&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-28T09:24:49Z&quot;,
+      &quot;status&quot;: 0,
+      &quot;status_text&quot;: &quot;in-progress&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-28T09:24:49Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 36,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-05-28T08:48:48Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-05-28T08:50:37Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;fc3faedc50a610ea&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-28T08:47:50Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-28T08:47:49Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 35,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-05-14T12:12:26Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-05-14T12:13:57Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2a0b62127f2a91ec&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-14T12:11:25Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-14T12:11:24Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 34,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T14:42:28Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T14:44:00Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;226f809ae60c822d&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T14:41:22Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T14:41:22Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 33,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T11:43:51Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T11:45:14Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;366312bf17cff615&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T11:43:51Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T11:42:54Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 32,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T11:42:27Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T11:43:50Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;5a4c6dfb253fd4df&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T11:41:26Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T11:41:25Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 31,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T10:03:39Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T10:05:16Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;8d01153a2176eb92&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T10:02:27Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T10:02:26Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 30,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T09:55:59Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T09:57:21Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;7b0d2eceefb419ff&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T09:55:01Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T09:55:00Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 29,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T08:14:06Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T08:15:53Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;e2c7befadbb34320&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T08:12:42Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T08:12:41Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 28,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T12:14:39Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T12:16:16Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2669ae9ae4185120&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T12:13:40Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T12:13:39Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 27,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T11:18:51Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T11:20:32Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ef73302cb5127653&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T11:17:19Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T11:13:56Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 26,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T11:15:55Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T11:17:18Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;d7084f3be385d180&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T11:14:34Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T11:12:41Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 25,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T11:13:10Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T11:14:33Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;eddd8244fecb7eeb&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T11:12:08Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T11:12:08Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 24,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T10:54:10Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T10:55:27Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2f05c9e0f85dfc60&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T10:52:56Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T10:52:56Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+      &quot;build_number&quot;: 23,
+      &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-03-08T11:18:53Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-03-08T11:20:17Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+        &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+        &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;fe2a0055cc8aa878&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-03-08T11:18:53Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-03-08T11:18:10Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+      &quot;build_number&quot;: 22,
+      &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-02-23T14:28:15Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-02-23T14:29:41Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+        &quot;branch_dest&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+        &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+        &quot;pull_request_head_branch&quot;: &quot;pull/4/head&quot;,
+        &quot;pull_request_id&quot;: 4,
+        &quot;pull_request_merge_branch&quot;: &quot;pull/4/merge&quot;,
+        &quot;pull_request_repository_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22.git&quot;
+      },
+      &quot;pull_request_id&quot;: 4,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/4&quot;,
+      &quot;slug&quot;: &quot;2a009816d8b62496&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-02-23T14:27:07Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-02-23T14:25:57Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+      &quot;build_number&quot;: 21,
+      &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-02-23T14:25:52Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-02-23T14:27:06Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+        &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+        &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;dc60d8be63011e29&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-02-23T14:25:52Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-02-23T14:25:51Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 20,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;generate an APK&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-11-08T13:24:33Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-11-08T13:26:54Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;generate an APK&quot;,
+        &quot;workflow_id&quot;: &quot;gen-apk&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ddf4134555e833d8&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-11-08T13:24:33Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-11-08T13:24:33Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;gen-apk&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 19,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T09:13:11Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T09:14:37Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;secondary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;8ee5e483b79fdfd4&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T09:12:05Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T09:10:41Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;secondary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 18,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T09:10:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T09:12:04Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;601e080954bbd57b&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T09:09:24Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T09:09:23Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;create_dev_file&quot;,
+      &quot;build_number&quot;: 17,
+      &quot;commit_hash&quot;: &quot;b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+      &quot;commit_message&quot;: &quot;Create dev.txt\n\nAdd a file&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T08:48:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T08:50:13Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;create_dev_file&quot;,
+        &quot;branch_dest&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+        &quot;commit_message&quot;: &quot;Create dev.txt\n\nAdd a file&quot;,
+        &quot;pull_request_head_branch&quot;: &quot;pull/3/head&quot;,
+        &quot;pull_request_id&quot;: 3,
+        &quot;pull_request_merge_branch&quot;: &quot;pull/3/merge&quot;,
+        &quot;pull_request_repository_url&quot;: &quot;https://github.com/slapec93/sample-apps-android-sdk22.git&quot;
+      },
+      &quot;pull_request_id&quot;: 3,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/3&quot;,
+      &quot;slug&quot;: &quot;62f841f1497f5f30&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T08:47:26Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T08:47:25Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 16,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T08:31:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T08:33:05Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;pull_request_id&quot;: 3
+      },
+      &quot;pull_request_id&quot;: 3,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/3&quot;,
+      &quot;slug&quot;: &quot;b5e4e86ff62ef8ec&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T08:30:29Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T08:30:28Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;develop&quot;,
+      &quot;build_number&quot;: 15,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T07:46:00Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T07:47:25Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;develop&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;1e79f459d59ec74b&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T07:46:00Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T07:45:59Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 14,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-07-19T16:29:59Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-07-19T16:31:38Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;9fb8eaaa4bdd3763&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-07-19T16:28:51Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-07-19T16:28:50Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 13,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-07-19T16:26:33Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-07-19T16:27:50Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;78c605ea44677118&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-07-19T16:23:01Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-07-19T16:23:00Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: &quot;User api-demo requested to abort this build with reason: canceled through the API&quot;,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 12,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-06-20T22:35:15Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ce86c8475d31d288&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;status&quot;: 3,
+      &quot;status_text&quot;: &quot;aborted&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-06-20T22:35:02Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 26
+  }
+}
+</code></pre>
+
+<p>Request with <code>workflow</code> filtering (builds triggered with <em>secondary</em> workflow):</p>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?workflow=secondary'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 19,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T09:13:11Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T09:14:37Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;secondary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;8ee5e483b79fdfd4&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T09:12:05Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T09:10:41Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;secondary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 1
+  }
+}
+</code></pre>
+
+<p>Request with <code>commit_message</code> filtering (builds with commit message __):</p>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?commit_message=build%20will%20be%20aborted'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: &quot;User api-demo requested to abort this build with reason: canceled through the API&quot;,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 12,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-06-20T22:35:15Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ce86c8475d31d288&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;status&quot;: 3,
+      &quot;status_text&quot;: &quot;aborted&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-06-20T22:35:02Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 1
+  }
+}
+</code></pre>
+
+<p>Request with <code>build_number</code> filtering (builds with commit message __):</p>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?build_number=3'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 3,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:39:24Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:43:16Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;23c891eab2caad9c&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:38:11Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:54Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 1
+  }
+}
+</code></pre>
+
+<h4 id="sorting-parameters-for-build-list">Sorting parameters for build list</h4>
+
+<p>There are two available sorting parameter for this endpoint:</p>
+
+<ul>
+<li><strong><code>created_at</code>:</strong> descending order by the <code>created_at</code> attribute (default setting)</li>
+<li><strong><code>running_first</code>:</strong> it&rsquo;s also ordered by <code>created_at</code> in descending order, but all running builds are listed first and then the builds with other status</li>
+</ul>
+
+<p><em>Note: sorting the list by <code>running_first</code> doesn&rsquo;t support paging parameters</em></p>
+
+<h5 id="example-curl-request-24">Example <code>curl</code> request</h5>
+
+<p>Request:</p>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds?sort_by=running_first'
+</code></pre>
+
+<p>Response:</p>
+
+<pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 37,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: null,
+      &quot;finished_at&quot;: null,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;b5d8ecabd4231264&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-28T09:24:49Z&quot;,
+      &quot;status&quot;: 0,
+      &quot;status_text&quot;: &quot;in-progress&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-28T09:24:49Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 36,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-05-28T08:48:48Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-05-28T08:50:37Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;fc3faedc50a610ea&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-28T08:47:50Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-28T08:47:49Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 35,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-05-14T12:12:26Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-05-14T12:13:57Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2a0b62127f2a91ec&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-05-14T12:11:25Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-05-14T12:11:24Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 34,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T14:42:28Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T14:44:00Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;226f809ae60c822d&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T14:41:22Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T14:41:22Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 33,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T11:43:51Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T11:45:14Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;366312bf17cff615&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T11:43:51Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T11:42:54Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 32,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T11:42:27Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T11:43:50Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;5a4c6dfb253fd4df&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T11:41:26Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T11:41:25Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 31,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T10:03:39Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T10:05:16Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;8d01153a2176eb92&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T10:02:27Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T10:02:26Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 30,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T09:55:59Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T09:57:21Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;7b0d2eceefb419ff&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T09:55:01Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T09:55:00Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 29,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-19T08:14:06Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-19T08:15:53Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;e2c7befadbb34320&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-19T08:12:42Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-19T08:12:41Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 28,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T12:14:39Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T12:16:16Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2669ae9ae4185120&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T12:13:40Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T12:13:39Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 27,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T11:18:51Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T11:20:32Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ef73302cb5127653&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T11:17:19Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T11:13:56Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 26,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T11:15:55Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T11:17:18Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;d7084f3be385d180&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T11:14:34Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T11:12:41Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 25,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T11:13:10Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T11:14:33Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;eddd8244fecb7eeb&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T11:12:08Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T11:12:08Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 24,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-04-11T10:54:10Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-04-11T10:55:27Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;primary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2f05c9e0f85dfc60&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-04-11T10:52:56Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-04-11T10:52:56Z&quot;,
+      &quot;triggered_by&quot;: &quot;bitrise_api_doc&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+      &quot;build_number&quot;: 23,
+      &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-03-08T11:18:53Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-03-08T11:20:17Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+        &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+        &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;fe2a0055cc8aa878&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-03-08T11:18:53Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-03-08T11:18:10Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+      &quot;build_number&quot;: 22,
+      &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-02-23T14:28:15Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-02-23T14:29:41Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+        &quot;branch_dest&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+        &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+        &quot;pull_request_head_branch&quot;: &quot;pull/4/head&quot;,
+        &quot;pull_request_id&quot;: 4,
+        &quot;pull_request_merge_branch&quot;: &quot;pull/4/merge&quot;,
+        &quot;pull_request_repository_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22.git&quot;
+      },
+      &quot;pull_request_id&quot;: 4,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/4&quot;,
+      &quot;slug&quot;: &quot;2a009816d8b62496&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-02-23T14:27:07Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-02-23T14:25:57Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+      &quot;build_number&quot;: 21,
+      &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2018-02-23T14:25:52Z&quot;,
+      &quot;finished_at&quot;: &quot;2018-02-23T14:27:06Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;gradle-plugin-v3&quot;,
+        &quot;commit_hash&quot;: &quot;cad2bc7b90085a9cfab58bbc7ead52ea913b9c13&quot;,
+        &quot;commit_message&quot;: &quot;gradle android plugin v3, gradle v4&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;dc60d8be63011e29&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2018-02-23T14:25:52Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2018-02-23T14:25:51Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 20,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;generate an APK&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-11-08T13:24:33Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-11-08T13:26:54Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;generate an APK&quot;,
+        &quot;workflow_id&quot;: &quot;gen-apk&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ddf4134555e833d8&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-11-08T13:24:33Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-11-08T13:24:33Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;gen-apk&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 19,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T09:13:11Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T09:14:37Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;workflow_id&quot;: &quot;secondary&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;8ee5e483b79fdfd4&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T09:12:05Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T09:10:41Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;secondary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 18,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T09:10:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T09:12:04Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;601e080954bbd57b&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T09:09:24Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T09:09:23Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;create_dev_file&quot;,
+      &quot;build_number&quot;: 17,
+      &quot;commit_hash&quot;: &quot;b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+      &quot;commit_message&quot;: &quot;Create dev.txt\n\nAdd a file&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T08:48:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T08:50:13Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;create_dev_file&quot;,
+        &quot;branch_dest&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;b170936b1281a1cfd01fd7d19559793aae1b891a&quot;,
+        &quot;commit_message&quot;: &quot;Create dev.txt\n\nAdd a file&quot;,
+        &quot;pull_request_head_branch&quot;: &quot;pull/3/head&quot;,
+        &quot;pull_request_id&quot;: 3,
+        &quot;pull_request_merge_branch&quot;: &quot;pull/3/merge&quot;,
+        &quot;pull_request_repository_url&quot;: &quot;https://github.com/slapec93/sample-apps-android-sdk22.git&quot;
+      },
+      &quot;pull_request_id&quot;: 3,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/3&quot;,
+      &quot;slug&quot;: &quot;62f841f1497f5f30&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T08:47:26Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T08:47:25Z&quot;,
+      &quot;triggered_by&quot;: &quot;webhook&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 16,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T08:31:31Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T08:33:05Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;pull_request_id&quot;: 3
+      },
+      &quot;pull_request_id&quot;: 3,
+      &quot;pull_request_target_branch&quot;: &quot;master&quot;,
+      &quot;pull_request_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/pull/3&quot;,
+      &quot;slug&quot;: &quot;b5e4e86ff62ef8ec&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T08:30:29Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T08:30:28Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;develop&quot;,
+      &quot;build_number&quot;: 15,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-08-17T07:46:00Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-08-17T07:47:25Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;develop&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;1e79f459d59ec74b&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-08-17T07:46:00Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-08-17T07:45:59Z&quot;,
+      &quot;triggered_by&quot;: &quot;curl&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 14,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-07-19T16:29:59Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-07-19T16:31:38Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;9fb8eaaa4bdd3763&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-07-19T16:28:51Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-07-19T16:28:50Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 13,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-07-19T16:26:33Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-07-19T16:27:50Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;78c605ea44677118&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-07-19T16:23:01Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-07-19T16:23:00Z&quot;,
+      &quot;triggered_by&quot;: &quot;manual-api-demo&quot;,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: &quot;User api-demo requested to abort this build with reason: canceled through the API&quot;,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 12,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-06-20T22:35:15Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;this build will be aborted through the API&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;ce86c8475d31d288&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-06-20T22:35:03Z&quot;,
+      &quot;status&quot;: 3,
+      &quot;status_text&quot;: &quot;aborted&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-06-20T22:35:02Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 11,
+      &quot;commit_hash&quot;: &quot;b4e7cad230e3fc2f2f84dbb455c7ac7f89a3a18b&quot;,
+      &quot;commit_message&quot;: &quot;API Demo - commit hash example\n\nThis build has a specified commit hash&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/b4e7cad230e3fc2f2f84dbb455c7ac7f89a3a18b&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-06-20T22:31:28Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-06-20T22:33:00Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;b4e7cad230e3fc2f2f84dbb455c7ac7f89a3a18b&quot;,
+        &quot;commit_message&quot;: &quot;API Demo - commit hash example\n\nThis build has a specified commit hash&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;c518445a250a5848&quot;,
+      &quot;stack_config_type&quot;: &quot;standard1&quot;,
+      &quot;stack_identifier&quot;: &quot;linux-docker-android&quot;,
+      &quot;started_on_worker_at&quot;: &quot;2017-06-20T22:31:28Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-06-20T22:31:27Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: &quot;User api-demo requested to abort this build with reason: This is an example abort build&quot;,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 10,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;Abort example&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-05-30T15:47:32Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;Abort example&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;3247e2920496e846&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+      &quot;status&quot;: 3,
+      &quot;status_text&quot;: &quot;aborted&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 9,
+      &quot;commit_hash&quot;: &quot;b4e7cad230e3fc2f2f84dbb455c7ac7f89a3a18b&quot;,
+      &quot;commit_message&quot;: &quot;API Demo - commit hash example\n\nThis build has a specified commit hash&quot;,
+      &quot;commit_view_url&quot;: &quot;https://github.com/bitrise-samples/sample-apps-android-sdk22/commit/b4e7cad230e3fc2f2f84dbb455c7ac7f89a3a18b&quot;,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-05-16T20:04:28Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-05-16T20:05:05Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_hash&quot;: &quot;b4e7cad230e3fc2f2f84dbb455c7ac7f89a3a18b&quot;,
+        &quot;commit_message&quot;: &quot;API Demo - commit hash example\n\nThis build has a specified commit hash&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;5267720a89cb298d&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-05-16T20:04:28Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-05-16T20:02:25Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 8,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;API demo\n\nmultiline commit message example&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-05-16T20:03:33Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-05-16T20:04:27Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;API demo\n\nmultiline commit message example&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;627cfd1a3f715134&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-05-16T20:02:25Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-05-16T20:00:18Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 7,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;API demo, commit hash example 1&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-05-16T19:59:05Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-05-16T20:02:19Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;API demo, commit hash example 1&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;2976b894d40cf339&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-05-16T19:59:05Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-05-16T19:59:04Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 6,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: &quot;unwatch test&quot;,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T12:05:48Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T12:09:26Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;,
+        &quot;commit_message&quot;: &quot;unwatch test&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;cabbf96b36031c45&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T12:04:38Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T12:04:37Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 5,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:48:15Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:51:47Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;8b2a7f96da727174&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:46:44Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:59Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 4,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:43:18Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:46:42Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;de020764ecdc8e57&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:43:18Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:57Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 3,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:39:24Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:43:16Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;23c891eab2caad9c&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:38:11Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:54Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 2,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:34:52Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:38:10Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;851f3cfcded7e20f&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:34:52Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:34:52Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    },
+    {
+      &quot;abort_reason&quot;: null,
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;build_number&quot;: 1,
+      &quot;commit_hash&quot;: null,
+      &quot;commit_message&quot;: null,
+      &quot;commit_view_url&quot;: null,
+      &quot;environment_prepare_finished_at&quot;: &quot;2017-04-25T11:06:55Z&quot;,
+      &quot;finished_at&quot;: &quot;2017-04-25T11:10:47Z&quot;,
+      &quot;is_on_hold&quot;: false,
+      &quot;original_build_params&quot;: {
+        &quot;branch&quot;: &quot;master&quot;
+      },
+      &quot;pull_request_id&quot;: 0,
+      &quot;pull_request_target_branch&quot;: null,
+      &quot;pull_request_view_url&quot;: null,
+      &quot;slug&quot;: &quot;51d5915205deede2&quot;,
+      &quot;stack_config_type&quot;: null,
+      &quot;stack_identifier&quot;: null,
+      &quot;started_on_worker_at&quot;: &quot;2017-04-25T11:06:55Z&quot;,
+      &quot;status&quot;: 1,
+      &quot;status_text&quot;: &quot;success&quot;,
+      &quot;tag&quot;: null,
+      &quot;triggered_at&quot;: &quot;2017-04-25T11:06:54Z&quot;,
+      &quot;triggered_by&quot;: null,
+      &quot;triggered_workflow&quot;: &quot;primary&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 37
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-builds-build-slug">GET /apps/{APP-SLUG}/builds/{BUILD-SLUG}</h3>
+
+<p>Get a specific build&rsquo;s data.</p>
+
+<p>Status codes (<code>status</code>) and related status texts (<code>status_text</code>): <strong>See the <a href="#get-appsapp-slugbuilds"><code>GET /apps/{APP-SLUG}/builds</code> endpoint description</a></strong></p>
+
+<p>Build times: <strong>See the <a href="#get-appsapp-slugbuilds"><code>GET /apps/{APP-SLUG}/builds</code> endpoint description</a></strong></p>
+
+<h4 id="example-curl-request-25">Example <code>curl</code> request</h4>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds/BUILD-SLUG'
+</code></pre>
+
+<h4 id="example-response-21">Example response</h4>
+
+<pre><code>{
+  &quot;data&quot;: {
+    &quot;abort_reason&quot;: &quot;User api-demo requested to abort this build with reason: This is an example abort build&quot;,
+    &quot;branch&quot;: &quot;master&quot;,
+    &quot;build_number&quot;: 10,
+    &quot;commit_hash&quot;: null,
+    &quot;commit_message&quot;: &quot;Abort example&quot;,
+    &quot;commit_view_url&quot;: null,
+    &quot;environment_prepare_finished_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+    &quot;finished_at&quot;: &quot;2017-05-30T15:47:32Z&quot;,
+    &quot;is_on_hold&quot;: false,
+    &quot;original_build_params&quot;: {
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;commit_message&quot;: &quot;Abort example&quot;
+    },
+    &quot;pull_request_id&quot;: 0,
+    &quot;pull_request_target_branch&quot;: null,
+    &quot;pull_request_view_url&quot;: null,
+    &quot;slug&quot;: &quot;3247e2920496e846&quot;,
+    &quot;stack_config_type&quot;: null,
+    &quot;stack_identifier&quot;: null,
+    &quot;started_on_worker_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+    &quot;status&quot;: 3,
+    &quot;status_text&quot;: &quot;aborted&quot;,
+    &quot;tag&quot;: null,
+    &quot;triggered_at&quot;: &quot;2017-05-30T15:47:17Z&quot;,
+    &quot;triggered_by&quot;: null,
+    &quot;triggered_workflow&quot;: &quot;primary&quot;
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-builds-build-slug-log">GET /apps/{APP-SLUG}/builds/{BUILD-SLUG}/log</h3>
+
+<p>Get the <strong>log info</strong> of a specific Build.</p>
+
+<p>The log info includes the last couple of <strong>chunks</strong> (<code>log_chunks</code>) of the build log,
+as well as other meta infos like how many chunks were generated during the build (<code>generated_log_chunks_num</code>).</p>
+
+<p>Once the build is finished and the full log is available in the log archives (<code>&quot;is_archived&quot;: true</code>)
+the response will also include an <strong>expiring</strong>, read only download URL (<code>expiring_raw_log_url</code>).</p>
+
+<p>There&rsquo;s no guarantee for how long this expiring raw log URL will exist (other than &ldquo;for a couple of minutes&rdquo;),
+so please <strong>do not store</strong> this URL! If you want to retrieve the full (raw) log please:</p>
+
+<ol>
+<li>Call this log info endpoint</li>
+<li>And right after that, when you get the response, parse the <code>expiring_raw_log_url</code> from it and send a <code>GET</code> request to that URL as soon as possible.</li>
+</ol>
+
+<p><strong>Important:</strong> when you send your <code>GET</code> request to the <code>expiring_raw_log_url</code> URL please <strong>do not</strong> include the Authorization headers.
+In fact, you should not include any special header at all; just create a simple GET request and send it to the <code>expiring_raw_log_url</code> url.
+The <code>expiring_raw_log_url</code> is configured so that it does not require any other parameter other than what&rsquo;s included in the URL.</p>
+
+<p>When a build is running, the log chunks can be retrieved with filtering, because in this case every response contain a <code>timestamp</code> which has Unix timestamp format. You can send this value in the next call as query parameter with the key <code>timestamp</code>, so the next response will contain only the chunks created after the timestamp.
+There is also a <code>limit</code> parameter which has 50 as the default value, with this you can limit the number of the retrieved log chunks.</p>
+
+<p><em>Note: If build is finished the logs will be archived, in this case there are no filtering options, the filter parameters won&rsquo;t have any effect on the content of the response, the whole archived log will be retrieved.</em></p>
+
+<h4 id="example-curl-request-26">Example <code>curl</code> request</h4>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds/BUILD-SLUG/log'
+</code></pre>
+
+<h4 id="example-response-22">Example response</h4>
+
+<pre><code>{
+  &quot;expiring_raw_log_url&quot;: &quot;https://bitrise-build-log-archives-production.s3.amazonaws.com/build-logs-v2/669403bffbe35909/3247e2920496e846/2194500/3247e2920496e846.log?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180528%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20180528T092454Z\u0026X-Amz-Expires=600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=ad4f5da24369ff715ee6bb89f0095dea74e3cc73481639186a73b24bee9fc715&quot;,
+  &quot;generated_log_chunks_num&quot;: 6,
+  &quot;is_archived&quot;: true,
+  &quot;log_chunks&quot;: [
+    {
+      &quot;chunk&quot;: &quot;\n  ██████╗ ██╗████████╗██████╗ ██╗███████╗███████╗\n  ██╔══██╗██║╚══██╔══╝██╔══██╗██║██╔════╝██╔════╝\n  ██████╔╝██║   ██║   ██████╔╝██║███████╗█████╗\n  ██╔══██╗██║   ██║   ██╔══██╗██║╚════██║██╔══╝\n  ██████╔╝██║   ██║   ██║  ██║██║███████║███████╗\n  ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝\n\n\u001b[32;1mVersion: 1.6.1\u001b[0m\n\n\u001b[34mINFO\u001b[0m[15:47:21] \u001b[33;1mbitrise runs in CI mode\u001b[0m           \n\u001b[34mINFO\u001b[0m[15:47:21] \u001b[32;1mRunning workflow:\u001b[0m primary         \n\n\u001b[34;1mSwitching to workflow:\u001b[0m primary\n\n&quot;,
+      &quot;position&quot;: 0
+    },
+    {
+      &quot;chunk&quot;: &quot;+------------------------------------------------------------------------------+\n| (0) activate-ssh-key@3.1.1                                                   |\n+------------------------------------------------------------------------------+\n| id: activate-ssh-key                                                         |\n| version: 3.1.1                                                               |\n| collection: https://github.com/bitrise-io/bitrise-steplib.git                |\n| toolkit: bash                                                                |\n| time: 2017-05-30T15:47:26Z                                                   |\n+------------------------------------------------------------------------------+\n|                                                                              |\n|                                                                              |\n+---+---------------------------------------------------------------+----------+\n| \u001b[34;1m-\u001b[0m | \u001b[34;1mactivate-ssh-key@3.1.1\u001b[0m                                        | 2.32 sec |\n+---+---------------------------------------------------------------+----------+\n\n                                          ▼\n\n\u001b[33mWARN\u001b[0m[15:47:26] The step's (activate-ssh-key@3.1.1) Run-If expression evaluated to false - skipping \n\u001b[34mINFO\u001b[0m[15:47:26] The Run-If expression was: \u001b[34;1m{{getenv \&quot;SSH_RSA_PRIVATE_KEY\&quot; | ne \&quot;\&quot;}}\u001b[0m \n&quot;,
+      &quot;position&quot;: 1
+    },
+    {
+      &quot;chunk&quot;: &quot;+------------------------------------------------------------------------------+\n| (1) git-clone@3.4.3                                                          |\n+------------------------------------------------------------------------------+\n| id: git-clone                                                                |\n| version: 3.4.3                                                               |\n| collection: https://github.com/bitrise-io/bitrise-steplib.git                |\n| toolkit: go                                                                  |\n| time: 2017-05-30T15:47:27Z                                                   |\n+------------------------------------------------------------------------------+\n|                                                                              |\n\u001b[34mINFO\u001b[0m[15:47:27] Start installing (golang) with apt-get       \n\u001b[34mINFO\u001b[0m[15:47:27]  * \u001b[32;1m[OK]\u001b[0m Step dependency (go) installed, available. \n&quot;,
+      &quot;position&quot;: 2
+    },
+    {
+      &quot;chunk&quot;: &quot;\n\u001b[34;1mGit Clone Configs:\u001b[0m\n- CloneIntoDir: /bitrise/src\n- RepositoryURL: https://github.com/bitrise-samples/sample-apps-android-sdk22.git\n\u001b[34;1mGit Checkout Configs:\u001b[0m\n- Commit: \n- Tag: \n- Branch: master\n- CloneDepth: \n\u001b[34;1mGit Pull Request Configs:\u001b[0m\n- PullRequestURI: \n- PullRequestID: \n- BranchDest: \n- PullRequestMergeBranch: \n- ResetRepository: No\n\u001b[34;1mBitrise Build Configs:\u001b[0m\n- BuildURL: https://www.bitrise.io/build/3247e2920496e846\n- BuildAPIToken: XtFWIhNx22MMMA6DcPXBGw\n\n\u001b[34;1mGit clone repository\u001b[0m\n=\u003e git \&quot;init\&quot;\n=\u003e git \&quot;remote\&quot; \&quot;add\&quot; \&quot;origin\&quot; \&quot;https://github.com/bitrise-samples/sample-apps-android-sdk22.git\&quot;\n=\u003e git \&quot;fetch\&quot;\n&quot;,
+      &quot;position&quot;: 3
+    },
+    {
+      &quot;chunk&quot;: &quot;=\u003e git \&quot;checkout\&quot; \&quot;master\&quot;\n=\u003e git \&quot;submodule\&quot; \&quot;update\&quot; \&quot;--init\&quot; \&quot;--recursive\&quot;\n\u001b[34;1mExporting git logs\u001b[0m\n=\u003e GIT_CLONE_COMMIT_HASH\n   value: b4e7cad230e3fc2f2f84dbb455c7ac7f89a3a18b\n\n=\u003e GIT_CLONE_COMMIT_MESSAGE_SUBJECT\n   value: downgrade to com.android.tools.build:gradle:2.1.0\n\n=\u003e GIT_CLONE_COMMIT_MESSAGE_BODY\n   value: \n\n=\u003e GIT_CLONE_COMMIT_AUTHOR_NAME\n   value: Viktor Benei\n\n=\u003e GIT_CLONE_COMMIT_AUTHOR_EMAIL\n   value: viktor.benei@gmail.com\n\n=\u003e GIT_CLONE_COMMIT_COMMITER_NAME\n   value: GitHub\n\n=\u003e GIT_CLONE_COMMIT_COMMITER_EMAIL\n   value: noreply@github.com\n\n\u001b[32;1mSuccess\u001b[0m\n|                                                                              |\n+---+---------------------------------------------------------------+----------+\n| \u001b[32;1m✓\u001b[0m | \u001b[32;1mgit-clone@3.4.3\u001b[0m                                               | 8.77 sec |\n+---+---------------------------------------------------------------+----------+\n\n                                          ▼\n\n+------------------------------------------------------------------------------+\n| (2) Sleep                                                                    |\n+------------------------------------------------------------------------------+\n| id: script                                                                   |\n| version: 1.1.3                                                               |\n| collection: https://github.com/bitrise-io/bitrise-steplib.git                |\n| toolkit: bash                                                                |\n| time: 2017-05-30T15:47:35Z                                                   |\n+------------------------------------------------------------------------------+\n|                                                                              |\n&quot;,
+      &quot;position&quot;: 4
+    },
+    {
+      &quot;chunk&quot;: &quot;+ sleep 30\n&quot;,
+      &quot;position&quot;: 5
+    }
+  ],
+  &quot;timestamp&quot;: null
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-builds-build-slug-artifacts">GET /apps/{APP-SLUG}/builds/{BUILD-SLUG}/artifacts</h3>
+
+<p>Get the artifacts for a specific build.</p>
+
+<h4 id="example-curl-request-27">Example <code>curl</code> request</h4>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds/BUILD-SLUG/artifacts'
+</code></pre>
+
+<h4 id="example-response-23">Example response</h4>
+
+<pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;artifact_type&quot;: &quot;file&quot;,
+      &quot;file_size_bytes&quot;: 10,
+      &quot;is_public_page_enabled&quot;: true,
+      &quot;slug&quot;: &quot;0d2277e50b8d32ce&quot;,
+      &quot;title&quot;: &quot;artifact-1.txt&quot;
+    },
+    {
+      &quot;artifact_type&quot;: &quot;file&quot;,
+      &quot;file_size_bytes&quot;: 11,
+      &quot;is_public_page_enabled&quot;: false,
+      &quot;slug&quot;: &quot;b69c23de1f13b998&quot;,
+      &quot;title&quot;: &quot;artifact-2.txt&quot;
+    }
+  ],
+  &quot;paging&quot;: {
+    &quot;page_item_limit&quot;: 50,
+    &quot;total_item_count&quot;: 2
+  }
+}
+</code></pre>
+
+<h3 id="get-apps-app-slug-builds-build-slug-artifacts-artifact-slug">GET /apps/{APP-SLUG}/builds/{BUILD-SLUG}/artifacts/{ARTIFACT-SLUG}</h3>
+
+<p>Get a certain build artifact&rsquo;s data. The provided download URL is a presigned Amazon S3 URL which is valid for 10 minutes and then it expires.</p>
+
+<h4 id="example-curl-request-28">Example <code>curl</code> request</h4>
+
+<pre><code>curl -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds/BUILD-SLUG/artifacts/ARTIFACT-SLUG'
+</code></pre>
+
+<h4 id="example-response-24">Example response</h4>
+
+<pre><code>{
+  &quot;data&quot;: {
+    &quot;artifact_type&quot;: &quot;file&quot;,
+    &quot;expiring_download_url&quot;: &quot;https://bitrise-prod-build-storage.s3.amazonaws.com/builds/9fb8eaaa4bdd3763/artifacts/2138393/artifact-1.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180528%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20180528T092455Z\u0026X-Amz-Expires=600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=48da44234d3ef6315c937e225fdf5fedfeb4ca92edeeee45fa5a014cc633ef03&quot;,
+    &quot;file_size_bytes&quot;: 10,
+    &quot;is_public_page_enabled&quot;: true,
+    &quot;public_install_page_url&quot;: &quot;https://www.bitrise.io/artifact/2138393/p/6e7dc9c2b99492e6aa997a2e5d3f7413&quot;,
+    &quot;slug&quot;: &quot;0d2277e50b8d32ce&quot;,
+    &quot;title&quot;: &quot;artifact-1.txt&quot;
+  }
+}
+</code></pre>
+
+<h3 id="patch-apps-app-slug-builds-build-slug-artifacts-artifact-slug">PATCH /apps/{APP-SLUG}/builds/{BUILD-SLUG}/artifacts/{ARTIFACT-SLUG}</h3>
+
+<p>Set the attributes of a build artifact. In the request body have to be sent a JSON with the specified new attribute values.</p>
+
+<p><em>Note: at this time only the <code>is_public_page_enabled</code> attribute can be set through this endpoint call. This attribute can only set for the artifacts with type <code>android-apk</code> or <code>ios-ipa</code>.</em></p>
+
+<h4 id="example-curl-request-29">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X PATCH -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds/BUILD-SLUG/artifacts/ARTIFACT-SLUG' -d '{&quot;is_public_page_enabled&quot;:true}'
+</code></pre>
+
+<h4 id="example-response-25">Example response</h4>
+
+<pre><code>{
+  &quot;data&quot;: {
+    &quot;artifact_type&quot;: &quot;android-apk&quot;,
+    &quot;expiring_download_url&quot;: &quot;https://bitrise-prod-build-storage.s3.amazonaws.com/builds/ddf4134555e833d8/artifacts/3205846/app-debug.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAIOC7N256G7J2W2TQ%2F20180528%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20180528T092455Z\u0026X-Amz-Expires=600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=b1c06855867dc36a56c881ae805b45ecdd593768d1b301ca75aa1f4a2db6a8be&quot;,
+    &quot;file_size_bytes&quot;: 607185,
+    &quot;is_public_page_enabled&quot;: true,
+    &quot;public_install_page_url&quot;: &quot;https://www.bitrise.io/artifact/3205846/p/300e0121b50985fd631fe304d549006f&quot;,
+    &quot;slug&quot;: &quot;5a9f5da8d5f1057c&quot;,
+    &quot;title&quot;: &quot;app-debug.apk&quot;
+  }
+}
+</code></pre>
+
+<h3 id="delete-apps-app-slug-builds-build-slug-artifacts-artifact-slug">DELETE /apps/{APP-SLUG}/builds/{BUILD-SLUG}/artifacts/{ARTIFACT-SLUG}</h3>
+
+<p>Delete a specific artifact.</p>
+
+<h4 id="example-curl-request-30">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X DELETE -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds/BUILD-SLUG/artifacts/ARTIFACT-SLUG'
+</code></pre>
+
+<h4 id="example-response-26">Example response</h4>
+
+<pre><code>{
+  &quot;data&quot;: {
+      &quot;artifact_type&quot;: &quot;android-apk&quot;,
+      &quot;file_size_bytes&quot;: 607185,
+      &quot;is_public_page_enabled&quot;: true,
+      &quot;slug&quot;: &quot;5a9f5da8d5f1057c&quot;,
+      &quot;title&quot;: &quot;app-debug.apk&quot;
+    }
+}
+</code></pre>
+
+<h3 id="post-apps-app-slug-builds">POST /apps/{APP-SLUG}/builds</h3>
+
+<p>Trigger a new build.</p>
+
+<p>You can trigger a new build with the specific trigger parameters defined. You can check the available parameters in the <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/build-trigger/">documentation of the Build Trigger API</a></p>
+
+<h4 id="example-curl-request-31">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X POST -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/APP-SLUG/builds' -d '{&quot;hook_info&quot;:{&quot;type&quot;:&quot;bitrise&quot;},&quot;build_params&quot;:{&quot;branch&quot;:&quot;master&quot;,&quot;workflow_id&quot;:&quot;primary&quot;},&quot;triggered_by&quot;:&quot;bitrise_api_doc&quot;}'
+</code></pre>
+
+<h4 id="example-response-27">Example response</h4>
+
+<pre><code>{
+  &quot;build_number&quot;: 37,
+  &quot;build_slug&quot;: &quot;b5d8ecabd4231264&quot;,
+  &quot;build_url&quot;: &quot;https://www.bitrise.io/build/b5d8ecabd4231264&quot;,
+  &quot;message&quot;: &quot;webhook processed&quot;,
+  &quot;service&quot;: &quot;bitrise&quot;,
+  &quot;slug&quot;: &quot;669403bffbe35909&quot;,
+  &quot;status&quot;: &quot;ok&quot;,
+  &quot;triggered_workflow&quot;: &quot;primary&quot;
+}
+</code></pre>
+
+<h3 id="post-apps-app-slug-builds-build-slug-abort">POST /apps/{APP-SLUG}/builds/{BUILD-SLUG}/abort</h3>
+
+<p>Abort a running build.</p>
+
+<p>Optionally you can specify a JSON body for the request, with an <code>abort_reason</code>. With parameter <code>abort_with_success</code> you can set the type of abort, if it&rsquo;s set as <code>true</code>, then the build will get a status with value 4, which means that it&rsquo;s aborted, but it counts as a successful build, this way Github will show as successful too. Also you can specify whether notifications (emails) should be sent. Example:</p>
+
+<pre><code>{
+	&quot;abort_reason&quot;: &quot;abort with abort_with_success=true test &amp; skip_notifications=true&quot;,
+	&quot;abort_with_success&quot;: true,
+	&quot;skip_notifications&quot;: true
+}
+</code></pre>
+
+<h4 id="example-curl-request-32">Example <code>curl</code> request</h4>
+
+<pre><code>curl -X POST -H 'Authorization: token THE-ACCESS-TOKEN' 'https://api.bitrise.io/v0.1/apps/{APP-SLUG}/builds/{BUILD-SLUG}/abort' -d '{&quot;abort_reason&quot;: &quot;abort with abort_with_success=true test &amp; skip_notifications=true&quot;, &quot;abort_with_success&quot;: true,&quot;skip_notifications&quot;: true}'
+</code></pre>
+
+<h4 id="example-response-28">Example response</h4>
+
+<pre><code>{
+    &quot;status&quot;: &quot;ok&quot;
+}
+</code></pre>
+
+<p>If the build is already finished or aborted you&rsquo;ll get an error:</p>
+
+<pre><code>{
+    &quot;error_msg&quot;: &quot;Build already finished, can't abort it.&quot;
+}
+</code></pre>
+
+<h2 id="wip-working-on-it">WIP / working on it</h2>
+
+<p>See <a href="https://discuss.bitrise.io/t/bitrise-api-v0-1-work-in-progress/1554">https://discuss.bitrise.io/t/bitrise-api-v0-1-work-in-progress/1554</a>.</p>
+
+<h2 id="feature-endpoint-requests">Feature / endpoint requests</h2>
+
+<p>If you want to request a new API feature / endpoint, please do it here: <a href="http://discuss.bitrise.io/t/bitrise-public-api/37">http://discuss.bitrise.io/t/bitrise-public-api/37</a></p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/api/outgoing-webhooks/" title="">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/bitrise-cli/" title="">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

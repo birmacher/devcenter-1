@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Faqs on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/</link>
+    <description>Recent content in Faqs on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/adding-projects-with-submodules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/adding-projects-with-submodules/</guid>
+      <description>The Problem A common issue is that you have a project, that has one or more submodules or other private repository dependencies.
+This means that you have to grant access to all repositories in order to make the build successful.
+If your git hosting service supports it, the best, most secure way is to register the same SSH key for every repository you have to access during the build, as &amp;ldquo;Deployment keys&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/android-x86-emulator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/android-x86-emulator/</guid>
+      <description>A frequent question is whether it&amp;rsquo;s possible to run the Android x86 emulator, instead of the ARM emulators.
+As an experiment we now allow all the required nested virtualization bits for the x86 Android emulators on the Linux/Android stacks, which means that we can use the virtualization that the host machine has for running an emulator with x86 architecture, and we can thus skip the slow emulation. This is still 10-15% slower than when run on a physical machine, but it is still much faster than the armv7-a emulator.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/available-environment-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/available-environment-variables/</guid>
+      <description>Interactive available Environment Variables list In the Workflow Editor on bitrise.io you can click into any input field of a Step and a green Insert Variable button will appear.
+Click this button and you&amp;rsquo;ll get a full list of available Environment Variables. You can search in this list, and when you find the one you&amp;rsquo;re looking for just click it, and it&amp;rsquo;ll be inserted into the input field for you.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/github-pull-request-status-troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/github-pull-request-status-troubleshooting/</guid>
+      <description>If you can&amp;rsquo;t see the nice little green/red CI checks status (like the one you can see on our Blog, about the Pull Request status feature announcement) on the Pull Request&amp;rsquo;s GitHub page, you should check this list for troubleshooting.
+Make sure to select a Service credential User who has a connected GitHub account The first requirement is that the Service credential User of the app on bitrise.io have to connect his/her GitHub account, or else bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/grant-access-to-github-organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/grant-access-to-github-organization/</guid>
+      <description>Steps to grant access for Bitrise.io to a given GitHub Organization:
+ Open https://github.com In the top right corner click your user / avatar In the list select Settings On the left side select Authorized applications In the left-side navigation, click Authorized OAuth Apps, and choose Bitrise Locate the Organization you want to grant access to, and click Grant.  You can now go back to bitrise.io and you should see the organization / repository on the Add New App page.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-change-the-owner-of-an-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-change-the-owner-of-an-app/</guid>
+      <description>It can happen that you need to transfer an Application on Bitrise to another User or to an Organization. This can be done in a few seconds by following these quick steps:
+ Login with the current Owner of the App on bitrise.io Open the App&amp;rsquo;s page and go to the Team tab Make sure the new owner of the App is in the team or add her/him if you need to.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-generate-ssh-keypair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/how-to-generate-ssh-keypair/</guid>
+      <description>If you want to do manual SSH key configuration on bitrise.io you can generate an appropriate SSH keypair with a simple Command Line / Terminal command:
+ssh-keygen -t rsa -b 4096 -P &#39;&#39; -f ./bitrise-ssh  This will generate two files in the current directory (the directory where you run the command):
+ bitrise-ssh (private key) bitrise-ssh.pub (public key)  You should copy paste the public key to your Git hosting service (GitHub, Bitbucket, etc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/i-cant-see-my-github-organization-repository-on-the-add-new-app-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/i-cant-see-my-github-organization-repository-on-the-add-new-app-page/</guid>
+      <description>Most likely you did not grant access to bitrise.io when you authenticated with GitHub to access the organization (or a repository owned by the organization).
+To fix this you should follow this guide: Grant access to a GitHub Organization.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/no-builds-are-triggered-automatically/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/no-builds-are-triggered-automatically/</guid>
+      <description>If no builds are triggered automatically when you push code into your repository, you should make sure your webhook is properly set on the git hosting service you use (GitHub, Bitbucket, GitLab, &amp;hellip;).
+You can find the webhook related setup and troubleshooting guides in the Webhooks section of the DevCenter.
+If the webhook is present on the git hosting service, you should check the Troubleshooting section of the Webhooks docs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/organization-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/organization-faq/</guid>
+      <description>What is an Organization on Bitrise? Organizations are used to seamlessly manage bigger teams and members inside a company. It is a place to gather all the people working on each of your company&amp;rsquo;s apps and delegate them through creating different groups.
+How do I create a new Organization? Just go to your account settings page, scroll down and click on the green New organization button at the bottom left.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/should-i-commit-my-dependencies-into-my-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/should-i-commit-my-dependencies-into-my-repository/</guid>
+      <description>It&amp;rsquo;s a highly debated topic, there are obvious pros and cons for both keeping your dependencies in or outside of your code repository.
+You&amp;rsquo;re of course free to do it the way you want to, our recommendation is that you should include your dependencies inside your repository, whenever you can.
+Let&amp;rsquo;s see why.
+ Once git clone is finished you&amp;rsquo;ll have everything, ready for work. In a CI / distributed environment this also means less chance for network issues, your build won&amp;rsquo;t fail just because a dependency manager&amp;rsquo;s server is down.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/why-my-build-takes-longer-on-bitrise-than-on-my-mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/faq/why-my-build-takes-longer-on-bitrise-than-on-my-mac/</guid>
+      <description>First of all you have to determine which step(s) consume significant time, to identify what can possibly be improved.
+If your dependency step (e.g. CocoaPods) is the one which takes a long time then you might be able to speed it up by using the Bitrise Build Cache feature. You can find more information at Using the Build Cache. This is also true for any step which might include network communication, addressing 3rd party web services, which might temporarily not be available or might be slow due to high demand.</description>
+    </item>
+    
+  </channel>
+</rss>

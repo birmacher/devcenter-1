@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code-signings on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/</link>
+    <description>Recent content in Code-signings on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-in-gradle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-in-gradle/</guid>
+      <description>Configure manually in Gradle You can manually specify the code signing configuration in your Gradle configuration so that your app gets signed during the build process.
+ Open your module-level build.gradle file.
+ Add the signingConfigs codeblock to your code and define the following entries specific to your project: storeFile, storePassword, keyAlias, and keyPassword.
+  !!! example &amp;ldquo;Signing configuration in build.gradle&amp;ldquo;  android { signingConfigs { release { keyAlias &#39;MyAndroidKey&#39; keyPassword &#39;***&#39; storeFile file(&amp;quot;/path/to/my/keystore.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-procedures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-procedures/</guid>
+      <description>Before you distribute your app through Google Play Store, your APK file must be digitally signed.
+You can specify the code signing configuration for your project in Android Studio or manually in your Gradle configuration. You can also use the sign-apk step in your Bitrise Workflow Editor to have your APK signed automatically.
+!!! info &amp;ldquo;Different Android code signing procedures&amp;rdquo; * Android code signing with Android Studio * Android code signing in Gradle * Android code signing using Bitrise Sign APK step</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-using-bitrise-sign-apk-step/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-using-bitrise-sign-apk-step/</guid>
+      <description>Create a signed APK with the Sign APK step You can create a signed APK using the Sign APK step in our Bitrise workflow.
+Bitrise Project Scanner provides a deploy workflow which contains the Sign APK step. With this step, you can digitally sign your APK as part of your workflow. This step is configured to run if you have already uploaded your keystore file to Bitrise. All you have to do is upload your keystore file in the Code signing tab of the Workflow Editor.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-with-android-studio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/android-code-signing/android-code-signing-with-android-studio/</guid>
+      <description>You can specify the code signing configuration for your project in Android Studio.
+ Go to Project navigator.
+ Select your project and open Module Settings.
+ From Modules, select your module.
+ On the Signing tab, fill out the signing information. In our example, we used the following values:
+ name: release
+ key alias: MyAndroidKey
+ key password: ***
+ store file: /path/to/my/keystore.jks
+ store password: ***
+   Once you filled out the signing information, the signingConfigs block will be created in your module&amp;rsquo;s build.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing-ios-frameworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing-ios-frameworks/</guid>
+      <description>Developing iOS frameworks When you are developing an iOS framework you have to distribute a code signed version of your framework, however you don&amp;rsquo;t need to sign it with your Distribution profile, the Developer profile will be enough. After distribution the framework will be re-codesigned by the frameworks&amp;rsquo; consumer during the code signing process.1
+If you attempt to build it without code signing Xcode won&amp;rsquo;t produce a .framework file and you will receive the following error:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/code-signing/</guid>
+      <description>To run a build of your iOS app on Bitrise, you will need to provide code signing files in some way. The code signing of iOS projects requires:
+ Signing certificates in a .p12 format Provisioning Profile file(s) matching your project (team ID, bundle ID, &amp;hellip;) a script, tool or step which installs these files in the build environment.  You can store your code signing files and create a signed .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/collecting-files-with-codesigndoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/collecting-files-with-codesigndoc/</guid>
+      <description>The open source codesigndoc tool runs a clean Xcode/Xamarin Studio Archive on your Mac, and analyzes the generated archive file. It collects the code signing settings that Xcode or Xamarin Studio used during the archive process, and prints the list of the required code signing files. You can also search for, export and upload these files using codesigndoc.
+Collecting the files with codesigndoc  Open the Terminal.
+ Enter the appropriate one-liner command, depending on your project type.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xamarin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xamarin/</guid>
+      <description>You can easily create a signed IPA for your Xamarin project with Bitrise. All you need to do is set the relevant inputs of our Xamarin Archive step!
+!!! todo &amp;ldquo;Before you start&amp;rdquo; Before setting up IPA export, make sure that:
+ * your code signing files have been collected: we recommend using our [codesigndoc](https://github.com/bitrise-tools/codesigndoc) tool. * you have the `Certificate and profile installer` step in your workflow.  If you&amp;rsquo;re all set, proceed to setting up IPA export in your workflow:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/create-signed-ipa-for-xcode/</guid>
+      <description>You can easily create a signed IPA for your Xamarin project with Bitrise. All you need to do is set the relevant inputs of our Xamarin Archive step!
+!!! todo &amp;ldquo;Before you start&amp;rdquo; Before setting up IPA export, make sure that:
+ * your code signing files have been collected: we recommend using our [codesigndoc](https://github.com/bitrise-tools/codesigndoc) tool. * you have the required steps in your workflow to manage code your signing files: * `Certificate and profile installer` if you uploaded your Provisioning Profiles manually.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/exporting-code-signing-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/exporting-code-signing-files/</guid>
+      <description>Exporting certificates using Xcode  Start Xcode Select Xcode &amp;gt; Preferences from the navigation bar. At the top of the window select Accounts. Select your Apple ID and your team from the right side bar, then click on View Details.... A dialog will appear where you will see your code signing identities and the provisioning profiles. Select the certificates and choose Export from the pop-up menu.  Enter a filename in the Save As dialog.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/generating-code-signing-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/generating-code-signing-files/</guid>
+      <description>You&amp;rsquo;ll need two kinds of files to sign your app: Certificates and Provisioning Profiles.
+Generate a Code Signing Certificate The certificates - development or distribution - are the guarantee that you, the named developer, built this code, that you are a member of the developer program, and that Apple have issued you with a certificate to do so.
+To get a certificate, you need to generate a Certificate Signing Request with Keychain Access and send it to Apple.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ionic-cordova-code-signing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ionic-cordova-code-signing/</guid>
+      <description>Naturally, Bitrise supports iOS applications built with either Ionic or Cordova. However, the code signing process is slightly different compared to a &amp;ldquo;native&amp;rdquo; Xcode project.
+Bitrise supports both manual and automatic provisioning for Ionic and Cordova apps as well - and once again, the processes are somewhat different.
+Ionic/Cordova code signing with manual provisioning  Generate the native Xcode project locally from your Ionic or Cordova project by calling cordova platform add ios or ionic cordova platform add ios.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-auto-provisioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-auto-provisioning/</guid>
+      <description>Manage your code signing files on bitrise.io. You can use iOS automatic provisioning to automatically generate the required Provisioning Profiles for your project.
+With automatic provisioning, the iOS Auto Provision step will manage the Provisioning Profiles. You only have to upload the .p12 certificate files manually to bitrise.io.
+!!! warning &amp;ldquo;Upload all signing certificates for your project&amp;rdquo; We strongly recommend uploading BOTH the development and distribution signing certificates for your project.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-manual-provisioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/ios-manual-provisioning/</guid>
+      <description>Manage your code signing files on bitrise.io. With manual provisioning, you can collect your Provisioning Profiles and .p12 certificates with our codesigndoc tool and then upload them manually or by using the tool.
+!!! info &amp;ldquo;Xcode Automatically manage signing option&amp;rdquo; We support using Xcode&amp;rsquo;s Automatically manage signing option, introduced in Xcode 8, with your project. In this case, create an IPA of the desired type on your local machine to let Xcode generate the required profiles and then codesigndoc can collect these.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/protecting-your-code-signing-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/protecting-your-code-signing-files/</guid>
+      <description>Protecting your code signing files You can set your code signing files to Protected mode: this means they cannot be downloaded from your bitrise.io account. Your builds will be able to use these protected files, of course. But if you make the file protected, no one will be able to reveal it and the only way to overwrite it is by deleting the current one and creating a new one.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/resigning-an-ipa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/ios-code-signing/resigning-an-ipa/</guid>
+      <description>During the development of your iOS app you will need multiple types of distributions for different purposes, such as internal testing or deployment to the App Store. The good news is that this does not require setting up two separate workflows on bitrise.io.
+!!! todo &amp;ldquo;Before you start&amp;rdquo; You need to:
+* upload different types of .p12 certificates (for example, developer and distribution certificates) * upload the associated Provisioning Profiles (or managing them automatically with the `iOS Auto Provisioning` step)  If all your code signing files are in place, proceed to setting up your workflow.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/xamarin-android-code-signing/xamarin-android-code-signing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/code-signing/xamarin-android-code-signing/xamarin-android-code-signing/</guid>
+      <description>Configure code signing in Xamarin Studio You can specify the code signing configuration for your Xamarin Android project by creating a signed APK in Xamarin Studio.
+ Log into your Xamarin Studio.
+ Double click on your Xamarin Android project to open Project Option.
+ Select the Android Package Signing in Build group.
+ Select your platform in the Configuration - Platform.
+ Check the Sign .APK file using the following keystore details.</description>
+    </item>
+    
+  </channel>
+</rss>

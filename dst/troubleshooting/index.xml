@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshootings on Material Docs</title>
+    <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/</link>
+    <description>Recent content in Troubleshootings on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/enabling-bitrise-support-user/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/enabling-bitrise-support-user/</guid>
+      <description>If you need quick tech support from us, our onsite chat support can look into your project and fix your technical issues in the most efficient way! All you have to do is enable Bitrise Support user so that we have access to your project, specifically to your workflow, your build log, your app settings or to your yml.
+With the toggle function, you can easily turn the Bitrise Support user on and off, no need to add us as a user to your app&amp;rsquo;s Team any more.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-android-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-android-issues/</guid>
+      <description>Could not find an android package or you have not accepted the license agreements Error &amp;gt; A problem occurred configuring project &#39;:lib&#39;. &amp;gt; You have not accepted the license agreements of the following SDK components: [Google Repository]. Before building your project, you need to accept the license agreements and complete the installation of the missing components using the Android Studio SDK Manager. Alternatively, to learn how to transfer the license agreements from one workstation to another, go to http://d.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-ios-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/frequent-ios-issues/</guid>
+      <description>Searching for errors and issues in Xcode generated output This applies only to the raw, unfiltered output of Xcode. If you can&amp;rsquo;t find the error reason in the logs make sure to switch the Output Tool option of the Xcode &amp;hellip; step to xcodebuild (Xcode&amp;rsquo;s Command Line Tool), which will result in a quite verbose output, but will include everything the way it&amp;rsquo;s produced by Xcode&amp;rsquo;s command line build tool (xcodebuild).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/known-xcode-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/known-xcode-issues/</guid>
+      <description>Feel free to add your comments to this list.
+You can do it directly on GitHub, by clicking this link, just don&amp;rsquo;t forget to send it as a Pull Request ;)
+Performance related Note: mainly affects UI tests.
+The root cause of the issue is that Xcode / the iOS Simulator has issues in performance limited environments. This included Virtual Machines (which is how your builds are running on bitrise.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/trigger-doesnt-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/trigger-doesnt-work/</guid>
+      <description>Unfortunately, it can happen that your build triggers do not trigger a build automatically on Bitrise. There are many potential issues that can stop your builds - let&amp;rsquo;s take a look!
+ Check your webhooks.
+Check that you have the webhook set up correctly. You can find out the webhook URL for your repository&amp;rsquo;s hosting provider on the Code tab of your app and you can check in your repository&amp;rsquo;s settings if they match.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/workflow-editor-doesnt-load/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://demo.devcenter.bitrise.io.s3-website-us-east-1.amazonaws.com/troubleshooting/workflow-editor-doesnt-load/</guid>
+      <description>This can happen if you modified the bitrise.yml / workflow configuration in a way which crashes the Workflow Editor UI.
+If this would happen please contact us so we can fix the issue in the UI code, then you can fix the bitrise.yml through our API.
+You can find an example of how the API works on GitHub. In short, you can use a simple curl call to download &amp;amp; to upload an app&amp;rsquo;s config / bitrise.</description>
+    </item>
+    
+  </channel>
+</rss>

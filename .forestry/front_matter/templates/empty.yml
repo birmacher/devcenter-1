@@ -15,6 +15,6 @@ fields:
     required: true
     display_utc: true
 pages:
-- content/caching/Index.md
-- content/infrastructure/index.md
 - content/getting-started/builds-and-workflows.md
+- content/infrastructure/index.md
+- content/caching/Index.md

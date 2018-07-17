@@ -5,7 +5,8 @@ menu:
   main:
     name: Getting Started
     identifier: getting-started
-    weight: 2
+    weight: 1
+    parent: Getting Started
 
 ---
 **Bitrise** is a [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)

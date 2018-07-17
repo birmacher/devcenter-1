@@ -2,8 +2,9 @@
 title: Add your first step to the workflow
 menu:
   main:
-    parent: "getting-started"
-    weight: 6
+    parent: getting-started
+    weight: 7
+
 ---
 When you've registered an app you can start modifying its Workflow,
 that is to customize how a build should work.

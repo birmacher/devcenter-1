@@ -2,10 +2,10 @@
 title: Account Security
 menu:
   main:
-    parent: "getting-started"
-    weight: 4
----
+    parent: getting-started
+    weight: 3
 
+---
 ## Enable Two-factor authentication
 
 We provide an extra layer of security if you enable Two-factor authentication (TFA) on your Bitrise account.

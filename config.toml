@@ -10,26 +10,6 @@ fractions = true
 plainIDAnchors = true
 smartDashes = true
 smartypants = true
-[[menu.main]]
-name = "Infrastructure"
-url = "/infrastructure/"
-weight = 10
-[[menu.main]]
-name = "License"
-url = "license/"
-weight = 9
-[[menu.main]]
-name = "Roadmap"
-url = "roadmap/"
-weight = 8
-[[menu.main]]
-name = "Adding content"
-url = "adding-content/"
-weight = 6
-[[menu.main]]
-name = "API"
-url = "api/"
-weight = 4
 [params]
 author = "Digitalcraftsman"
 copyright = "Released under the MIT license"

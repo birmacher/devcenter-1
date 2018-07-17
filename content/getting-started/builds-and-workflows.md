@@ -2,8 +2,9 @@
 title: Builds & workflows
 menu:
   main:
-    parent: "getting-started"
-    weight: 2
+    parent: getting-started
+    weight: 3
+
 ---
 A _build_ is the process specified by the app's _workflow_, which is a collection of _steps_. Every step is an **open source** repository which you can inspect, modify, and run with the [open source Bitrise CLI](https://www.bitrise.io/cli).
 

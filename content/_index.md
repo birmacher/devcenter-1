@@ -1,6 +1,12 @@
 ---
-title: "Bitrise DevCenter"
+title: Bitrise DevCenter
 type: index
+menu:
+  main:
+    name: Getting Started
+    identifier: getting-started
+    weight: 2
+
 ---
 **Bitrise** is a [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
 and [Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) (CI/CD) Platform as a Service (PaaS)

@@ -1,12 +1,6 @@
 ---
 title: Bitrise DevCenter
 type: index
-menu:
-  main:
-    name: Getting Started
-    identifier: getting-started
-    weight: 1
-    parent: Getting Started
 
 ---
 **Bitrise** is a [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
